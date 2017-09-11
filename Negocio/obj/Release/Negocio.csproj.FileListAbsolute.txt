@@ -1,0 +1,40 @@
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\conn.ini
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\Negocio.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\Negocio.pdb
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\DAL.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\MarUtils.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\MySql.Data.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\DAL.pdb
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\MarUtils.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\bin\Release\MySql.Data.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\obj\Release\ResolveAssemblyReference.cache
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\obj\Release\Negocio.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\Negocio\obj\Release\Negocio.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\conn.ini
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\Negocio.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\Negocio.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\INIFileParser.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MarUtils.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MySql.Data.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\INIFileParser.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MarUtils.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MySql.Data.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.pdb
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\conn.ini
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\Negocio.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\Negocio.pdb
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\INIFileParser.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MarUtils.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MySql.Data.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\DAL.pdb
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\INIFileParser.xml
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MarUtils.xml
+D:\Dropbox\Sistemas\Gasolero\Negocio\bin\Release\MySql.Data.xml
+D:\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+D:\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.dll
+D:\Dropbox\Sistemas\Gasolero\Negocio\obj\Release\Negocio.pdb

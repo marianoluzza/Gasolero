@@ -1,0 +1,37 @@
+para anular facts
+ALTER TABLE `gasolero`.`factencabezados` ADD COLUMN `Anula` INTEGER UNSIGNED AFTER `Numero`;
+
+ALTER TABLE `gasolero`.`factencabezados` ADD CONSTRAINT `FK_factencabezados_Anula` FOREIGN KEY `FK_factencabezados_Anula` (`Anula`)
+    REFERENCES `factencabezados` (`IdFactEncabezado`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+
+
+
+ver fiscal en op directas		****************************
+escribir nbre turno			****************************
+ver dif correctas			****************************
+cerrar sesion auto. dsp de cerrar turno ****************************
+reset pass				****************************
+
+usuario encargado:
+NO art
+NO ptos
+SI cierre parcial
+SI anular - NC
+NO mostrar Densidada
+NO mostrar habilitacion Modo Fiscal
+Cierre Z y X voluntarios
+X automatico en cada cierre de caja
+Z automatico en cierre turno tarde luego del X
+
+Administrador (Afip)
+NO mostrar Densidada
+NO mostrar habilitacion Modo Fiscal
+
+Vendedor:
+Ventas
+Cierre
+
+SuperUsuario:
+TODO

@@ -1,0 +1,3113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarUtils</name>
+    </assembly>
+    <members>
+        <member name="T:MarUtils.Listados.ListadoBinding">
+            <summary>
+            Binding entre datos y ListView
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoBinding.#ctor(System.Windows.Forms.ListView,System.Collections.Generic.IList{MarUtils.Listados.ListadoEsquema})">
+            <summary>
+            
+            </summary>
+            <param name="lista"></param>
+            <param name="esquemas"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoBinding.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualiza una tabla en el listado
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoBinding.ResetBinding">
+            <summary>
+            Resetea la ligadura, usese la primera vez y cada vez que se cambian los datos o el formato
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoBinding.AutoResizeLista">
+            <summary>
+            Reajusta la lista
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.TablaMain">
+            <summary>
+            Obtiene o establece la tabla principal
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.DatoGrupo">
+            <summary>
+            Obtiene o establece el dato con el que se agrupa
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.DatosTotalizadores">
+            <summary>
+            Obtiene los datos totalizadores
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.GrupoTotalizador">
+            <summary>
+            Grupo totalizador o resumen, dejar el nombre en blanco para que no se use
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.Grupos">
+            <summary>
+            Listado de grupos
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoBinding.GrupoTotalizadorDatos">
+            <summary>
+            Los datos que se usan el grupo resumen
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Crypto">
+            <summary>
+            Clase para criptografia
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Crypto.HashU2Ch(System.String)">
+            <summary>
+            Hash propio
+            </summary>
+            <param name="txt">texto a codificar</param>
+            <returns>hash del texto</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Crypto.HashU2Hexa(System.String)">
+            <summary>
+            Hash hexa
+            </summary>
+            <param name="txt">texto a codificar</param>
+            <returns>hash del texto</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Crypto.HashXOR(System.String,System.String)">
+            <summary>
+            Encriptacion ida y vuelta con xor
+            </summary>
+            <param name="txt">texto a codificar</param>
+            <param name="clavePublica">la clave publica conocida para des/encriptar</param>
+            <returns>texto encriptado</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Crypto.VerificadorEAN13(System.String)">
+            <summary>
+            Calcula el dígito verificador de EAN13
+            </summary>
+            <param name="EAN">ean de 12 dígitos</param>
+            <returns>digito verificador</returns>
+        </member>
+        <member name="T:MarUtils.Listados.IAgrupador">
+            <summary>
+            Interfaz de agrupacion
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.IAgrupador.GetGrupo(System.Object)">
+            <summary>
+            Devuelve la clave de grupo al que pertenece el objeto
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.AgrupadorSimple">
+            <summary>
+            Agrupador simple, agrupa por ToString
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.AgrupadorSimple.GetGrupo(System.Object)">
+            <summary>
+            Obtiene el grupo del objeto
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.AgrupadorIniciales">
+            <summary>
+            Agrupador por letra inicial
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.AgrupadorIniciales.#ctor(System.Int32)">
+            <summary>
+            Crea una instancia del agrupador
+            </summary>
+            <param name="cantIniciales"></param>
+        </member>
+        <member name="M:MarUtils.Listados.AgrupadorIniciales.GetGrupo(System.Object)">
+            <summary>
+            Obtiene el grupo del objeto
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.AgrupadorMeses">
+            <summary>
+            Agrupador por mes
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.AgrupadorMeses.GetGrupo(System.Object)">
+            <summary>
+            Obtiene el grupo del objeto
+            </summary>
+        </member>
+        <member name="T:MarUtils.Controles.Prompt">
+            <summary>
+            Pide un valor al usuario
+            </summary>
+        </member>
+        <member name="F:MarUtils.Controles.Prompt._entries">
+            <summary>
+            [dato, entry] solo dato!!! para alias usar diccionario de alias
+            </summary>
+        </member>
+        <member name="F:MarUtils.Controles.Prompt._datoAlias">
+            <summary>
+            [alias, dato] para buscar bien en la lista de arriba
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.#ctor">
+            <summary>
+            Arma el prompt para un text entry
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.#ctor(MarUtils.Soporte.Esquema)">
+            <summary>
+            Arma el prompt con los datos provistos
+            </summary>
+            <param name="esquema">esquema para el dato</param>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.#ctor(MarUtils.Soporte.Esquema,System.Data.DataView)">
+            <summary>
+            Arma el prompt con los datos provistos
+            </summary>
+            <param name="esquema">esquema para el dato</param>
+            <param name="vista">tabla para el combo, solo sirve para ese control</param>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.#ctor(MarUtils.Soporte.EsquemaCollection,System.Collections.Generic.Dictionary{MarUtils.Soporte.Esquema,System.Data.DataView})">
+            <summary>
+            Arma el prompt con los datos provistos
+            </summary>
+            <param name="esquemas">esquemas de datos</param>
+            <param name="vistas">tablas para los combos, solo sirve para ese control. Solo agregar las vistas necesarias para los esquemas q las requieran.</param>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.GetValue">
+            <summary>
+            Obtiene el valor ingresado por el usuario en el primer entry. 
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.GetValue(MarUtils.Soporte.Esquema)">
+            <summary>
+            Obtiene el valor ingresado por el usuario en el dato especificado. 
+            </summary>
+            <param name="esq">esquema del dato</param>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.GetValue(System.String)">
+            <summary>
+            Obtiene el valor ingresado por el usuario en el dato especificado. 
+            </summary>
+            <param name="dato">nombre o alias del dato</param>
+        </member>
+        <member name="F:MarUtils.Controles.Prompt.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MarUtils.Controles.Prompt.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Datos.ITabla">
+            <summary>
+            Da la firma para metodos básicos comunes a una tabla.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.ITabla.GetNombreEntidad">
+            <summary>
+            Devuelve el nombre de la entidad representada.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.ITabla.GetNombreTabla">
+            <summary>
+            Devuelve el nombre de la tabla que representa a las entidades.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.ITabla.GetPK">
+            <summary>
+            Devuelve el nombre de la clave primaria de la entidad/tabla.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.ITabla.Empaquetar">
+            <summary>
+            Empaqueta las propiedades de una entidad.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MarUtils.Soporte.enErrores">
+            <summary>
+            Especifica un error, o exito si es ninguno.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.Ninguno">
+            <summary>
+            Ningun error. Exito.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.Cancelado">
+            <summary>
+            Operacion cancelada.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.YaExiste">
+            <summary>
+            El item ya existe.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.FormatoIncorrecto">
+            <summary>
+            El formato es incorrecto.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.DatosFaltantes">
+            <summary>
+            Faltan datos.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.ErrorBD">
+            <summary>
+            Error en la base de datos.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.LogicaInvalida">
+            <summary>
+            Error en la capa de negocio, ver mensaje.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enErrores.Otro">
+            <summary>
+            Otro error. No especificado.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.enABMFuncion">
+            <summary>
+            Especifica que funcion se trata de hacer
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enABMFuncion.Alta">
+            <summary>
+            Alta, insercion.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enABMFuncion.Baja">
+            <summary>
+            Baja, eliminacion.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enABMFuncion.Modificacion">
+            <summary>
+            Modificacion, actualizacion.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.enTipoMensaje">
+            <summary>
+            Tipos de mensaje
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enTipoMensaje.Informacion">
+            <summary>
+            Puramente informativo
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enTipoMensaje.Advertencia">
+            <summary>
+            Advierte sobre algo
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.enTipoMensaje.Error">
+            <summary>
+            Informa un error
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Par`1">
+            <summary>
+            Par Original - Actual
+            </summary>
+            <typeparam name="T">Tipo del par</typeparam>
+        </member>
+        <member name="M:MarUtils.Soporte.Par`1.#ctor">
+            <summary>
+            Crea un nuevo par
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Par`1.#ctor(`0,`0)">
+            <summary>
+            Crea un nuevo par
+            </summary>
+            <param name="ori">Valor original</param>
+            <param name="act">Valor actual</param>
+        </member>
+        <member name="P:MarUtils.Soporte.Par`1.Original">
+            <summary>
+            Valor original
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Par`1.Actual">
+            <summary>
+            Valor actual
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.PropiedadCambiadaHandler">
+            <summary>
+            Usese para señalar cambios en propiedades de un objeto
+            </summary>
+            <param name="sender">objeto dueño de la propiedad</param>
+            <param name="e">datos sobre la propiedad</param>
+        </member>
+        <member name="T:MarUtils.Soporte.Resx">
+            <summary>
+            Clase de recursos
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Resx.Get(MarUtils.Soporte.Resx.enBitmaps)">
+            <summary>
+            Obtiene una imagen de los recursos
+            </summary>
+            <param name="res"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MarUtils.Soporte.Resx.enBitmaps">
+            <summary>
+            Recursos disponibles
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Resx.enBitmaps.Aceptar">
+            <summary>
+            Imagen de aceptar
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Resx.enBitmaps.Cancelar">
+            <summary>
+            Imagen de cancelar
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Resx.enBitmaps.Info">
+            <summary>
+            Imagen de info
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Resx.enBitmaps.Advertencia">
+            <summary>
+            Imagen de advertencia
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Resx.enBitmaps.Error">
+            <summary>
+            Imagen de error
+            </summary>
+        </member>
+        <member name="T:MarUtils.Entidades.EntidadBase">
+            <summary>
+            Clase base para las entidades, implementa IABM e ITabla
+            </summary>
+        </member>
+        <member name="T:MarUtils.Entidades.IABM">
+            <summary>
+            Da la firma para Alta, Baja y Modificacion.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.IABM.Alta">
+            <summary>
+            Inserta el item en un almacen persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.IABM.Baja">
+            <summary>
+            Elimina el item de un almacen persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.IABM.Modificacion">
+            <summary>
+            Modifica un item en un almacen persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MarUtils.Datos.IDatos">
+            <summary>
+            Da la firma para metodos de Datos.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.IDatos.ProtocoloDatos">
+            <summary>
+            Devuelve la entidad con el protocolo de datos.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.OnPropiedadCambiada(System.String)">
+            <summary>
+            Dispara PropiedadCambiada
+            </summary>
+            <param name="prop"></param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.#ctor(System.Data.DataTable,System.Int32)">
+            <summary>
+            Crea una entidad a partir de una fila de su tabla
+            </summary>
+            <param name="dt"></param>
+            <param name="indice"></param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.#ctor(MarUtils.Soporte.EsqValDicc)">
+            <summary>
+            Crea una entidad a partir de un diccionario de esquemas y valores
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.SetProp(System.String,System.Object)">
+            <summary>
+            Establece una propiedad en la entidad
+            </summary>
+            <param name="prop">nombre de la propiedad</param>
+            <param name="valor">valor deseado</param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.GetProp(System.String)">
+            <summary>
+            Obtiene una propiedad en la entidad
+            </summary>
+            <param name="prop">nombre de la propiedad</param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.GetProp``1(System.String)">
+            <summary>
+            Obtiene una propiedad en la entidad
+            </summary>
+            <param name="prop">nombre de la propiedad</param>
+            <typeparam name="T">tipo de casteo</typeparam>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.Alta">
+            <summary>
+            Da de alta la entidad en el medio persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.Baja">
+            <summary>
+            Da de baja la entidad en el medio persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.Modificacion">
+            <summary>
+            Modifica la entidad en el medio persistente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.GetNombreEntidad">
+            <summary>
+            Devuelve el nombre de esta entidad, mirando la propiedad public NombreEntidad.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.GetNombreTabla">
+            <summary>
+            Devuelve el nombre de tabla que representa a las entidades de este tipo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.GetPK">
+            <summary>
+            Devuelve la clave primaria de entidad/tabla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.Empaquetar">
+            <summary>
+            Devuelve una lista con los datos de la entidad segun el protocolo de datos.
+            Usa Empaquetar de documentacion.xls
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.Empaquetar_Old">
+            <summary>
+            Devuelve una tabla con los datos de la entidad. Usa Empaquetar de documentacion.xls
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadBase.ProtocoloDatos">
+            <summary>
+            Devuelve la entidad con el protocolo de datos. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:MarUtils.Entidades.EntidadBase.PropiedadCambiada">
+            <summary>
+            Se dispara cuando se cambia el valor de una propiedad
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.ListadoGrupo">
+            <summary>
+            Grupos de listado
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoGrupo.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoGrupo.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nombre"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoGrupo.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nombre"></param>
+            <param name="clave"></param>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.Nombre">
+            <summary>
+            Obtiene o establece el nombre del grupo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.Clave">
+            <summary>
+            Obtiene o establece el valor de la clave del grupo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.ForeColorTt">
+            <summary>
+            Color de fuente del item total
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.BackColorTt">
+            <summary>
+            Color de fondo del item total
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.UsarColoresGrpTt">
+            <summary>
+            Usar colores personalizados para el item total?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.ForeColor">
+            <summary>
+            Color de fuente de los items del grupo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.BackColor">
+            <summary>
+            Color de fondo de los items del grupo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoGrupo.UsarColoresGrp">
+            <summary>
+            Usar colores personalizados para los items del grupo?
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.ListadoEsquema">
+            <summary>
+            Esquemas de listado
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoEsquema.Dato">
+            <summary>
+            Nombre del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoEsquema.Alias">
+            <summary>
+            Alias del dato, si corresponde
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoEsquema.Posicion">
+            <summary>
+            Posicion relativa, mandatoria e irrepetible
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoEsquema.Alineacion">
+            <summary>
+            (I)zquierda, (D)erecha o (C)entro
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EsqValDicc">
+            <summary>
+            Representa un diccionario de esquemas y valores
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.#ctor">
+            <summary>
+            Crea un nuevo diccionario
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.#ctor(System.Int32)">
+            <summary>
+            Crea un nuevo diccionario
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Add(MarUtils.Soporte.Esquema,System.Object)">
+            <summary>
+            Añade un valor al diccionario
+            </summary>
+            <param name="key">esquema del dato</param>
+            <param name="value">valor</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.ContainsKey(MarUtils.Soporte.Esquema)">
+            <summary>
+            Dice si el diccionario contiene el valor del esquema dado
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.ContainsKey(System.String)">
+            <summary>
+            Dice si el diccionario contiene el valor del esquema dado
+            </summary>
+            <param name="dato"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Remove(MarUtils.Soporte.Esquema)">
+            <summary>
+            Remueve un valor del diccionario
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.TryGetValue(MarUtils.Soporte.Esquema,System.Object@)">
+            <summary>
+            Intenta obtener un valor
+            </summary>
+            <param name="key">clave</param>
+            <param name="value">si clave esta, su valor, si no null</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Add(System.Collections.Generic.KeyValuePair{MarUtils.Soporte.Esquema,System.Object})">
+            <summary>
+            Añade una dupla al diccionario
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Clear">
+            <summary>
+            Limpia el diccionario
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Contains(System.Collections.Generic.KeyValuePair{MarUtils.Soporte.Esquema,System.Object})">
+            <summary>
+            Dice si el esquema pertenece al diccionario
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.CopyTo(System.Collections.Generic.KeyValuePair{MarUtils.Soporte.Esquema,System.Object}[],System.Int32)">
+            <summary>
+            Copia el diccionario a un array
+            </summary>
+            <param name="array"></param>
+            <param name="arrayIndex">desde donde en el array</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.Remove(System.Collections.Generic.KeyValuePair{MarUtils.Soporte.Esquema,System.Object})">
+            <summary>
+            Remueve una dupla del diccionario
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.GetEnumerator">
+            <summary>
+            Obtiene el enumerador
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsqValDicc.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.Keys">
+            <summary>
+            Esquemas en la colleccion
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.Values">
+            <summary>
+            Valores en la colleccion
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.Item(MarUtils.Soporte.Esquema)">
+            <summary>
+            Obtiene o establece el valor para el esquema dado
+            </summary>
+            <param name="key">esquema</param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.Item(System.String)">
+            <summary>
+            Obtiene o establece el valor para el esquema dado
+            </summary>
+            <param name="key">dato o alias</param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.Count">
+            <summary>
+            Cantidad en la lista
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EsqValDicc.IsReadOnly">
+            <summary>
+            Es RO?
+            </summary>
+        </member>
+        <member name="T:MarUtils.Entidades.EntidadNombrada">
+            <summary>
+            Entidad basica nombrada, con Id y Nombre
+            </summary>
+        </member>
+        <member name="F:MarUtils.Entidades.EntidadNombrada._id">
+            <summary>
+            Id de la entidad
+            </summary>
+        </member>
+        <member name="F:MarUtils.Entidades.EntidadNombrada._nombre">
+            <summary>
+            Nombre de la entidad
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadNombrada.#ctor">
+            <summary>
+            Constructor base
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadNombrada.#ctor(System.Data.DataTable,System.Int32)">
+            <summary>
+            Crea una entidad nombrada
+            </summary>
+            <param name="dt">tabla con datos</param>
+            <param name="indice">que fila usar</param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadNombrada.#ctor(System.Data.DataTable,System.Int32,System.Boolean)">
+            <summary>
+            Crea una entidad nombrada
+            </summary>
+            <param name="dt">tabla con datos</param>
+            <param name="indice">que fila usar</param>
+            <param name="usarId">usar la PrimaryKey para setear el Id?</param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadNombrada.ToString">
+            <summary>
+            Devuelve "Id: Nombre"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Entidades.EntidadNombrada.Id">
+            <summary>
+            Obtiene o establece el id
+            </summary>
+        </member>
+        <member name="P:MarUtils.Entidades.EntidadNombrada.Nombre">
+            <summary>
+            Obtiene o establece el nombre
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EntidadFactory">
+            <summary>
+            Fabrica de entidades
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadFactory.Build(System.String)">
+            <summary>
+            Construye una instancia del tipo solicitado
+            </summary>
+            <param name="tipo">tipo de entidad</param>
+            <returns>una instancia nueva</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadFactory.Build``1">
+            <summary>
+            Construye una instancia del tipo solicitado
+            </summary>
+            <returns>una instancia nueva</returns>
+            <typeparam name="T">tipo de instancia</typeparam>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadFactory.Inicializar">
+            <summary>
+            Iniciliaza la factory
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadFactory.Inicializar(System.Reflection.Assembly)">
+            <summary>
+            Iniciliaza la factory
+            </summary>
+            <param name="asm">assembly para revisar tipos de entidades</param>
+        </member>
+        <member name="T:MarUtils.Listados.ListViewPrinterBase">
+            <summary>
+            A ListViewPrinterBase prints or print previews an ListView.
+            </summary>
+            <remarks>
+            <para>The format of the page header/footer, list header and list rows can all be customised.</para>
+            <para>This class works best with ObjectListView class, but still works fine with normal ListViews.
+            If you don't have ObjectListView class in your project, you must define WITHOUT_OBJECTLISTVIEW as one
+            of the conditional compilation symbols on your projects properties.</para>
+            </remarks>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.#ctor">
+            <summary>
+            Make a new ListViewPrinterBase
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.#ctor(System.Windows.Forms.ListView)">
+            <summary>
+            Make a new ListViewPrinterBase that will print the given ListView
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetRowCount(System.Windows.Forms.ListView)">
+            <summary>
+            Return the number of rows that this printer is going to print
+            </summary>
+            <param name="lv">The listview that is being printed</param>
+            <returns>The number of rows that will be displayed</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetRow(System.Windows.Forms.ListView,System.Int32)">
+            <summary>
+            Return the n'th row that will be printed
+            </summary>
+            <param name="lv">The listview that is being printed</param>
+            <param name="n">The index of the row to be printed</param>
+            <returns>A ListViewItem</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetVirtualItem(System.Windows.Forms.ListView,System.Int32)">
+            <summary>
+            Get the nth item from the given listview, which is in virtual mode.
+            </summary>
+            <param name="lv">The ListView in virtual mode</param>
+            <param name="n">index of item to get</param>
+            <returns>the item</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetSubItem(System.Windows.Forms.ListViewItem,System.Int32)">
+            <summary>
+            Return the i'th subitem of the given row, in the order 
+            that coumns are presented in the report
+            </summary>
+            <param name="lvi">The row from which a subitem is to be fetched</param>
+            <param name="i">The index of the subitem in display order</param>
+            <returns>A SubItem</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetColumnCount">
+            <summary>
+            Return the number of columns to be printed in the report
+            </summary>
+            <returns>An int</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetColumn(System.Int32)">
+            <summary>
+            Return the n'th ColumnHeader (ordered as they should be displayed in the report)
+            </summary>
+            <param name="i">Which column</param>
+            <returns>A ColumnHeader</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.GetGroupAtPosition(System.Int32)">
+            <summary>
+            Return the index of group that starts at the given position.
+            Return -1 if no group starts at that position
+            </summary>
+            <param name="n">The row position in the list</param>
+            <returns>The group index</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PageSetup">
+            <summary>
+            Show a Page Setup dialog to customize the printing of this document
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintPreview">
+            <summary>
+            Show a Print Preview of this document
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintWithDialog">
+            <summary>
+            Print this document after showing a confirmation dialog
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            A print job is about to be printed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Print a given page
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PreparePrint">
+            <summary>
+            Prepare some precalculated fields used when printing
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintOnePage(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Do the actual work of printing on page
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.CalculateBounds(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Figure out the page bounds and the boundaries for the list
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.CalculatePrintParameters(System.Windows.Forms.ListView)">
+            <summary>
+            Figure out the boundaries for various aspects of the report
+            </summary>
+            <param name="lv">The listview to be printed</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.ApplyScaling(System.Drawing.Graphics)">
+            <summary>
+            Apply any scaling that is required to the report
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintWatermark(System.Drawing.Graphics)">
+            <summary>
+            Print our watermark on the given Graphic
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintList(System.Drawing.Graphics,System.Windows.Forms.ListView)">
+            <summary>
+            Do the work of printing the list into 'listBounds'
+            </summary>
+            <param name="g">The graphic used for drawing</param>
+            <param name="lv">The listview to be printed</param>
+            <returns>Return true if there are still more pages in the report</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintListHeader(System.Drawing.Graphics,System.Windows.Forms.ListView)">
+            <summary>
+            Print the header of the listview
+            </summary>
+            <param name="g">The graphic used for drawing</param>
+            <param name="lv">The listview to be printed</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintRows(System.Drawing.Graphics,System.Windows.Forms.ListView)">
+            <summary>
+            Print the rows of the listview
+            </summary>
+            <param name="g">The graphic used for drawing</param>
+            <param name="lv">The listview to be printed</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.CalculateRowHeight(System.Drawing.Graphics,System.Windows.Forms.ListView,System.Int32)">
+            <summary>
+            Calculate how high the given row of the report should be.
+            </summary>
+            <param name="g">The graphic used for drawing</param>
+            <param name="lv">The listview to be printed</param>
+            <param name="n">The index of the row whose height is to be calculated</param>
+            <returns>The height of one row in pixels</returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintGroupHeader(System.Drawing.Graphics,System.Windows.Forms.ListView,System.Int32)">
+            <summary>
+            Print a group header
+            </summary>
+            <param name="g">The graphic used for drawing</param>
+            <param name="lv">The listview to be printed</param>
+            <param name="groupIndex">The index of the group header to be printed</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintRow(System.Drawing.Graphics,System.Windows.Forms.ListView,System.Int32,System.Single)">
+            <summary>
+            Print one row of the listview
+            </summary>
+            <param name="g"></param>
+            <param name="lv"></param>
+            <param name="row"></param>
+            <param name="rowHeight"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintCell(System.Drawing.Graphics,System.Windows.Forms.ListView,System.Windows.Forms.ListViewItem,System.Int32,System.Int32,System.Drawing.RectangleF)">
+            <summary>
+            Print one cell of the listview
+            </summary>
+            <param name="g"></param>
+            <param name="lv"></param>
+            <param name="lvi"></param>
+            <param name="row"></param>
+            <param name="column"></param>
+            <param name="cell"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintHeaderFooter(System.Drawing.Graphics)">
+            <summary>
+            Print the page header and page footer
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintPageHeader(System.Drawing.Graphics)">
+            <summary>
+            Print the page header
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.PrintPageFooter(System.Drawing.Graphics)">
+            <summary>
+            Print the page footer
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:MarUtils.Listados.ListViewPrinterBase.SplitAndFormat(System.String)">
+            <summary>
+            Split the given string into at most three parts, using Tab as the divider. 
+            Perform any substitutions required
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.ListView">
+            <summary>
+            This is the ListView that will be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.IsTextOnly">
+            <summary>
+            Should this report use text only?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.IsShrinkToFit">
+            <summary>
+            Should this report be shrunk to fit into the width of a page?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.IsPrintSelectionOnly">
+            <summary>
+            Should this report only include the selected rows in the listview?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.UseColumnDisplayOrder">
+            <summary>
+            Should this report use the column order as the user sees them? With this enabled,
+            the report will match the order of column as the user has arranged them.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.AlwaysCenterListHeader">
+            <summary>
+            Should column headings always be centered, even if on the control itself, they are
+            aligned to the left or right?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.IsListHeaderOnEachPage">
+            <summary>
+            Should listview headings be printed at the top of each page, or just at the top of the list?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.FirstPage">
+            <summary>
+            Return the first page of the report that should be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.LastPage">
+            <summary>
+            Return the last page of the report that should be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.PageNumber">
+            <summary>
+            Return the number of the page that is currently being printed.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.IsShowingGroups">
+            <summary>
+            Is this report showing groups? 
+            </summary>
+            <remarks>Groups can't be shown when we are printing selected rows only.</remarks>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.HeaderFormat">
+            <summary>
+            How should the page header be formatted? null means no page header will be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.ListHeaderFormat">
+            <summary>
+            How should the list header be formatted? null means no list header will be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.GroupHeaderFormat">
+            <summary>
+            How should the grouping header be formatted? null means revert to reasonable default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.CellFormat">
+            <summary>
+            How should the list cells be formatted? null means revert to default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.FooterFormat">
+            <summary>
+            How should the page footer be formatted? null means no footer will be printed
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.ListFont">
+            <summary>
+            What font will be used to draw the text of the list?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.ListGridPen">
+            <summary>
+            What pen will be used to draw the cells within the list?
+            If this is null, no grid will be drawn
+            </summary>
+            <remarks>This is just a conviencence wrapper around CellFormat.SetBorderPen</remarks>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.ListGridColor">
+            <summary>
+            What color will all the borders be drawn in? 
+            </summary>
+            <remarks>This is just a conviencence wrapper around CellFormat.SetBorder</remarks>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.Header">
+            <summary>
+            What string will be written at the top of each page of the report?
+            </summary>
+            <remarks><para>The header can be divided into three parts: left aligned, 
+            centered, and right aligned. If the given string contains Tab characters,
+            everything before the first tab will be left aligned, everything between
+            the first and second tabs will be centered and everything after the second
+            tab will be right aligned.</para>
+            <para>Within each part, the following substitutions are possible:</para>
+            <list>
+            <item>{0} - The page number</item>
+            <item>{1} - The current date/time</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.Footer">
+            <summary>
+            What string will be written at the bottom of each page of the report?
+            </summary>
+            <remarks>The footer, like the header, can have three parts, and behaves
+            in the same way as described as Header.</remarks>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.Watermark">
+            <summary>
+            The watermark will be printed translucently over the report itself
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.WatermarkFont">
+            <summary>
+            What font should be used to print the watermark
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.WatermarkFontOrDefault">
+            <summary>
+            Return the watermark font or a reasonable default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.WatermarkColor">
+            <summary>
+            What color should be used for the watermark?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.WatermarkColorOrDefault">
+            <summary>
+            Return the color of the watermark or a reasonable default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.ListViewPrinterBase.WatermarkTransparency">
+            <summary>
+            How transparent should the watermark be? &lt;= 0 is transparent, &gt;= 100 is completely opaque.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.Sides">
+            <summary>
+            Specify which sides of a block will be operated on
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.Sides.Left">
+            <summary>
+            Left
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.Sides.Top">
+            <summary>
+            Top
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.Sides.Right">
+            <summary>
+            Right
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.Sides.Bottom">
+            <summary>
+            Bottom
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.Sides.All">
+            <summary>
+            All
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.BlockFormat">
+            <summary>
+            A BlockFormat controls the formatting and style of a single part (block) of a 
+            ListViewPrinter output.
+            </summary>
+        </member>
+        <member name="F:MarUtils.Listados.BlockFormat.TextBrush">
+            <summary>
+            What brush will be used to draw the text? 
+            </summary>
+            <remarks>
+            <para>If this format is used for cells and this is null AND an ObjectListView is being printed, 
+            then the text color from the listview will be used.
+            This is useful when you have setup specific colors on a RowFormatter delegate, for example.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:MarUtils.Listados.BlockFormat.BackgroundBrush">
+            <summary>
+            What brush will be used to paint the background?
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GetPadding(MarUtils.Listados.Sides)">
+            <summary>
+            Get the padding for a particular side. 0 means no padding on that side.
+            Padding appears before the border does.
+            </summary>
+            <param name="side">Which side</param>
+            <returns>The width of the padding</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.SetPadding(MarUtils.Listados.Sides,System.Single)">
+            <summary>
+            Set the padding for a particular side. 0 means no padding on that side.
+            </summary>
+            <param name="side">Which side</param>
+            <param name="value">How much padding</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GetBorderPen(MarUtils.Listados.Sides)">
+            <summary>
+            Get the pen of the border on a particular side. 
+            </summary>
+            <param name="side">Which side</param>
+            <returns>The pen of the border</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GetBorderWidth(MarUtils.Listados.Sides)">
+            <summary>
+            Get the width of the border on a particular side. 0 means no border on that side.
+            </summary>
+            <param name="side">Which side</param>
+            <returns>The width of the border</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GetBorderBrush(MarUtils.Listados.Sides)">
+            <summary>
+            Get the width of the border on a particular side. 0 means no border on that side.
+            </summary>
+            <param name="side">Which side</param>
+            <returns>The width of the border</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.SetBorder(MarUtils.Listados.Sides,System.Single,System.Drawing.Brush)">
+            <summary>
+            Change the brush and width of the border on a particular side. 0 means no border on that side.
+            </summary>
+            <param name="side">Which side</param>
+            <param name="width">How wide should it be?</param>
+            <param name="brush">What brush should be used to paint it</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.SetBorderPen(MarUtils.Listados.Sides,System.Drawing.Pen)">
+            <summary>
+            Change the pen of the border on a particular side.
+            </summary>
+            <param name="side">Which side</param>
+            <param name="p">What pen should be used to draw it</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GetTextInset(MarUtils.Listados.Sides)">
+            <summary>
+            Get the distance that the text should be inset from the border on a given side
+            </summary>
+            <param name="side">Which side</param>
+            <returns>Distance of text inset</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.SetTextInset(MarUtils.Listados.Sides,System.Single)">
+            <summary>
+            Set the distance that the text should be inset from the border on a given side
+            </summary>
+            <param name="side">Which side</param>
+            <param name="value">Distance of text inset</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculateHeight(System.Drawing.Graphics)">
+            <summary>
+            Calculate how height this block will be when its printed on one line
+            </summary>
+            <param name="g">The Graphic to use for renderering</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculateHeight(System.Drawing.Graphics,System.String,System.Int32)">
+            <summary>
+            Calculate how height this block will be when it prints the given string 
+            to a maximum of the given width
+            </summary>
+            <param name="g">The Graphic to use for renderering</param>
+            <param name="s">The string to be considered</param>
+            <param name="width">The max width for the rendering</param>
+            <returns>The height that will be used</returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculatePaddedBox(System.Drawing.RectangleF)">
+            <summary>
+            Given a bounding box return the box after applying the padding factors
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculateBorderedBox(System.Drawing.RectangleF)">
+            <summary>
+            Given an already padded box, return the box into which the text will be drawn.
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculateTextBox(System.Drawing.RectangleF)">
+            <summary>
+            Given an already padded and bordered box, return the box into which the text will be drawn.
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.CalculatePaddedTextBox(System.Drawing.RectangleF)">
+            <summary>
+            Apply paddeding and text insets to the given rectangle
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.String,System.Windows.Forms.HorizontalAlignment)">
+            <summary>
+            Draw the given string aligned within the given cell
+            </summary>
+            <param name="g">Graphics to draw on</param>
+            <param name="r">Cell into which the text is to be drawn</param>
+            <param name="s">The string to be drawn</param>
+            <param name="align">How should the string be aligned</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.String[])">
+            <summary>
+            Draw the array of strings so that the first string is left aligned,
+            the second is centered and the third is right aligned. All strings 
+            are optional. Extra strings are ignored.
+            </summary>
+            <param name="g">Graphics to draw on</param>
+            <param name="r">Cell into which the text is to be drawn</param>
+            <param name="strings">Array of strings</param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.String,System.String,System.String)">
+            <summary>
+            Draw this block
+            </summary>
+            <param name="g"></param>
+            <param name="r"></param>
+            <param name="left"></param>
+            <param name="centre"></param>
+            <param name="right"></param>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.DefaultCell">
+            <summary>
+            Return the default style for cells
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Minimal">
+            <summary>
+            Return a minimal set of formatting values.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Minimal(System.Drawing.Font)">
+            <summary>
+            Return a minimal set of formatting values.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Box">
+            <summary>
+            Return a set of formatting values that draws boxes
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Box(System.Drawing.Font)">
+            <summary>
+            Return a set of formatting values that draws boxes
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Header">
+            <summary>
+            Return a format that will nicely print headers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Header(System.Drawing.Font)">
+            <summary>
+            Return a format that will nicely print headers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Footer">
+            <summary>
+            Return a format that will nicely print report footers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.Footer(System.Drawing.Font)">
+            <summary>
+            Return a format that will nicely print report footers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.ListHeader">
+            <summary>
+            Return a format that will nicely print list headers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.ListHeader(System.Drawing.Font)">
+            <summary>
+            Return a format that will nicely print list headers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GroupHeader">
+            <summary>
+            Return a format that will nicely print group headers.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.BlockFormat.GroupHeader(System.Drawing.Font)">
+            <summary>
+            Return a format that will nicely print group headers.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.Font">
+            <summary>
+            In what font should the text of the block be drawn? If this is null, the font from the listview will be used
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.FontOrDefault">
+            <summary>
+            Return the font that should be used for the text of this block or a reasonable default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.TextBrushOrDefault">
+            <summary>
+            Return the brush that will be used to draw the text or a reasonable default
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.TextColor">
+            <summary>
+            What color will be used to draw the text?
+            This is a convience method used by the IDE. Programmers should call TextBrush directly.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.BackgroundColor">
+            <summary>
+            What color will be used to draw the background?
+            This is a convience method used by the IDE.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.CanWrap">
+            <summary>
+            When laying out our header can the text be wrapped?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.MinimumTextHeight">
+            <summary>
+            If this is set, at least this much vertical space will be reserved for the text,
+            even if the text is smaller.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.TopBorderWidth">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.LeftBorderWidth">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.BottomBorderWidth">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.RightBorderWidth">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.TopBorderColor">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.LeftBorderColor">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.BottomBorderColor">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="P:MarUtils.Listados.BlockFormat.RightBorderColor">
+            <summary>
+            Set the TopBorderWidth
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EntidadGrillaBinding`1">
+            <summary>
+            Realiza la ligadura entre una grilla y coleccion de entidades
+            </summary>
+            <typeparam name="T">Tipo de la entidad</typeparam>
+        </member>
+        <member name="F:MarUtils.Soporte.EntidadGrillaBinding`1._entidades">
+            <summary>
+            {NroRenglon , entidad}
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.EntidadGrillaBinding`1._dicc_Fila_Ent">
+            <summary>
+            Fila -> Entidad
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.EntidadGrillaBinding`1._dicc_PxC_CxP">
+            <summary>
+            Propiedad -> Columna y Columna -> Propiedad
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.#ctor(System.Windows.Forms.DataGridView,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            
+            </summary>
+            <param name="grilla">La grilla</param>
+            <param name="aliases">Propiedad -> Columna y Columna -> Propiedad</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.Grilla_CellValueChanged(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Actualiza la entidad con el valor nuevo de la grilla
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.Grilla_RowsAdded(System.Object,System.Windows.Forms.DataGridViewRowsAddedEventArgs)">
+            <summary>
+            Agrega la entidad y setea la grilla con los valores por defecto
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.Entidad_PropiedadCambiada(MarUtils.Soporte.IGrilla,System.String,System.Object)">
+            <summary>
+            Actualiza la grilla con el valor cambiado en la entidad
+            </summary>
+            <param name="sender"></param>
+            <param name="propNbre"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.Grilla_RowsRemoved(System.Object,System.Windows.Forms.DataGridViewRowsRemovedEventArgs)">
+            <summary>
+            Actualiza la lista de entidades para reflejar las eliminaciones
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.AddEntidad(`0)">
+            <summary>
+            Añade una entidad a la grilla
+            </summary>
+            <param name="entidad"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.RemoverEntidad(System.Int32)">
+            <summary>
+            Remueve el renglon y la entidad asociada
+            </summary>
+            <param name="renglon">empieza en 1</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.GetPropName(System.String)">
+            <summary>
+            Devuelve la propiedad que corresponde a la columna
+            </summary>
+            <param name="colName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.GetColName(System.String)">
+            <summary>
+            Devuelve la columna que corresponde a la propiedad
+            </summary>
+            <param name="propNbre"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.AddDiccionario(System.String,System.String)">
+            <summary>
+            Setea la propiedad que corresponde a la columna y viceversa
+            </summary>
+            <param name="colName">nombre de la columna</param>
+            <param name="propName">nombre de la propiedad</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EntidadGrillaBinding`1.RemoverFromDicc(System.String)">
+            <summary>
+            Remueve la entrada del diccionario
+            </summary>
+            <param name="nombre">prop o col</param>
+        </member>
+        <member name="E:MarUtils.Soporte.EntidadGrillaBinding`1.EntidadesAgregadas">
+            <summary>
+            Se produce cuando se agregan entidades
+            </summary>
+        </member>
+        <member name="E:MarUtils.Soporte.EntidadGrillaBinding`1.EntidadesEliminadas">
+            <summary>
+            Se produce cuando se eliminan entidades
+            </summary>
+        </member>
+        <member name="E:MarUtils.Soporte.EntidadGrillaBinding`1.EntidadesModificadas">
+            <summary>
+            Se produce cuando se modifican entidades
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EntidadGrillaBinding`1.Entidades">
+            <summary>
+            Devuelve las entidades cargadas, ordenadas por renglon
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EntidadGrillaBinding`1.Prefijo">
+            <summary>
+            Prefijo para los nombres de las columnas. Sirve solo si no existe alias.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EntidadGrillaBinding`1.Count">
+            <summary>
+            Devuelve la cantidad de entidades en la grilla
+            </summary>
+        </member>
+        <member name="T:MarUtils.Controles.ConsolaMensajes">
+            <summary>
+            Consola de mensajes, permite interactuar
+            </summary>
+        </member>
+        <member name="F:MarUtils.Controles.ConsolaMensajes.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.ConsolaMensajes.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MarUtils.Controles.ConsolaMensajes.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.ConsolaMensajes.#ctor(System.Collections.Generic.IList{MarUtils.Soporte.Mensaje})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.ConsolaMensajes.AddMensaje(MarUtils.Soporte.Mensaje)">
+            <summary>
+            Añade un mensaje a la consola
+            </summary>
+            <param name="mje"></param>
+        </member>
+        <member name="E:MarUtils.Controles.ConsolaMensajes.IgnorarAdvertencias">
+            <summary>
+            Se dispara cuando el usuario intenta ignorar las advertencias
+            </summary>
+        </member>
+        <member name="T:MarUtils.Entidades.EntidadGrillaBase">
+            <summary>
+            Clase base que implementa IGrilla
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.IGrilla">
+            <summary>
+            Interfaz para soporte entre entidad y grilla
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.IGrilla.Getter(System.String)">
+            <summary>
+            Accesor de propiedades
+            </summary>
+            <param name="propNbre">nombre de la propiedad</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.IGrilla.Setter(System.String,System.Object)">
+            <summary>
+            Establecedor de propiedades
+            </summary>
+            <param name="propNbre">nombre de la propiedad</param>
+            <param name="valor">valor de la propiedad</param>
+        </member>
+        <member name="E:MarUtils.Soporte.IGrilla.PropiedadCambiada">
+            <summary>
+            Disparese cuando se cambia el valor de una propiedad en la entidad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.IGrilla.NroRenglon">
+            <summary>
+            Obtiene o establece el numero del renglon. Empieza en 1.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.Getter(System.String)">
+            <summary>
+            Accesor de propiedades
+            </summary>
+            <param name="propNbre">nombre de la propiedad</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.Setter(System.String,System.Object)">
+            <summary>
+            Establecedor de propiedades
+            </summary>
+            <param name="propNbre">nombre de la propiedad</param>
+            <param name="valor">valor de la propiedad</param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.CastSeguro(System.String,System.Reflection.PropertyInfo,System.Object@)">
+            <summary>
+            Realiza cast seguros
+            </summary>
+            <param name="toString">el valor en string</param>
+            <param name="prop">propiedad que desea establecer (no setea)</param>
+            <param name="final">si tuvo exito, la conversion, si no el valor defecto</param>
+            <returns>exito?</returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.Iguales(System.Object,System.Object)">
+            <summary>
+            Dice si dos son iguales por su converson a string
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.OnPropiedadCambiada(MarUtils.Soporte.IGrilla,System.String,System.Object)">
+            <summary>
+            Dispara el evento propiedad cambiada
+            </summary>
+            <param name="sender"></param>
+            <param name="propNbre"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:MarUtils.Entidades.EntidadGrillaBase.CompareTo(MarUtils.Entidades.EntidadGrillaBase)">
+            <summary>
+            Compara por el orden en la grilla, es decir el renglon
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="E:MarUtils.Entidades.EntidadGrillaBase._PropiedadCambiada">
+            <summary>
+            Se dispara cuando se cambia el valor de una propiedad en la entidad
+            </summary>
+        </member>
+        <member name="E:MarUtils.Entidades.EntidadGrillaBase.PropiedadCambiada">
+            <summary>
+            Se dispara cuando se cambia el valor de una propiedad en la entidad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Entidades.EntidadGrillaBase.NroRenglon">
+            <summary>
+            Obtiene o establece el numero del renglon. Empieza en 1.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Recursos">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Recursos.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Recursos.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Matriz`3">
+            <summary>
+            Define una matriz cuadrada
+            </summary>
+            <typeparam name="TCol">tipo de la columna</typeparam>
+            <typeparam name="TFila">tipo de la fila</typeparam>
+            <typeparam name="TCelda">tipo de la celda</typeparam>
+        </member>
+        <member name="M:MarUtils.Soporte.Matriz`3.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Matriz`3.AddColumna(`0)">
+            <summary>
+            Añade una columna a la matriz
+            </summary>
+            <param name="col"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.Matriz`3.AddFila(`1)">
+            <summary>
+            Añade una fila a la columna
+            </summary>
+            <param name="fila"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.Matriz`3.GetCols">
+            <summary>
+            Obtiene las columnas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Matriz`3.GetFilas">
+            <summary>
+            Obtiene las filas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.Matriz`3.Item(`0,`1)">
+            <summary>
+            Obtiene o establece la posicion (col,fila)
+            </summary>
+            <param name="col">q columna</param>
+            <param name="fila">q fila</param>
+            <returns>valor almacenado</returns>
+        </member>
+        <member name="T:MarUtils.Datos.PDatosUnit">
+            <summary>
+            Representa la minima unidad del protocolo de datos.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosUnit.#ctor">
+            <summary>
+            Crea una instancia vacia
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosUnit.#ctor(System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            Crea una instancia a partir de la propiedad y de la instancia
+            </summary>
+            <param name="prop"></param>
+            <param name="instancia"></param>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosUnit.Equals(System.Object)">
+            <summary>
+            Dice si son el mismo dato
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosUnit.GetHashCode">
+            <summary>
+            Devuelve el hash. Corresponde al nombre.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosUnit.ToString">
+            <summary>
+            Representacion legible
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosUnit.Nombre">
+            <summary>
+            Obtiene o establece el nombre de la propiedad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosUnit.Valor">
+            <summary>
+            Obtiene o establece el valor de la propiedad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosUnit.Tipo">
+            <summary>
+            Obtiene o establece el tipo de la propiedad
+            </summary>
+        </member>
+        <member name="T:MarUtils.Datos.PDatosFull">
+            <summary>
+            Representa el protocolo de datos total
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosFull.#ctor">
+            <summary>
+            Crea una instancia vacia del protocolo
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.PDatosFull.#ctor(MarUtils.Datos.ITabla)">
+            <summary>
+            Crea una instancia completa del protocolo a partir de una entidad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosFull.Propiedades">
+            <summary>
+            Obtiene o establece las propiedades que se transmiten
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosFull.NombreTabla">
+            <summary>
+            Obtiene o establece el nombre de la tabla
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosFull.NombreEntidad">
+            <summary>
+            Obtiene o establece el nombre de la entidad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.PDatosFull.NombreClave">
+            <summary>
+            Obtiene o establece el nombre de la clave
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Memoria">
+            <summary>
+            Memoria de cambios, para deshacer y rehacer
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Memoria.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="capacidad">capacidad maxima</param>
+        </member>
+        <member name="M:MarUtils.Soporte.Memoria.AddCambio(System.String)">
+            <summary>
+            Añade un cambio a la memoria.
+            </summary>
+            <param name="cambio">valor del cambio</param>
+        </member>
+        <member name="M:MarUtils.Soporte.Memoria.Deshacer">
+            <summary>
+            Deshacer una accion.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Memoria.Rehacer">
+            <summary>
+            Rehacer una accion.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Memoria.PuedeDeshacer">
+            <summary>
+            Se puede deshacer?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Memoria.PuedeRehacer">
+            <summary>
+            Se puede rehacer?
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Memoria.UltimoValor">
+            <summary>
+            Ultimo valor para el tiempo corriente.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Controles.PromptEntry">
+            <summary>
+            Control de entry data
+            </summary>
+        </member>
+        <member name="F:MarUtils.Controles.PromptEntry.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.#ctor">
+            <summary>
+            Arma el prompt para un text entry
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.#ctor(MarUtils.Soporte.Esquema)">
+            <summary>
+            Arma el promptEntry con los datos provistos
+            </summary>
+            <param name="esquema">esquema para el dato</param>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.#ctor(MarUtils.Soporte.Esquema,System.Data.DataView)">
+            <summary>
+            Arma el prompt con los datos provistos
+            </summary>
+            <param name="esquema">esquema para el dato</param>
+            <param name="vista">tabla para el combo, solo sirve para ese control</param>
+        </member>
+        <member name="M:MarUtils.Controles.PromptEntry.GetValue">
+            <summary>
+            Obtiene el valor ingresado por el usuario
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PromptEntry.Etiqueta">
+            <summary>
+            Obtiene o establece la etiqueta
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.ABMResultado">
+            <summary>
+            Da el resultado de un abm. Sirve para ver un error o conocer el id de la insercion,
+            entre otras cosas.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.#ctor(MarUtils.Soporte.enErrores,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="error">codigo de error</param>
+            <param name="mje">mensaje de error</param>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.#ctor(System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="id">id de la inserción</param>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.ToString">
+            <summary>
+            Sobreescrito. Devuelve la representacion escrita del resultado.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.Equals(System.Object)">
+            <summary>
+            Determina si el objeto especifico es igual al objeto corriente.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.ABMResultado.GetHashCode">
+            <summary>
+            Sirve como funcion de Hash.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.ABMResultado.CodigoError">
+            <summary>
+            Obtiene o establece el codigo de error.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.ABMResultado.MensajeError">
+            <summary>
+            Obtiene o establece el mensaje de error.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.ABMResultado.IdInsercion">
+            <summary>
+            Obtiene o establece el Id de la inserción correspondiente.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.ABMResultado.FilasAfectadas">
+            <summary>
+            Obtiene o establece la cantidad de filas afectadas
+            </summary>
+        </member>
+        <member name="T:MarUtils.Datos.BDAdmin">
+            <summary>
+            Encapsulacion de un administrador de BD
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.#ctor(System.Data.IDbConnection)">
+            <summary>
+            Crea un BDAdmin para trabajar con la conexion dada
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.AbrirConnSafe">
+            <summary>
+            Abre la conexion si aun no lo esta
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.CerrarConnSafe">
+            <summary>
+            Cierra la conexion si ya no se usa y esta abierta
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.InicioTransaccion">
+            <summary>
+            Inicia una transaccion si es que ya no hay una
+            </summary>
+            <returns>true si no habia una ya</returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.FinTransaccion(System.Boolean)">
+            <summary>
+            Termina una transaccion si habia una
+            </summary>
+            <param name="exito">fue exitosa?</param>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ChangeDataBase(System.String)">
+            <summary>
+            Cambia la base de datos actual en el conector
+            </summary>
+            <param name="db">nombre de la base de datos</param>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.GetComando(System.String)">
+            <summary>
+            Obtiene un comando para ejecutar
+            </summary>
+            <param name="texto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ExecuteReader(System.Data.IDbCommand)">
+            <summary>
+            Ejecuta una consulta y devuelve una tabla
+            </summary>
+            <param name="comm">comando con la consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ExecuteReaderM(System.Data.IDbCommand)">
+            <summary>
+            Ejecuta una consulta y devuelve una o más tabla
+            </summary>
+            <param name="comm">comando con la consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ExecuteNonQuery(System.Data.IDbCommand)">
+            <summary>
+            Ejecuta una operacion ABM y dice el resultado
+            </summary>
+            <param name="comm">comando con la consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ExecuteReader``1(System.Data.IDbCommand)">
+            <summary>
+            Ejecuta un consulta escalar tipada
+            </summary>
+            <param name="comm">comando con la consulta</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.BDAdmin.ExecuteScalar(System.Data.IDbCommand)">
+            <summary>
+            Ejecuta un consulta escalar
+            </summary>
+            <param name="comm">comando con la consulta</param>
+            <returns></returns>
+        </member>
+        <member name="T:MarUtils.Controles.PanelMensajes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.AddMensaje(MarUtils.Soporte.Mensaje)">
+            <summary>
+            Añade un mensaje
+            </summary>
+            <param name="mje"></param>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.Clear">
+            <summary>
+            Limpia el panel
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.GetMensajes">
+            <summary>
+            Obtiene los mensajes del panel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:MarUtils.Controles.PanelMensajes.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MarUtils.Controles.PanelMensajes.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.ColorInfo">
+            <summary>
+            Obtiene o establece el color para los mensajes de información
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.ColorWarning">
+            <summary>
+            Obtiene o establece el color para los mensajes de advertencia
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.ColorError">
+            <summary>
+            Obtiene o establece el color para los mensajes de error
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.Text">
+            <summary>
+            Obtiene o establece el texto del panel
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.HayErrores">
+            <summary>
+            Dice si hay mensajes de error en el panel
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.PanelMensajes.HayAdvertencias">
+            <summary>
+            Dice si hay mensajes de advertencia en el panel
+            </summary>
+        </member>
+        <member name="T:MarUtils.Datos.Cuenta">
+            <summary>
+            Refleja una cuenta de acceso
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.Cuenta.Ping">
+            <summary>
+            Hace ping al host
+            </summary>
+            <returns>Estado del IP</returns>
+        </member>
+        <member name="P:MarUtils.Datos.Cuenta.Host">
+            <summary>
+            Obtiene o establece el Nombre/IP del host
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.Cuenta.Puerto">
+            <summary>
+            Obtiene o establece el puerto de conexion
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.Cuenta.Usuario">
+            <summary>
+            Obtiene o establece el nombre del usuario
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.Cuenta.Password">
+            <summary>
+            Obtiene o establece la contraseña
+            </summary>
+        </member>
+        <member name="P:MarUtils.Datos.Cuenta.Database">
+            <summary>
+            Obtiene o establece la base de datos
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.GrillaAdapter">
+            <summary>
+            Crea el esquema de la grilla
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.GrillaAdapter.#ctor(System.Windows.Forms.DataGridView,System.Windows.Forms.BindingSource,MarUtils.Soporte.EsquemaCollection,System.Data.DataSet)">
+            <summary>
+            
+            </summary>
+            <param name="grilla">la grilla que se va a mostrar</param>
+            <param name="bindS">el bindingsource utilizado</param>
+            <param name="esquemas">el esquema de la grilla</param>
+            <param name="info">las tablas necesarias</param>
+        </member>
+        <member name="M:MarUtils.Soporte.GrillaAdapter.SetDataSource(System.Object)">
+            <summary>
+            Establece el datasource de la grilla
+            </summary>
+            <param name="ds">DataSource</param>
+        </member>
+        <member name="M:MarUtils.Soporte.GrillaAdapter.SetDataSource(System.String)">
+            <summary>
+            Establece el datasource de la grilla con una tabla de la info dada antes
+            </summary>
+            <param name="tabla">que tabla?</param>
+        </member>
+        <member name="M:MarUtils.Soporte.GrillaAdapter.ContieneTabla(System.String)">
+            <summary>
+            Dice si la info dada tiene esta tabla
+            </summary>
+            <param name="tabla">que tabla?</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.GrillaAdapter.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualiza la tabla en la info
+            </summary>
+            <param name="dt">que tabla?</param>
+        </member>
+        <member name="P:MarUtils.Soporte.GrillaAdapter.ColumnaQuitar">
+            <summary>
+            Debe tener una columna para quitar?
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EventoGralArg">
+            <summary>
+            Argumentos para eventos generales.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EventoGralArg.#ctor">
+            <summary>
+            Argumentos para eventos generales.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoGralArg.Valor">
+            <summary>
+            Valor nuevo que disparo el evento.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoGralArg.Cadena">
+            <summary>
+            Cadena asociada al evento.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoGralArg.Verdad">
+            <summary>
+            Valor lógico asociada al evento.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoGralArg.Sujeto">
+            <summary>
+            Quien, donde o a causa de quien se disparo el evento.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoGralArg.Tabla">
+            <summary>
+            Tabla con datos asociados al evento
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EventoValorCambiado`1">
+            <summary>
+            Valor viejo y nuevo
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:MarUtils.Soporte.EventoValorCambiado`1.#ctor(`0,`0)">
+            <summary>
+            
+            </summary>
+            <param name="viejo"></param>
+            <param name="nuevo"></param>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoValorCambiado`1.ValorViejo">
+            <summary>
+            Obtiene el valor antiguo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoValorCambiado`1.ValorNuevo">
+            <summary>
+            Obtiene el valor actual
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EventoPropCambiada">
+            <summary>
+            Cambio realizado en una propiedad de un entidad
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EventoPropCambiada.#ctor(MarUtils.Entidades.EntidadBase,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EventoPropCambiada.#ctor(MarUtils.Entidades.EntidadBase,System.String,MarUtils.Soporte.Par{System.Object})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoPropCambiada.Prop">
+            <summary>
+            Obtiene el nombre de la propiedad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoPropCambiada.Entidad">
+            <summary>
+            Obtiene la entidad en donde se realizo el cambio
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoPropCambiada.Valores">
+            <summary>
+            Obtiene los valores del cambio
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EventoABMEntidad`1">
+            <summary>
+            Data para eventos de ABM de entidades
+            </summary>
+            <typeparam name="T">tipo de la entidad</typeparam>
+        </member>
+        <member name="M:MarUtils.Soporte.EventoABMEntidad`1.#ctor(MarUtils.Soporte.enABMFuncion,`0)">
+            <summary>
+            Crea la data del evento
+            </summary>
+            <param name="funcion"></param>
+            <param name="entidad"></param>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoABMEntidad`1.Funcion">
+            <summary>
+            Obtiene la funcion hecha
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoABMEntidad`1.Entidad">
+            <summary>
+            Obtiene la entidad objetivo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoABMEntidad`1.Cambio">
+            <summary>
+            Si hubo una modificacion, cuál fue
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoABMEntidad`1.NombrePropiedad">
+            <summary>
+            Si hubo una modificacion, en qué propiedad fue
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EventoABMEntidad`1.NombreColumna">
+            <summary>
+            Si hubo una modificacion, en qué columna fue
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.ListadoItemFinal">
+            <summary>
+            Representa el ultimo renglon del grupo
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoItemFinal.#ctor(System.Collections.Generic.IList{MarUtils.Listados.ListadoEsquema})">
+            <summary>
+            Item final totalizador esquematizado
+            </summary>
+            <param name="esquemas">esquemas del listado</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoItemFinal.ContieneValor(System.String)">
+            <summary>
+            Dice si contiene el valor dado
+            </summary>
+            <param name="val">valor de un label en el item totalizador</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoItemFinal.GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoItemFinal.Item(MarUtils.Listados.ListadoEsquema)">
+            <summary>
+            Obtiene o establece el label total del esquema correspondiente
+            </summary>
+            <param name="esq">esquema</param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoItemFinal.Item(System.String)">
+            <summary>
+            Obtiene o establece el label total del esquema correspondiente
+            </summary>
+            <param name="dato">dato o alias del esquema</param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Listados.ListadoItemFinal.Vacio">
+            <summary>
+            Dice si esta vacio el item final
+            </summary>
+        </member>
+        <member name="T:MarUtils.Listados.ListadoAutomatico">
+            <summary>
+            Arma listados automaticamente
+            </summary>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoAutomatico.GetBinding(System.Xml.XmlNode,System.Windows.Forms.ListView,System.Data.DataSet)">
+            <summary>
+            Armado un bindind para los datos dados
+            </summary>
+            <param name="raiz">nodo raiz del xml de configuracion</param>
+            <param name="lista">la lista que se va a mostrar</param>
+            <param name="ds">conjunto de tablas del listado</param>
+        </member>
+        <member name="M:MarUtils.Listados.ListadoAutomatico.GetXmlBase">
+            <summary>
+            Devuelve un xml base para crear listados automáticos
+            </summary>
+        </member>
+        <member name="T:MarUtils.Controles.MoneyTextBox">
+            <summary>
+            Textbox para moneda y decimales
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.#ctor">
+            <summary>
+            Crea un MoneyTextBox con formato $1 000 000.00
+            </summary>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.#ctor(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Crea un MoneyTextBox con formato dado
+            </summary>
+            <param name="cantEnteros">cantidad de enteros</param>
+            <param name="cantDecimales">cantidad de decimales</param>
+            <param name="simbolo">simbolo para anteponer, como '$'</param>
+            <param name="separadorDecimal">que separador usar, como '.'</param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Crea un MoneyTextBox con formato dado
+            </summary>
+            <param name="cantEnteros">cantidad de enteros</param>
+            <param name="cantDecimales">cantidad de decimales</param>
+            <param name="simbolo">simbolo para anteponer, como '$'</param>
+            <param name="separadorDecimal">que separador decimal usar, como '.'</param>
+            <param name="separadorMiles">que separador de miles usar, como ','</param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.#ctor(System.String)">
+            <summary>
+            Crea un MoneyTextBox con maskara dada
+            </summary>
+            <param name="mask"></param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Chequeos de pto y otros
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.OnEnter(System.EventArgs)">
+            <summary>
+            Selecciona todo
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.OnClick(System.EventArgs)">
+            <summary>
+            Selecciona todo
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.OnLeave(System.EventArgs)">
+            <summary>
+            Formatea el numero
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:MarUtils.Controles.MoneyTextBox.MinMax(System.Decimal)">
+            <summary>
+            Devuelve el valor sin que se pase de los maximos (- y +) y redondeado
+            </summary>
+            <param name="valor"></param>
+            <returns></returns>
+        </member>
+        <member name="E:MarUtils.Controles.MoneyTextBox.ValorCambiado">
+            <summary>
+            Se dispara cuando cambia el valor
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.Valor">
+            <summary>
+            Obtiene o establece el valor del control
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.ConSigno">
+            <summary>
+            Dice si el número puede cambiar de signo
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.Simbolo">
+            <summary>
+            Simbolo que antepone al numero, como el $ para formato moneda
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.ColorNegativo">
+            <summary>
+            Obtiene o establece el color para valores negativos
+            </summary>
+        </member>
+        <member name="P:MarUtils.Controles.MoneyTextBox.ColorPositivo">
+            <summary>
+            Obtiene o establece el color para valores positivos
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EsquemaBase">
+            <summary>
+            Base para los esquemas. Provee escritura/lectura xml basica.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaBase.ToXml">
+            <summary>
+            Convierte el esquema en un arbol xml
+            </summary>
+            <returns>El nodo raiz 'CONFIG' con la estructura del esquema</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaBase.FromXml(System.Xml.XmlNode)">
+            <summary>
+            Crea el esquema apartir del arbol xml
+            </summary>
+            <param name="xmlRaiz">El nodo raiz 'CONFIG' con la estructura del esquema</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaBase.ToXml_Viejo">
+            <summary>
+            Convierte el esquema en un archivo xml
+            </summary>
+            <returns>Un documento xml listo para guardarse en disco</returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaBase.FromXml_Viejo(System.Xml.XmlDocument)">
+            <summary>
+            Convierte el esquema en un archivo xml
+            </summary>
+            <param name="xmlDoc">Un documento xml con el esquema</param>
+        </member>
+        <member name="T:MarUtils.Soporte.Mensaje">
+            <summary>
+            Representa un mensaje para el usuario
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Mensaje.#ctor(System.String)">
+            <summary>
+            Arma un mensaje
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Mensaje.#ctor(System.String,MarUtils.Soporte.enTipoMensaje)">
+            <summary>
+            Arma un mensaje
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Mensaje.Texto">
+            <summary>
+            Obtiene o establece el texto del mensaje
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Mensaje.TextoDetallado">
+            <summary>
+            Obtiene o establece el texto más detallado del mensaje
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Mensaje.Tipo">
+            <summary>
+            Obtiene o establece el tipo del mensaje
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Mensaje.Permitido">
+            <summary>
+            Ya esta permitido? Si es asi se omite
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Mensaje.PermisosRequeridos">
+            <summary>
+            Obtiene o establece que permisos requiere
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.PropCambiadaHandler">
+            <summary>
+            Para cuando los valores de las propiedades cambian.
+            </summary>
+            <param name="sender">Donde?</param>
+            <param name="propNbre">Que propiedad?</param>
+            <param name="valor">Nuevo valor</param>
+        </member>
+        <member name="T:MarUtils.Soporte.GrillaBindingEntidadesAddedEventHandler`1">
+            <summary>
+            Para cuando haya ABM en el GrillaBinding
+            </summary>
+            <typeparam name="T">tipo de la entidad</typeparam>
+            <param name="sender">GrillaBinding donde se origino</param>
+            <param name="e">Data del ABM de entidades</param>
+        </member>
+        <member name="T:MarUtils.Soporte.Esquema">
+            <summary>
+            Representa el esquema de un dato del SuperABM
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.#ctor">
+            <summary>
+            Crea un esquema vacio
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.#ctor(System.Data.DataTable,System.Int32)">
+            <summary>
+            Crea UN esquema con la primera fila de la tabla
+            </summary>
+            <param name="datos"></param>
+            <param name="indice">que fila</param>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.GetListaEsquema(System.Data.DataTable)">
+            <summary>
+            Devuelve una lista de esquemas, un esquema por cada fila de la tabla, 
+            cuya clave es el nombre y el alias del cada dato.
+            </summary>
+            <param name="datos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.RecuperarColeccion(System.String)">
+            <summary>
+            Recupera una coleccion dentro de un string
+            </summary>
+            <param name="coleccion">string con formato {item1,item2}</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.ToString">
+            <summary>
+            Devuelve el dato
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.GetValores">
+            <summary>
+            Devuelve los valores del esquema, ideal para crear DataRows
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.Alta">
+            <summary>
+            No implementado
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.Baja">
+            <summary>
+            No implementado
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Esquema.Modificacion">
+            <summary>
+            No implementado
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.IdEsquema">
+            <summary>
+            Obtiene o establece el Id del esquema
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.TableName">
+            <summary>
+            Obtiene o establece el nombre de la tabla correspondiente
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Dato">
+            <summary>
+            Obtiene o establece el nombre del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Tipo">
+            <summary>
+            Obtiene o establece el tipo del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Tabla">
+            <summary>
+            Obtiene o establece la tabla fuente del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.TablaDisplay">
+            <summary>
+            Obtiene o establece la columna display de la tabla fuente
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.TablaId">
+            <summary>
+            Obtiene o establece la columna id de la tabla fuente
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Alias">
+            <summary>
+            Obtiene o establece el alias del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Comentario">
+            <summary>
+            Obtiene o establece el comentario para el dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.SoloLectura">
+            <summary>
+            Dice si el dato es de solo lectura
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.ValorDefectoOriginal">
+            <summary>
+            Obtiene o establece el valor por defecto original para el dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.ValorDefectoActual">
+            <summary>
+            Obtiene o establece el valor por defecto actual para el dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Mascara">
+            <summary>
+            Obtiene o establece la mascara de entrada para el dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.EsId">
+            <summary>
+            Dice si el dato es id de la tabla
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.EsColor">
+            <summary>
+            Dice si el dato es usado para colorear la tabla
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.CriterioBusqueda">
+            <summary>
+            Obtiene o establece el tipo de criterio de busqueda que es este dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Editable">
+            <summary>
+            Dice si el dato es editable
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Dependencias">
+            <summary>
+            Obtiene o establece las dependencias del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Busqueda">
+            <summary>
+            Dice si se puede buscar en el dato 
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Longitud">
+            <summary>
+            Obtiene o establece la longitud del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Visible">
+            <summary>
+            Dice si el dato es visible
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.Posicion">
+            <summary>
+            Obtiene o establece la posicion preferida del dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.AnchoMinimo">
+            <summary>
+            Obtiene o establece el ancho minimo para mostrar el dato
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.NombreTabla">
+            <summary>
+            Nombre de la tabla
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.NombreEntidad">
+            <summary>
+            Nombre de la entidad
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.Esquema.NombreClave">
+            <summary>
+            Nombre de la clave
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Esquema.enControles">
+            <summary>
+            Controles para los datos
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enControles.TextBox">
+            <summary>
+            Textbox comun y corriente
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enControles.ComboBox">
+            <summary>
+            ComboBox comun y corriente
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enControles.Money">
+            <summary>
+            Textbox con mascara y manejo especial para decimales
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enControles.DateTimePicker">
+            <summary>
+            DateTimePicker comun y corriente
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enControles.CheckBox">
+            <summary>
+            CheckBox comun y corriente
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Esquema.enCriteriosBusqueda">
+            <summary>
+            Citerios de busqueda para los datos
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enCriteriosBusqueda.Ninguno">
+            <summary>
+            Ningun criterio
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enCriteriosBusqueda.Rango">
+            <summary>
+            Busqueda por rango
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enCriteriosBusqueda.Texto">
+            <summary>
+            Busqueda por texto (LIKE)
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enCriteriosBusqueda.ComboBox">
+            <summary>
+            Seleccion por combobox
+            </summary>
+        </member>
+        <member name="F:MarUtils.Soporte.Esquema.enCriteriosBusqueda.CheckBox">
+            <summary>
+            Seleccion por CheckBox, true, false o indeterminado
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.EsquemaCollection">
+            <summary>
+            Representa una coleccion de esquemas, pudiendo indexarla por dato o alias.
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="capacidadInicial"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.#ctor(System.Collections.Generic.IList{MarUtils.Soporte.Esquema})">
+            <summary>
+            
+            </summary>
+            <param name="valores"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.SortByPosicion">
+            <summary>
+            Devuelve una coleccion ordenada por posicion
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.Add(MarUtils.Soporte.Esquema)">
+            <summary>
+            Añade un esquema a la coleccion
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.AddSafe(MarUtils.Soporte.Esquema)">
+            <summary>
+            Añade un esquema a la coleccion, en forma segura
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.Clear">
+            <summary>
+            Limpia la coleccion
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.Contains(MarUtils.Soporte.Esquema)">
+            <summary>
+            Dice si el item esta en la coleccion
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.Contains(System.String)">
+            <summary>
+            Dice si el dato o alias esta en la coleccion
+            </summary>
+            <param name="dato">dato o alias</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.CopyTo(MarUtils.Soporte.Esquema[],System.Int32)">
+            <summary>
+            Copia la coleccion a un arreglo
+            </summary>
+            <param name="array">arreglo de esquemas</param>
+            <param name="arrayIndex">offset</param>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.Remove(MarUtils.Soporte.Esquema)">
+            <summary>
+            Remueve el esquema pedido
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Soporte.EsquemaCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.EsquemaCollection.Item(System.String)">
+            <summary>
+            Obtiene o establece el esquema dado por el dato o el alias
+            </summary>
+            <param name="index">nombre de dato o alias del dato</param>
+            <returns></returns>
+        </member>
+        <member name="P:MarUtils.Soporte.EsquemaCollection.Count">
+            <summary>
+            Cantidad de esquemas
+            </summary>
+        </member>
+        <member name="P:MarUtils.Soporte.EsquemaCollection.IsReadOnly">
+            <summary>
+            Es de solo lectura
+            </summary>
+        </member>
+        <member name="T:MarUtils.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MarUtils.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:MarUtils.Soporte.Imagen">
+            <summary>
+            Soporte para imagenes
+            </summary>
+        </member>
+        <member name="M:MarUtils.Soporte.Imagen.Convertir(System.Byte[])">
+            <summary>
+            Convierte un arreglo de bytes en una imagen
+            </summary>
+            <param name="bytes">bytes de la imagen</param>
+        </member>
+        <member name="M:MarUtils.Soporte.Imagen.Convertir(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Convierte una imagen en un arreglo de bytes
+            </summary>
+            <param name="im">imagen</param>
+            <param name="formato">formato de la imagen</param>
+        </member>
+    </members>
+</doc>

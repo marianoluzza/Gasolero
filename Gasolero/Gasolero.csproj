@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9923D039-CEE9-460A-8101-19A7313A43B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gasolero</RootNamespace>
+    <AssemblyName>Gasolero</AssemblyName>
+    <ApplicationIcon>Gasolero.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Gasolero.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Gasolero.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BarChart.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FormCom, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FormCom.dll</HintPath>
+    </Reference>
+    <Reference Include="Gios Pdf.NET">
+      <HintPath>..\Gios Pdf.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MarUtils, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MarUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yogesh.ExcelXml, Version=3.35.1017.910, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Yogesh.ExcelXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Yogesh.Extensions, Version=1.16.524.1306, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Yogesh.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessQuery.Designer.cs">
+      <DependentUpon>AccessQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CBarChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CBarChart.Designer.cs">
+      <DependentUpon>CBarChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCierre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCierre.Designer.cs">
+      <DependentUpon>CCierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEntregas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CEntregas.Designer.cs">
+      <DependentUpon>CEntregas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGastos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CGastos.Designer.cs">
+      <DependentUpon>CGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptCierre.cs" />
+    <Compile Include="FiscalOld.cs" />
+    <Compile Include="RptRendicion.cs" />
+    <Compile Include="LVVisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LVVisor.Designer.cs">
+      <DependentUpon>LVVisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CVentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CVentas.Designer.cs">
+      <DependentUpon>CVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emailer.cs" />
+    <Compile Include="Exportador.cs" />
+    <Compile Include="FactFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FactFiltro.Designer.cs">
+      <DependentUpon>FactFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreg.Designer.cs">
+      <DependentUpon>FrmPreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelLogin.Designer.cs">
+      <DependentUpon>PanelLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planilla.Designer.cs">
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccessQuery.resx">
+      <DependentUpon>AccessQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCierre.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGastos.resx">
+      <DependentUpon>CGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LVVisor.resx">
+      <DependentUpon>LVVisor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CVentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FactFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreg.resx">
+      <DependentUpon>FrmPreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PanelLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planilla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Recursos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QFiltro.Designer.cs">
+      <DependentUpon>QFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recursos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.cs" />
+    <Compile Include="RptCCMov.cs" />
+    <Compile Include="ZCierresFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZCierresFiltro.Designer.cs">
+      <DependentUpon>ZCierresFiltro.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{3AE6EACA-4BD0-4694-92C8-E8AFC5953E5F}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mysqldump.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="CBarChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CBarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEntregas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CEntregas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZCierresFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZCierresFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Recursos\BuscarC.png" />
+    <None Include="config.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Recursos\Acceso.png" />
+    <None Include="Recursos\Articulo.png" />
+    <None Include="Recursos\Autorizado.png" />
+    <Content Include="Gasolero.ico" />
+    <None Include="Recursos\Atajos.png" />
+    <Content Include="Recursos\b_save.png" />
+    <None Include="Recursos\Impresora.png" />
+    <None Include="Recursos\CtaCte.png" />
+    <None Include="Recursos\Cierre.png" />
+    <None Include="Recursos\Cliente.png" />
+    <None Include="Recursos\Cuentas.png" />
+    <None Include="Recursos\Email.png" />
+    <None Include="Recursos\Enargas.png" />
+    <Content Include="Recursos\Excel.png" />
+    <None Include="Recursos\Factura.png" />
+    <None Include="Recursos\Imprimir.png" />
+    <None Include="Recursos\Libros.png" />
+    <None Include="Recursos\Formas de Pago.png" />
+    <None Include="Recursos\Gastos.png" />
+    <None Include="Recursos\Gráfico de Barras.png" />
+    <None Include="Recursos\Informes Z.png" />
+    <None Include="Recursos\Moneda.png" />
+    <None Include="Recursos\Fichas.png" />
+    <Content Include="Recursos\PDF.png" />
+    <None Include="Recursos\Reporte.png" />
+    <None Include="Recursos\Salir.png" />
+    <None Include="Recursos\Reiniciar.png" />
+    <None Include="Recursos\Reporte 1.png" />
+    <None Include="Recursos\Reporte 2.png" />
+    <None Include="Recursos\Reportes.png" />
+    <None Include="Recursos\Planillas.png" />
+    <Content Include="Recursos\surtidor.ico" />
+    <None Include="Recursos\Surtidor.png" />
+    <None Include="Recursos\Turnos.png" />
+    <Content Include="Recursos\Undo.png" />
+    <None Include="Recursos\Verificar16.png" />
+    <None Include="Recursos\Vendedor.png" />
+    <None Include="Recursos\Venta.png" />
+    <None Include="Recursos\Vale.png" />
+    <None Include="Recursos\Web.png" />
+    <Content Include="Seguridad.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FiscalPrinterLib">
+      <Guid>{39ABE45D-F077-4D34-A361-6906C77D67F7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

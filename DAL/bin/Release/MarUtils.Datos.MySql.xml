@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarUtils.Datos.MySql</name>
+    </assembly>
+    <members>
+        <member name="T:MarUtils.Datos.MySql.MySqlBDAdmin">
+            <summary>
+            Admin de BD para MySql
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.#ctor(System.String)">
+            <summary>
+            ctor. con conexion
+            </summary>
+            <param name="sconn">string de conexion</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.ABM(MarUtils.Soporte.enABMFuncion,System.String,MarUtils.Datos.PDatosFull)">
+            <summary>
+            Realiza el abm
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.Get(System.String,System.String,MarUtils.Datos.PDatosUnit[])">
+            <summary>
+            Realiza una consulta
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.Get``1(System.String,MarUtils.Datos.PDatosUnit[])">
+            <summary>
+            Realiza una consulta escalar
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.NowCmd(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Devuelve el comando para ejecutar now()
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.CargaParametros(MySql.Data.MySqlClient.MySqlCommand,MarUtils.Datos.PDatosFull)">
+            <summary>
+            Carga los parametros de un SP en el comando.
+            </summary>
+            <param name="comm">comando que se va a ejecutar</param>
+            <param name="protoDatos">protocolo de datos</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.ConversorTipos(System.String)">
+            <summary>
+            Convierte un tipo comun a uno de MySQL
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.ConversorTipos(System.DateTime)">
+            <summary>
+            Cambia el formato DD/MM/YYYY HH:MM:SS a YYYY/MM/DD HH:MM:SS
+            </summary>
+            <param name="fecha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlBDAdmin.ConversorTipos(System.DateTime,System.Boolean)">
+            <summary>
+            Cambia el formato DD/MM/YYYY HH:MM:SS a YYYY/MM/DD HH:MM:SS
+            </summary>
+            <param name="fecha"></param>
+            <param name="conHoraCero">Dice si hay que poner la hora en cero</param>
+            <returns></returns>
+        </member>
+        <member name="T:MarUtils.Datos.MySql.MySqlUtils">
+            <summary>
+            Paquete de utilidades para MySql
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.#ctor(MarUtils.Datos.MySql.MySqlBDAdmin)">
+            <summary>
+            Crea un utilitario a partir de un admin
+            </summary>
+            <param name="admin">admin de la bd</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.Backup(System.String,System.String,System.String,System.String)">
+            <summary>
+            Hace un backup de la BD
+            </summary>
+            <param name="database">qué BD</param>
+            <param name="pass">password del user root</param>
+            <param name="pathMySql">path de instalación de MySql</param>
+            <param name="pathBak">path completo del archivo backup</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.Restore(System.String,System.String,System.String,System.String)">
+            <summary>
+            Restaura una BD
+            </summary>
+            <param name="database">qué BD</param>
+            <param name="pass">password del user root</param>
+            <param name="pathMySql">path de instalación de MySql</param>
+            <param name="pathBak">path completo del archivo backup</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.GetMyIni(System.String,System.String,System.Int32)">
+            <summary>
+            Escribe un archivo de configuración my.ini
+            </summary>
+            <param name="pathMySql">path de instalación de MySql</param>
+            <param name="pathData">path de datos de MySql</param>
+            <param name="port">puerto de escucha</param>
+            <returns>devuelve el puntero al archivo</returns>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.RunMySql(System.String)">
+            <summary>
+            Levanta el motor de la BD
+            </summary>
+            <param name="pathMySql">path de instalación de MySql</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.StopMySql(System.String,System.String)">
+            <summary>
+            Detiene el motor de la BD
+            </summary>
+            <param name="pathMySql">path de instalación de MySql</param>
+            <param name="pass">password de root</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.InstallMySqlService(System.String)">
+            <summary>
+            Instala el servicio de MySql
+            </summary>
+            <param name="pathMySql">path de instalación de MySql</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.UninstallMySqlService(System.String)">
+            <summary>
+            Desinstala el servicio de MySql
+            </summary>
+            <param name="pathMySql">path de instalación de MySql</param>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.RunMySqlService">
+            <summary>
+            Arranca el servicio de MySql
+            </summary>
+        </member>
+        <member name="M:MarUtils.Datos.MySql.MySqlUtils.StopMySqlService">
+            <summary>
+            Detiene el servicio de MySql
+            </summary>
+        </member>
+    </members>
+</doc>

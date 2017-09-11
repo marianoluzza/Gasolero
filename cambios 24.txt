@@ -1,0 +1,6 @@
+- restaurar esq_sp
+
+- agregar "UltimoIdImpreso" a settings  (BD)
+- agregar "UltimoIdIncluido" a settings  (BD)
+
+ver vales y actualizar sett

@@ -1,0 +1,15 @@
+Restore SP_Esq
+
+SELECT surtidor,sum(salida-entrada)as dif,sum((salida-entrada)*costo) as cash,turno FROM cierres c group by turno,surtidor;
+SELECT surtidor,entrada,salida,salida-entrada as dif,costo
+FROM cierres c where turno = 17 and entrada != salida order by surtidor;
+
+
+SELECT idarticulo,sum(cantidad)
+FROM factitems f where idfactencabezado > 205 group by idarticulo;
+
+
+SELECT * FROM factencabezados f where fecha > '2009-09-09 13:00:00';
+
+
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release

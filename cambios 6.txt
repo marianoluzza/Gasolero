@@ -1,0 +1,25 @@
+* Visualizar los cierres anteriores en orden inverso, ver primero los
+ùltimos cierres.
+RESTORE esq_sp.sql
+Agregar indice para fechas
+
+* En estos cierres ver tambièn el nombre del vendedor, no solo el tipo.
+
+* Cuando hace la previsualizaciòn del cierre de caja, ver completa la
+ventana, que no tenga que hacer scroll, para que vean directamente el
+total de la planilla, sin hacer el scroll.
+
+* Modificar una caja por parte nuestra, ya que ha pasado que cuando
+cierran mal una caja, quedan los turnos (Mañana, Tarde, Noche) desfasados.
+
+* Cuando han ingresado mal un numero de una caja y modifican el numero, no
+se le refresca la diferencia al cambiar el numero. Por ejemplo, ingresaron
+mal el valor del cierre de caja del surtidor 3, vuelven atrás a
+modificarlo porque era un numero que le salio en rojo y al cambiar el
+numero no se le refresca el resultado correcto.
+
+ALTER TABLE `gasolero`.`cierres` ADD CONSTRAINT `FK_cierres_IdVendedor` FOREIGN KEY `FK_cierres_IdVendedor` (`IdVendedor`)
+    REFERENCES `vendedores` (`IdVendedor`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+

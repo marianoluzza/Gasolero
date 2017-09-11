@@ -1,0 +1,35 @@
+- agregar ModeloFiscal a sett con modelo 441
+- agregar MarcaParcial a sett con "Cierre Parcial"
+- agregar ImprimirFinalComoParcial a sett con False
+- restaurar esq_sp + Parciales:
+
+DROP TABLE IF EXISTS `gasolero`.`parciales`;
+CREATE TABLE  `gasolero`.`parciales` (
+  `IdParcial` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Fecha` datetime NOT NULL,
+  `Turno` int(10) unsigned NOT NULL COMMENT 'nro de turno',
+  PRIMARY KEY (`IdParcial`),
+  KEY `Index_Fecha` (`Fecha`),
+  KEY `Index_Turno` (`Turno`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+
+-
+ALTER TABLE `gasolero`.`cierres` ADD COLUMN `IdParcial` INTEGER UNSIGNED DEFAULT 0 AFTER `IdArticulo`;
+ALTER TABLE `gasolero`.`cierres` ADD INDEX `Index_IdParcial`(`IdParcial`);
+
+ALTER TABLE `gasolero`.`valeentregas` ADD COLUMN `IdParcial` INTEGER UNSIGNED DEFAULT 0 AFTER `IdTurno`;
+ALTER TABLE `gasolero`.`valeentregas` DROP FOREIGN KEY `FK_ValeEntregas_IdTurno`;
+ALTER TABLE `gasolero`.`valeentregas` DROP INDEX `FK_ValeEntregas_IdTurno`;
+ALTER TABLE `gasolero`.`valeentregas` CHANGE COLUMN `IdTurno` `Turno` INTEGER UNSIGNED NOT NULL COMMENT 'nro de turno';
+ALTER TABLE `gasolero`.`valeentregas` ADD COLUMN `Fecha` DATETIME NOT NULL AFTER `IdParcial`;
+ALTER TABLE `gasolero`.`valeentregas` ADD INDEX `Index_Fecha`(`Fecha`);
+ALTER TABLE `gasolero`.`valeentregas` ADD COLUMN `Precio` DECIMAL(9,3) NOT NULL COMMENT 'precio de venta del momento' AFTER `Cantidad`;
+ALTER TABLE `gasolero`.`valeentregas` ADD INDEX `Index_IdParcial`(`IdParcial`);
+
+- ejecutar fix de nro de turno para vales
+update valeentregas set Turno = Turno - 2;
+- ejecutar fix de fechas para vales
+update valeentregas set fecha = (select FechaFinal from turnos where numero = turno);
+- ejecutar fix de precio para vales
+update valeentregas v set precio = (select costo from cierres c where v.turno = c.turno and v.idArticulo = c.idArticulo order by costo desc limit 1)

@@ -1,0 +1,5 @@
+opc ¿permitir baja de cliente desde ventas?
+visor de facturas
+est clientes mas facturados x fechas
+est venta de comb segun cierres x fechas
+todos met fiscales

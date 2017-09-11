@@ -1,0 +1,48 @@
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\conn.ini
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\DAL.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\DAL.pdb
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MarUtils.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MySql.Data.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MarUtils.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\x86\Release\MySql.Data.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\x86\Release\DAL.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\x86\Release\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\conn.ini
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.pdb
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\conn.ini
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.dll
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.pdb
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.dll
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.dll
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.dll
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.xml
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.xml
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.xml
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.dll
+D:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\conn.ini
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\DAL.pdb
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MarUtils.Datos.MySql.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\x86\Release\MySql.Data.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\x86\Release\DAL.pdb

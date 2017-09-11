@@ -1,0 +1,7 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+- Solo programa
+
+
+cambios: 24/02/2011
+- fix cierres con densidad
+- fix filtro en "Ver Otros Cierres"

@@ -1,0 +1,12 @@
+- restaurar esq_sp
+
+cambiar acceso a densidades            ***
+- agregar "Resolucion" a settings  (BD)
+
+             PetroRed
+tomar venta en vales auto.             ***
+- agregar "PetroRed" a settings    (archivo local)
+-
+ALTER TABLE `gasolero`.`articulos` ADD COLUMN `CodProducto` SMALLINT DEFAULT 102 COMMENT 'en petrored.mdb' AFTER `VentaMaxima`;
+
+- Ponerle a todos 102

@@ -1,0 +1,36 @@
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\conn.ini
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\DAL.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\DAL.pdb
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MarUtils.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MySql.Data.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MarUtils.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MySql.Data.xml
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\Debug\DAL.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\obj\Debug\DAL.pdb
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.dll
+D:\Mis Docs\Visual Studio 2010\Projects\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\conn.ini
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MySql.Data.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MySql.Data.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.pdb
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\conn.ini
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\DAL.pdb
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MySql.Data.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MarUtils.Datos.MySql.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\bin\Debug\MySql.Data.xml
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\DAL\obj\Debug\DAL.pdb

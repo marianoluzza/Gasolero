@@ -1,0 +1,63 @@
+Cierre ciego de montos   ************LISTO
+Vista de cierres acumulado  *********LISTO
+Informe de CC por turnos   **********LISTO
+Formas de pago Deposito y cheque ****LISTO
+Ver config en raiz   ****************LISTO
+Reimprimir cierre, imprime todo  ****LISTO
+Fichas y movimientos
+Reporte de fichas x ct
+Reporte de fichas x $
+Cierre de fichas
+Modificar cierre de cc (fp)
+
+
+Ver PausaEntreFiscal y c32 en VM
+
+
+BACKUP!!!! (BD+Petro+Sys)
+CALL _Update34();
+OJO con config.ini ver valores!
+
+INSERT INTO Settings (Nombre,Valor) VALUES ("Version",34);
+INSERT INTO PagoFormas (Descripcion, SumaAlTotal, Orden, Habilitado) VALUES ("Deposito",1,5,1);
+UPDATE PagoFormas SET Habilitado = 1 WHERE Descripcion = "Cheques";
+
+CREATE TABLE `gasolero`.`Fichas` (
+  `IdFicha` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Nombre` VARCHAR(45) NOT NULL,
+  `StockPreferido` INTEGER UNSIGNED NOT NULL,
+  `Precio` DECIMAL(7,2) NOT NULL,
+  PRIMARY KEY (`IdFicha`)
+)
+ENGINE = InnoDB;
+
+DROP TABLE IF EXISTS `gasolero`.`FichaMovimientos`;
+CREATE TABLE  `gasolero`.`FichaMovimientos` (
+  `IdFichaMovimiento` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `IdFicha` int(10) unsigned NOT NULL,
+  `IdVendedor` int(10) unsigned NOT NULL,
+  `Turno` int(10) unsigned NOT NULL,
+  `Cantidad` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`IdFichaMovimiento`),
+  KEY `FK_FichaMovimientos_IdFicha` (`IdFicha`),
+  KEY `FK_FichaMovimientos_IdVendedor` (`IdVendedor`),
+  CONSTRAINT `FK_FichaMovimientos_IdVendedor` FOREIGN KEY (`IdVendedor`) REFERENCES `vendedores` (`IdVendedor`),
+  CONSTRAINT `FK_FichaMovimientos_IdFicha` FOREIGN KEY (`IdFicha`) REFERENCES `fichas` (`IdFicha`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `gasolero`.`cierrefichas`;
+CREATE TABLE  `gasolero`.`cierrefichas` (
+  `IdCierreFicha` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `IdFicha` int(10) unsigned NOT NULL,
+  `IdVendedor` int(10) unsigned NOT NULL,
+  `Entrada` int(10) unsigned NOT NULL,
+  `Salida` int(10) unsigned NOT NULL,
+  `Costo` decimal(7,2) NOT NULL,
+  `Turno` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`IdCierreFicha`),
+  KEY `FK_CierreFichas_IdFicha` (`IdFicha`),
+  KEY `FK_CierreFichas_IdVendedor` (`IdVendedor`),
+  CONSTRAINT `FK_CierreFichas_IdVendedor` FOREIGN KEY (`IdVendedor`) REFERENCES `vendedores` (`IdVendedor`),
+  CONSTRAINT `FK_CierreFichas_IdFicha` FOREIGN KEY (`IdFicha`) REFERENCES `fichas` (`IdFicha`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+

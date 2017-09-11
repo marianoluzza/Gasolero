@@ -1,0 +1,31 @@
+Copiar resolucion.xml
+
+Agregar el articulo que falte
+
+Hacer Backup de sistema y BD
+
+Copiar Release
+
+24/03/2012
+fix: puestos con *Nuevos Surtidores*
+
+ALTER TABLE `gasolero`.`cierres` ADD COLUMN `IdArticulo` INTEGER UNSIGNED NOT NULL AFTER `Turno`;
+
+Levantar Backup de SP
+
+Ejecutar fix: 
+
+call cierresUpdateFix();
+
+Fix de idArt a mano en los cierres parciales hechos hace rato (art ¿6?)
+
+ALTER TABLE `gasolero`.`cierres` ADD CONSTRAINT `FK_cierres_IdArticulo` FOREIGN KEY `FK_cierres_IdArticulo` (`IdArticulo`)
+    REFERENCES `articulos` (`IdArticulo`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+    
+
+
+
+SELECT * FROM cierres c where turno = 2883 order by surtidor asc;
+SELECT * FROM cierres c where turno = 2884 order by surtidor asc;

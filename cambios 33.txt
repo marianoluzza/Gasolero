@@ -1,0 +1,15 @@
+Descuentos Clientes   ******************LISTO
+Descuentos en Ventas  ******************LISTO
+Descuentos en Fiscal  ******************LISTO
+
+
+Ver PausaEntreFiscal y c32 en VM
+
+
+BACKUP!!!! (BD+Petro+Sys)
+CALL _Update33();
+
+
+ALTER TABLE `gasolero`.`clientes` ADD COLUMN `Descuento` DECIMAL(5,3) DEFAULT 0 AFTER `Email`;
+ALTER TABLE `gasolero`.`factitems` ADD COLUMN `Descuento` DECIMAL(5,3) DEFAULT 0 COMMENT 'porcentaje de descuento aplicado' AFTER `Descripcion`;
+ALTER TABLE `gasolero`.`factitemfiscales` ADD COLUMN `Descuento` DECIMAL(5,3) DEFAULT 0 COMMENT 'porcentaje de descuento aplicado' AFTER `Descripcion`;

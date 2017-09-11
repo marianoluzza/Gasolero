@@ -1,0 +1,35 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+- Solo programa
+
+
+cambios:
+- ZCierres con mas info:
+ALTER TABLE `gasolero`.`zcierres` ADD COLUMN `NumeroZ` VARCHAR(15) NOT NULL AFTER `IdVendedor`,
+ ADD COLUMN `CantDFCancelados` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `NumeroZ`,
+ ADD COLUMN `CantDNFHEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantDFCancelados`,
+ ADD COLUMN `CantDNFEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantDNFHEmitidos`,
+ ADD COLUMN `CantDFEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantDNFEmitidos`,
+ ADD COLUMN `UltimoFiscalBC` VARCHAR(15) NOT NULL AFTER `CantDFEmitidos`,
+ ADD COLUMN `UltimoFiscalA` VARCHAR(15) NOT NULL AFTER `UltimoFiscalBC`,
+ ADD COLUMN `MontoVentasFiscal` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `UltimoFiscalA`,
+ ADD COLUMN `MontoIVAFiscal` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoVentasFiscal`,
+ ADD COLUMN `MontoImpIntFiscal` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoIVAFiscal`,
+ ADD COLUMN `MontoPercepcionesFiscal` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoImpIntFiscal`,
+ ADD COLUMN `MontoIVANoInscriptoFiscal` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoPercepcionesFiscal`,
+ ADD COLUMN `UltimaNotaCreditoBC` VARCHAR(15) NOT NULL AFTER `MontoIVANoInscriptoFiscal`,
+ ADD COLUMN `UltimaNotaCreditoA` VARCHAR(15) NOT NULL AFTER `UltimaNotaCreditoBC`,
+ ADD COLUMN `MontoVentasNotaCredito` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `UltimaNotaCreditoA`,
+ ADD COLUMN `MontoIVANotaCredito` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoVentasNotaCredito`,
+ ADD COLUMN `MontoImpIntNotaCredito` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoIVANotaCredito`,
+ ADD COLUMN `MontoPercepcionesNotaCredito` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoImpIntNotaCredito`,
+ ADD COLUMN `MontoIVANoInscriptoNotaCredito` DECIMAL(9,2) NOT NULL DEFAULT 0 AFTER `MontoPercepcionesNotaCredito`,
+ ADD COLUMN `UltimoRemito` VARCHAR(15) NOT NULL AFTER `MontoIVANoInscriptoNotaCredito`,
+ ADD COLUMN `CantNCCanceladas` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `UltimoRemito`,
+ ADD COLUMN `CantDFBCEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantNCCanceladas`,
+ ADD COLUMN `CantDFAEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantDFBCEmitidos`,
+ ADD COLUMN `CantNCBCEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantDFAEmitidos`,
+ ADD COLUMN `CantNCAEmitidos` INTEGER UNSIGNED NOT NULL DEFAULT 0 AFTER `CantNCBCEmitidos`;  
+
+- fix reporte
+- nvo reporte Cierres Z y modificado el Libro Ventas
+- esq_sp

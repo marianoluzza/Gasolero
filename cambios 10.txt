@@ -1,0 +1,11 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+
+restore esq_sp
+
+agregado de sp (DAL.dll) (Negocio.dll)
+ 
+cambios:
+- Reporte (gasolero.exe)
+- Fiscal (gasolero.exe)
+- Añadido webbrowser (gasolero.exe)
+- Grafico de barras (BarChart.dll) -> (gasolero.exe)

@@ -1,0 +1,2 @@
+ademas de rehacer backups con xampp, remover 4 ult col de mysql.proc
+veras que son 4 nulls.

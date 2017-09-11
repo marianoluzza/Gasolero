@@ -1,0 +1,245 @@
+INCLUDE=-I.
+CXXFLAGS=$(INCLUDE) -DP_LINUX
+FISCAL_LIB=clasefiscal.a
+all: $(FISCAL_LIB) clasefiscal
+
+depend: 
+	makedepend $(INCLUDE) *.cpp
+
+clasefiscal_objs =  debug.o Excepcion.o ImpresorFiscal16Bits.o \
+         ImpresorFiscal8Bits.o ImpresorFiscal.o Mutex.o P262_100.o \
+         P272_100.o P320_100.o P321_100.o P322_100.o P322_201.o P322.o \
+         P330_100.o P330_201.o P330_202.o P330.o P425_100.o P425_201.o \
+         P425.o P435_100.o P435_101.o P435.o P614_100.o P615_100.o \
+         P715_100.o P715_201.o P715.o P950_100.o P951_100.o PJ20_100.o \
+         PPL8_100.o PPL8_201.o PPL8.o PPL9_100.o PPR4_100.o PPR5_100.o \
+         PPR5_201.o PPR5.o Protocolo.o PuertoSerie.o Socket.o ssplit.o \
+         Chars.o Select.o
+$(FISCAL_LIB): $(clasefiscal_objs)
+	ar rvu $(FISCAL_LIB) $(clasefiscal_objs)
+	ranlib $(FISCAL_LIB)
+
+clasefiscal: ClaseFiscal.o $(FISCAL_LIB)
+	$(CXX) ClaseFiscal.o $(FISCAL_LIB) -o clasefiscal -lpthread
+
+# DO NOT DELETE
+
+ClaseFiscal.o: P262_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+ClaseFiscal.o: /usr/include/assert.h /usr/include/features.h
+ClaseFiscal.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ClaseFiscal.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+ClaseFiscal.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+ClaseFiscal.o: P272_100.h P950_100.h P951_100.h PPR4_100.h PPR5_100.h PPR5.h
+ClaseFiscal.o: PPR5_201.h P614_100.h P615_100.h P715_100.h P715.h P715_201.h
+ClaseFiscal.o: P320_100.h ImpresorFiscal16Bits.h PPL8_100.h PPL8.h PPL8_201.h
+ClaseFiscal.o: PJ20_100.h P321_100.h P322_100.h P322.h P322_201.h PPL9_100.h
+ClaseFiscal.o: P330_100.h P330.h P330_201.h P330_202.h P425_100.h P425.h
+ClaseFiscal.o: P425_201.h P435_100.h P435.h P435_101.h
+debug.o: /usr/include/stdio.h /usr/include/features.h
+debug.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+debug.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+debug.o: /usr/lib/gcc/i386-redhat-linux/4.0.0/include/stddef.h
+debug.o: /usr/include/bits/types.h /usr/include/bits/typesizes.h
+debug.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+debug.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+debug.o: /usr/lib/gcc/i386-redhat-linux/4.0.0/include/stdarg.h
+debug.o: /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h
+debug.o: /usr/include/string.h /usr/include/fcntl.h /usr/include/bits/fcntl.h
+debug.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/stdlib.h
+debug.o: debug.h Excepcion.h
+Excepcion.o: Excepcion.h
+ImpresorFiscal16Bits.o: ImpresorFiscal16Bits.h ImpresorFiscal.h
+ImpresorFiscal16Bits.o: /usr/include/assert.h /usr/include/features.h
+ImpresorFiscal16Bits.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ImpresorFiscal16Bits.o: /usr/include/bits/wordsize.h
+ImpresorFiscal16Bits.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h
+ImpresorFiscal16Bits.o: Excepcion.h Eventos.h Mutex.h
+ImpresorFiscal8Bits.o: ImpresorFiscal8Bits.h ImpresorFiscal.h
+ImpresorFiscal8Bits.o: /usr/include/assert.h /usr/include/features.h
+ImpresorFiscal8Bits.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ImpresorFiscal8Bits.o: /usr/include/bits/wordsize.h
+ImpresorFiscal8Bits.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h
+ImpresorFiscal8Bits.o: Excepcion.h Eventos.h Mutex.h
+ImpresorFiscal.o: ImpresorFiscal.h /usr/include/assert.h
+ImpresorFiscal.o: /usr/include/features.h /usr/include/sys/cdefs.h
+ImpresorFiscal.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+ImpresorFiscal.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h
+ImpresorFiscal.o: Excepcion.h Eventos.h Mutex.h
+Mutex.o: Mutex.h
+P262_100.o: P262_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P262_100.o: /usr/include/assert.h /usr/include/features.h
+P262_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P262_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P262_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P272_100.o: P272_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P272_100.o: /usr/include/assert.h /usr/include/features.h
+P272_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P272_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P272_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P320_100.o: P320_100.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P320_100.o: /usr/include/assert.h /usr/include/features.h
+P320_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P320_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P320_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P321_100.o: P321_100.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P321_100.o: /usr/include/assert.h /usr/include/features.h
+P321_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P321_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P321_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P322_100.o: P322_100.h P322.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P322_100.o: /usr/include/assert.h /usr/include/features.h
+P322_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P322_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P322_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P322_201.o: P322_201.h P322.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P322_201.o: /usr/include/assert.h /usr/include/features.h
+P322_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P322_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P322_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P322.o: P322.h ImpresorFiscal16Bits.h ImpresorFiscal.h /usr/include/assert.h
+P322.o: /usr/include/features.h /usr/include/sys/cdefs.h
+P322.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+P322.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+P322.o: Eventos.h Mutex.h
+P330_100.o: P330_100.h P330.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P330_100.o: /usr/include/assert.h /usr/include/features.h
+P330_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P330_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P330_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P330_201.o: P330_201.h P330.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P330_201.o: /usr/include/assert.h /usr/include/features.h
+P330_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P330_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P330_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P330_202.o: P330_202.h P330.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P330_202.o: /usr/include/assert.h /usr/include/features.h
+P330_202.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P330_202.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P330_202.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P330.o: P330.h ImpresorFiscal16Bits.h ImpresorFiscal.h /usr/include/assert.h
+P330.o: /usr/include/features.h /usr/include/sys/cdefs.h
+P330.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+P330.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+P330.o: Eventos.h Mutex.h
+P425_100.o: P425_100.h P425.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P425_100.o: /usr/include/assert.h /usr/include/features.h
+P425_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P425_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P425_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P425_201.o: P425_201.h P425.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P425_201.o: /usr/include/assert.h /usr/include/features.h
+P425_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P425_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P425_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P425.o: P425.h ImpresorFiscal16Bits.h ImpresorFiscal.h /usr/include/assert.h
+P425.o: /usr/include/features.h /usr/include/sys/cdefs.h
+P425.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+P425.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+P425.o: Eventos.h Mutex.h
+P435_100.o: P435_100.h P435.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P435_100.o: /usr/include/assert.h /usr/include/features.h
+P435_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P435_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P435_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P435_101.o: P435_101.h P435.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+P435_101.o: /usr/include/assert.h /usr/include/features.h
+P435_101.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P435_101.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P435_101.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P435.o: P435.h ImpresorFiscal16Bits.h ImpresorFiscal.h /usr/include/assert.h
+P435.o: /usr/include/features.h /usr/include/sys/cdefs.h
+P435.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+P435.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+P435.o: Eventos.h Mutex.h
+P614_100.o: P614_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P614_100.o: /usr/include/assert.h /usr/include/features.h
+P614_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P614_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P614_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P615_100.o: P615_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P615_100.o: /usr/include/assert.h /usr/include/features.h
+P615_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P615_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P615_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P715_100.o: P715_100.h P715.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P715_100.o: /usr/include/assert.h /usr/include/features.h
+P715_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P715_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P715_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P715_201.o: P715_201.h P715.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P715_201.o: /usr/include/assert.h /usr/include/features.h
+P715_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P715_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P715_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P715.o: P715.h ImpresorFiscal8Bits.h ImpresorFiscal.h /usr/include/assert.h
+P715.o: /usr/include/features.h /usr/include/sys/cdefs.h
+P715.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+P715.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+P715.o: Eventos.h Mutex.h
+P950_100.o: P950_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P950_100.o: /usr/include/assert.h /usr/include/features.h
+P950_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P950_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P950_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+P951_100.o: P951_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+P951_100.o: /usr/include/assert.h /usr/include/features.h
+P951_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+P951_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+P951_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PJ20_100.o: PJ20_100.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+PJ20_100.o: /usr/include/assert.h /usr/include/features.h
+PJ20_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PJ20_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PJ20_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPL8_100.o: PPL8_100.h PPL8.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+PPL8_100.o: /usr/include/assert.h /usr/include/features.h
+PPL8_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPL8_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPL8_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPL8_201.o: PPL8_201.h PPL8.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+PPL8_201.o: /usr/include/assert.h /usr/include/features.h
+PPL8_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPL8_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPL8_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPL8.o: PPL8.h ImpresorFiscal16Bits.h ImpresorFiscal.h /usr/include/assert.h
+PPL8.o: /usr/include/features.h /usr/include/sys/cdefs.h
+PPL8.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+PPL8.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+PPL8.o: Eventos.h Mutex.h
+PPL9_100.o: PPL9_100.h ImpresorFiscal16Bits.h ImpresorFiscal.h
+PPL9_100.o: /usr/include/assert.h /usr/include/features.h
+PPL9_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPL9_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPL9_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPR4_100.o: PPR4_100.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+PPR4_100.o: /usr/include/assert.h /usr/include/features.h
+PPR4_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPR4_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPR4_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPR5_100.o: PPR5_100.h PPR5.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+PPR5_100.o: /usr/include/assert.h /usr/include/features.h
+PPR5_100.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPR5_100.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPR5_100.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPR5_201.o: PPR5_201.h PPR5.h ImpresorFiscal8Bits.h ImpresorFiscal.h
+PPR5_201.o: /usr/include/assert.h /usr/include/features.h
+PPR5_201.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+PPR5_201.o: /usr/include/bits/wordsize.h /usr/include/gnu/stubs-32.h
+PPR5_201.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h
+PPR5.o: PPR5.h ImpresorFiscal8Bits.h ImpresorFiscal.h /usr/include/assert.h
+PPR5.o: /usr/include/features.h /usr/include/sys/cdefs.h
+PPR5.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+PPR5.o: /usr/include/gnu/stubs-32.h Protocolo.h Transporte.h Excepcion.h
+PPR5.o: Eventos.h Mutex.h
+Protocolo.o: Protocolo.h Transporte.h Excepcion.h Eventos.h Mutex.h ssplit.h
+Protocolo.o: debug.h Chars.h
+PuertoSerie.o: Transporte.h Excepcion.h Eventos.h debug.h
+Select.o: Transporte.h Excepcion.h Eventos.h
+Socket.o: /usr/include/time.h /usr/include/bits/types.h
+Socket.o: /usr/include/features.h /usr/include/sys/cdefs.h
+Socket.o: /usr/include/gnu/stubs.h /usr/include/bits/wordsize.h
+Socket.o: /usr/include/gnu/stubs-32.h
+Socket.o: /usr/lib/gcc/i386-redhat-linux/4.0.0/include/stddef.h
+Socket.o: /usr/include/bits/typesizes.h Transporte.h Excepcion.h Eventos.h
+Socket.o: debug.h
+ssplit.o: ssplit.h

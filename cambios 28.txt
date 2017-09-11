@@ -1,0 +1,22 @@
+BACKUP!!!!
+
+Restore Esq
+
+Agregar ClienteGobierno a settings
+Agregar MargenInf a settings
+Agregar MargenSup a settings
+Agregar TurnosParaPromedio a settings
+Agregar Sede a settings
+
+Imprimir modo H2
+
+ALTER TABLE `gasolero`.`clientes` MODIFY COLUMN `RespInscripto` TINYINT(1) UNSIGNED,
+ ADD COLUMN `Exento` TINYINT(1) UNSIGNED AFTER `RespInscripto`;
+
+
+SOLO SAN LUIS (faltó hacer el cambios 27)
+
+ALTER TABLE `gasolero`.`articulos` ADD COLUMN `Facturar` BOOLEAN NOT NULL DEFAULT true AFTER `CodProducto`;
+
+update articulos set Facturar = false where idarticulo = 7;
+

@@ -1,0 +1,11 @@
+ver dif negativa cuando mas facturado de lo debido	***********
+mas explicativo en donde se pasa			***********
+no permitir anular si esta en cierre			***********
+cierre x y z en vendedor???
+nivel user prompt ver					***********
+escribir turno actual, no ult en titulo 		***********
+no permitir bajas a vendedor en clientes		***********
+propina en planilla					***********
+ALTER TABLE `gasolero`.`turnos` ADD COLUMN `Propina` DECIMAL(6,2) NOT NULL DEFAULT 0 AFTER `IdVendedor`;
+
+Restore SP_Esq

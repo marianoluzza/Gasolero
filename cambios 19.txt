@@ -1,0 +1,4 @@
+Release
+
+18/05/2011
+fix: unica instancia de programa

@@ -1,0 +1,11 @@
+hasar 780
+precios es precio final 		*****************************
+ciclo x puesto  *****************************************************
+tipo iva del cliente en ventas -> exento o resp. insc.   ------- CONS. FIN. ***
+permitir cambiar nbre cliente en CONS FINAL		*************
+turnos secuenciales  ************************************************
+cierre parcial pide clave superusuario  *****************************
+margenes control por puesto    **************************************
+en art. -> tasa de iva y porcentaje no gravado **********************
+chequeo de CUIT -> ver repetido *************************************
+densidades   ********************************************************

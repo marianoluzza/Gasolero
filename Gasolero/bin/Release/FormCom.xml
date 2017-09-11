@@ -1,0 +1,3085 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FormCom</name>
+    </assembly>
+    <members>
+        <member name="T:FormCom.ItClickEventArgs">
+            <summary>
+            Para clicks
+            </summary>
+        </member>
+        <member name="M:FormCom.ItClickEventArgs.#ctor(System.Data.DataRowView,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="item">item que se clickeo</param>
+            <param name="dato">dato en que se clickeo</param>
+        </member>
+        <member name="P:FormCom.ItClickEventArgs.Item">
+            <summary>
+            Obtiene el item que se clickeo
+            </summary>
+        </member>
+        <member name="P:FormCom.ItClickEventArgs.Dato">
+            <summary>
+            Obtiene el dato en que se clickeo
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMAddOnPosicion">
+            <summary>
+            Posiciones de addons
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMAddOnPosicion.PanelIzquierdo">
+            <summary>
+            En la posicion del panel izquierdo
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMAddOnPosicion.PanelDerecho">
+            <summary>
+            En la posicion del panel derecho
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMAddOnPosicion.PanelSuperior">
+            <summary>
+            En la posicion del panel superior
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMAddOnPosicion.PanelInferior">
+            <summary>
+            En la posicion del panel inferior
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMAddOnPosicion.Ninguna">
+            <summary>
+            En ningun lado
+            </summary>
+        </member>
+        <member name="T:FormCom.enMenuPosicion">
+            <summary>
+            Posiciones para menues
+            </summary>
+        </member>
+        <member name="F:FormCom.enMenuPosicion.BarraHerramientas">
+            <summary>
+            En la barra de herramientas del abm
+            </summary>
+        </member>
+        <member name="F:FormCom.enMenuPosicion.BarraEstado">
+            <summary>
+            En la barra de estado del abm
+            </summary>
+        </member>
+        <member name="F:FormCom.enMenuPosicion.Contextual">
+            <summary>
+            En el menu contextual del abm
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMTablaInvalidada">
+            <summary>
+            Una tabla fue invalidada en el abm
+            </summary>
+            <param name="abm"></param>
+            <param name="tabla"></param>
+        </member>
+        <member name="T:FormCom.ItemClickedEventHandler">
+            <summary>
+            Item clickeado
+            </summary>
+            <param name="abm"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:FormCom.ABMDatos">
+            <summary>
+            Visulizador de datos
+            </summary>
+        </member>
+        <member name="T:FormCom.IABMAddOn">
+            <summary>
+            Contrato para añadidos para el ABM
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMAddOn.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="tamPropuesto">tamaño prouesto</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMAddOn.OnInit(FormCom.IABMTool)">
+            <summary>
+            Llamado al inicio de la creacion, por el abm huesped
+            </summary>
+            <param name="abm"></param>
+        </member>
+        <member name="M:FormCom.IABMAddOn.OnFinit(FormCom.AddOnQuitInfo)">
+            <summary>
+            Llamado al quitar el addon del abm huesped, permite cancelar
+            </summary>
+            <param name="info">info del cierre</param>
+        </member>
+        <member name="P:FormCom.IABMAddOn.Posicion">
+            <summary>
+            En que lugar va el addon
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMAddOn.Control">
+            <summary>
+            Control que representa al addon
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMAddOn.Nombre">
+            <summary>
+            Obtiene el nombre del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMAddOn.ABMTool">
+            <summary>
+            Obtiene el abm al que pertenece el addon
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMDatos.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMDatos.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.#ctor">
+            <summary>
+            Constructor base
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.#ctor(System.Boolean)">
+            <summary>
+            Constructor base
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="proposedSize">tamaño propuesto</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMDatos.FormCom#IABMAddOn#GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="tamPreferido">tamaño propuesto</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMDatos.FormCom#IABMAddOn#OnInit(FormCom.IABMTool)">
+            <summary>
+            Llamado al arrancar
+            </summary>
+            <param name="abm"></param>
+        </member>
+        <member name="M:FormCom.ABMDatos.FormCom#IABMAddOn#OnFinit(FormCom.AddOnQuitInfo)">
+            <summary>
+            Se llama cuando se quita el addon
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.DataSourceChanged">
+            <summary>
+            Ajusta los controles para poder ver la nueva fuente
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Dato_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Cuando se sale de un campo
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Dato_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Cuando se entra a un campo
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Dato_ValorChanged(System.Object,System.EventArgs)">
+            <summary>
+            Setea el modificado y tb actualiza combos
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.ReLeerEntidad">
+            <summary>
+            Actualiza los campos con los valores de la entidad
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.CurrentChanged(System.Collections.Generic.SortedList{System.String,System.Object})">
+            <summary>
+            Cuando cambia el item corriente en el abm
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.SetComboValue(System.Windows.Forms.ComboBox,System.Object)">
+            <summary>
+            Setea el valor en un combo
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.SetComboHijo(System.Windows.Forms.ComboBox)">
+            <summary>
+            Pone el filtro de los hijos con su valor
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.ToString">
+            <summary>
+            Devuelve el nombre
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMDatos.SetDato(System.String,System.Object)">
+            <summary>
+            Setea el valor de un dato
+            </summary>
+            <param name="dato"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:FormCom.ABMDatos.DoABM(MarUtils.Soporte.enABMFuncion)">
+            <summary>
+            Intenta la operacion dada
+            </summary>
+            <param name="func"></param>
+        </member>
+        <member name="M:FormCom.ABMDatos.Limpiar">
+            <summary>
+            Limpia los controles
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Editar">
+            <summary>
+            Panel modo edición
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Nuevo">
+            <summary>
+            Panel modo nuevo
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMDatos.Focus(System.String)">
+            <summary>
+            Hace foco en el control
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.ABMDatos.GetEsqValDicc">
+            <summary>
+            Obtiene los valores actuales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMDatos.GetValor(System.String)">
+            <summary>
+            Obtiene el valor actual del dato dado
+            </summary>
+            <param name="dato">de que dato</param>
+        </member>
+        <member name="M:FormCom.ABMDatos.GetValores">
+            <summary>
+            Obtiene los valores actuales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:FormCom.ABMDatos.ABMIntentado">
+            <summary>
+            Se dispara cuando se intenta hacer una funcion ABM
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMDatos.BusquedaIntentada">
+            <summary>
+            Se dispara cuando se desea buscar un dato
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMDatos.EdicionIntentada">
+            <summary>
+            Se dispara cuando se desea editar un dato
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMDatos.DatoModificado">
+            <summary>
+            Se dispara cuando se cambio el valor de un dato
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMDatos.LimpiezaHecha">
+            <summary>
+            Se dispara cuando se limpia el formulario
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.Entidad">
+            <summary>
+            Obtiene o establece la entidad para los datos del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.ModoEstricto">
+            <summary>
+            Modo estricto? Actualizar sólo disponible cuando se edita e insertar cuando es nuevo.
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.FormCom#IABMAddOn#Posicion">
+            <summary>
+            Posicion del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.FormCom#IABMAddOn#Control">
+            <summary>
+            Control del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.Nombre">
+            <summary>
+            Obtiene el nombre del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMDatos.ABMTool">
+            <summary>
+            Obtiene el abm al que pertenece
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMDatos.ABMIntentadoHandler">
+            <summary>
+            Delegado para ABM
+            </summary>
+            <param name="sender">el addon</param>
+            <param name="e">datos de la operacion</param>
+        </member>
+        <member name="T:FormCom.ABMDatos.OperacionIntentadaHandler">
+            <summary>
+            Operacion sobre un dato
+            </summary>
+            <param name="sender">el addon</param>
+            <param name="dato">en que dato</param>
+        </member>
+        <member name="T:FormCom.AddonNull`1">
+            <summary>
+            Addon nulo
+            </summary>
+            <typeparam name="T">para diferenciar</typeparam>
+        </member>
+        <member name="F:FormCom.AddonNull`1.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.AddonNull`1.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.AddonNull`1.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.AddonNull`1.#ctor(FormCom.ABMAddOnPosicion,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pos">posicion deseada</param>
+            <param name="nombre">nombre para el addon</param>
+        </member>
+        <member name="M:FormCom.AddonNull`1.FormCom#IABMAddOn#GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="tamPreferido">tamaño propuesto</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.AddonNull`1.ToString">
+            <summary>
+            Devuelve el nombre
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.AddonNull`1.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="proposedSize">tamaño propuesto</param>
+            <returns></returns>
+        </member>
+        <member name="P:FormCom.AddonNull`1.ABMTool">
+            <summary>
+            Devuelve null ya que puede pertenecer a varios
+            </summary>
+        </member>
+        <member name="P:FormCom.AddonNull`1.Tag">
+            <summary>
+            Objeto relacionado al addon
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMForm">
+            <summary>
+            Formulario de ABM
+            </summary>
+        </member>
+        <member name="T:FormCom.IABMTool">
+            <summary>
+            Contrato para ABMs
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualizar una tabla, ponerla si no esta
+            </summary>
+            <param name="tabla"></param>
+        </member>
+        <member name="M:FormCom.IABMTool.ExisteTabla(System.String)">
+            <summary>
+            Esta la tabla en el dataset
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerTabla(System.String)">
+            <summary>
+            Obtener una copia de la tabla
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerVista(System.String)">
+            <summary>
+            Obtener una vista de la tabla
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerVista">
+            <summary>
+            Obtener la vista usada de la tabla principal
+            </summary>
+            <returns>Vista actualmente usada por el abm</returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerItem(System.Int64)">
+            <summary>
+            Devuelve el item que corresponde al id, null si no esta
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.SeleccionarItem(System.Int64[])">
+            <summary>
+            Selecciona items
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.SeleccionarAnterior(System.Boolean)">
+            <summary>
+            Selecciona el item anterior
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.IABMTool.SeleccionarSiguiente(System.Boolean)">
+            <summary>
+            Selecciona el item siguiente
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.IABMTool.SeleccionarPrimero">
+            <summary>
+            Selecciona el 1º item
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.SeleccionarUltimo">
+            <summary>
+            Selecciona el ultimo item
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.PintarItem(System.Int64,System.Drawing.Color)">
+            <summary>
+            Pinta un item de color
+            </summary>
+            <param name="id">que item</param>
+            <param name="color">que color</param>
+        </member>
+        <member name="M:FormCom.IABMTool.Colorear(System.Boolean)">
+            <summary>
+            Colorear grilla?
+            </summary>
+            <param name="ver">ver o quitar colores</param>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerSeleccion">
+            <summary>
+            Obtiene la seccion seleccionada, como una copia filtrada de la tabla principal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerCampos">
+            <summary>
+            Obtiene los campos del abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerAnchos">
+            <summary>
+            Obtiene el ancho actual de cada campo del abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerDataType(System.String)">
+            <summary>
+            Obtiene el tipo de un campo
+            </summary>
+            <param name="campo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.AgregarCampo(MarUtils.Soporte.Esquema)">
+            <summary>
+            Agrega un campo al abm
+            </summary>
+            <param name="esq"></param>
+        </member>
+        <member name="M:FormCom.IABMTool.EliminarCampo(System.String)">
+            <summary>
+            Elimina un campo del abm
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.IABMTool.ReajustarGrilla">
+            <summary>
+            Reajusta la grilla de datos
+            </summary>
+        </member>
+        <member name="M:FormCom.IABMTool.AddAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Añade un nuevo addon
+            </summary>
+            <param name="addon"></param>
+        </member>
+        <member name="M:FormCom.IABMTool.ActivarAddOn(System.Type)">
+            <summary>
+            Activa un nuevo addon
+            </summary>
+            <param name="tipo">tipo del addon</param>
+        </member>
+        <member name="M:FormCom.IABMTool.DesactivarPanel(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva una posicion de addons de la herramienta
+            </summary>
+            <param name="pos">la posicion que se quiere desactivar</param>
+        </member>
+        <member name="M:FormCom.IABMTool.ContieneAddOn(System.Type)">
+            <summary>
+            Dice el ABM contiene el addon
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerAddOn(System.Type)">
+            <summary>
+            Obtiene el addon pedido
+            </summary>
+            <param name="tipo">que addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerAddOns">
+            <summary>
+            Obtiene los addons del abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerAddOnsActivos">
+            <summary>
+            Obtiene los addons activos del abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.ObtenerAddOn``1">
+            <summary>
+            Obtiene el addon pedido
+            </summary>
+            <typeparam name="T">tipo del addon</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.EstaActivoAddon(System.Type)">
+            <summary>
+            Dice si el addon esta activo
+            </summary>
+            <param name="tipo">que addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.IABMTool.RemoverAddOn(System.Type)">
+            <summary>
+            Remueve un addon del abm
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.IABMTool.ResizeAddon(System.Type)">
+            <summary>
+            Reajusta el tamaño de un addon
+            </summary>
+            <param name="tipo">que addon</param>
+        </member>
+        <member name="M:FormCom.IABMTool.VerComoVentana(System.Type)">
+            <summary>
+            Muestra el addon como una ventana
+            </summary>
+            <param name="tipo">que addon</param>
+        </member>
+        <member name="M:FormCom.IABMTool.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Agrega un menu al abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.IABMTool.RemoverMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Remueve un menu del abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="P:FormCom.IABMTool.Control">
+            <summary>
+            Obtener el formulario que representa la herramienta
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.CampoBotonClicked">
+            <summary>
+            Cuando se pulsa un campo boton en el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.ItemDobleClicked">
+            <summary>
+            Para doble clicks sobre el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.TeclaPulsada">
+            <summary>
+            Se dispara cuando se pulsa una tecla
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.ItemActual">
+            <summary>
+            Obtiene el item actual
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.TablaEsquema">
+            <summary>
+            Obtiene o establece el nombre de la tabla de esquemas
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.TablaMain">
+            <summary>
+            Obtiene o establece el nombre de la tabla principal mostrada en el ABM
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.TablaMainKey">
+            <summary>
+            Obtiene la clave de la tabla principal
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.Esquemas">
+            <summary>
+            Obtiene la coleccion de esquemas para la tabla corriente
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.Filtro">
+            <summary>
+            Obtiene o establece el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.IABMTool.MultiSeleccion">
+            <summary>
+            Se puede hacer MultiSeleccion?
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.TablaInvalidada">
+            <summary>
+            Para cuando se invalidad las tablas
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.ItemCorrienteCambiado">
+            <summary>
+            Cuando el item corriente es cambiado
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.DataSourceCambiado">
+            <summary>
+            Cuando se cambia la fuente (datos)
+            </summary>
+        </member>
+        <member name="E:FormCom.IABMTool.EsquemasCambiado">
+            <summary>
+            Cuando se cambian los esquemas (estructura)
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.#ctor">
+            <summary>
+            Carga el abm con plugins por defecto
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Carga el abm
+            </summary>
+            <param name="conFiltro">plugin de filtro?</param>
+            <param name="conData">plugin de datos?</param>
+        </member>
+        <member name="M:FormCom.ABMForm.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualiza una tabla del abm y la agrega si no está
+            </summary>
+            <param name="tabla"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.ExisteTabla(System.String)">
+            <summary>
+            Dice si una tabla ya está en el abm
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerTabla(System.String)">
+            <summary>
+            Devuelve una copia de la tabla pedida
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerItem(System.Int64)">
+            <summary>
+            Devuelve el item que corresponde al id, null si no esta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.SeleccionarItem(System.Int64[])">
+            <summary>
+            Selecciona items
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.SeleccionarAnterior(System.Boolean)">
+            <summary>
+            Selecciona el item anterior
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMForm.SeleccionarSiguiente(System.Boolean)">
+            <summary>
+            Selecciona el item siguiente
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMForm.SeleccionarPrimero">
+            <summary>
+            Selecciona el 1º item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.SeleccionarUltimo">
+            <summary>
+            Selecciona el ultimo item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerSeleccion">
+            <summary>
+            Devuelve una tabla que representa las filas seleccionadas en el abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerVista(System.String)">
+            <summary>
+            Obtiene una vista de la tabla requerida
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerVista">
+            <summary>
+            Obtiene la vista usada de la tabla principal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.AddAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Añade un addon al abm
+            </summary>
+            <param name="addon">instancia del addon</param>
+        </member>
+        <member name="M:FormCom.ABMForm.ActivarAddOn(System.Type)">
+            <summary>
+            Activa el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.DesActivarAddOn(System.Type)">
+            <summary>
+            Desactiva el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.ContieneAddOn(System.Type)">
+            <summary>
+            Dice si un tipo de addon ya esta en el abm
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerAddOn(System.Type)">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerAddOn``1">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param type="T">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.RemoverAddOn(System.Type)">
+            <summary>
+            Remueve un addon si esta
+            </summary>
+            <param name="tipo">tipo del addon</param>
+        </member>
+        <member name="M:FormCom.ABMForm.ResizeAddon(System.Type)">
+            <summary>
+            Reajusta el tamaño de un addon
+            </summary>
+            <param name="tipo">que addon</param>
+        </member>
+        <member name="M:FormCom.ABMForm.EstaActivoAddon(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.DesactivarPanel(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva un panel de addons de la herramienta
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerAddOns">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerAddOnsActivos">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.VerComoVentana(System.Type)">
+            <summary>
+            Muestra un addon como ventana
+            </summary>
+            <param name="tipoAddon"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerCampos">
+            <summary>
+            Obtiene los nombres de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerAnchos">
+            <summary>
+            Obtiene los anchos de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.AgregarCampo(MarUtils.Soporte.Esquema)">
+            <summary>
+            Agrega una columna
+            </summary>
+            <param name="esq"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.ObtenerDataType(System.String)">
+            <summary>
+            Obtiene el tipo de un campo
+            </summary>
+            <param name="campo">nombre del campo</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMForm.EliminarCampo(System.String)">
+            <summary>
+            Quita una columna
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.ABMForm.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Agrega un menu al abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMForm.RemoverMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Remueve un menu del abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMForm.ReajustarGrilla">
+            <summary>
+            Reajusta la grilla para todas las filas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.Colorear(System.Boolean)">
+            <summary>
+            Colorear grilla?
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.Colorear(System.Drawing.Color)">
+            <summary>
+            Colorea las filas seleccionadas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.PintarItem(System.Int64,System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="color"></param>
+        </member>
+        <member name="F:FormCom.ABMForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.TablaInvalidada">
+            <summary>
+            Se dispara cuando las tablas necesitan ser refrescadas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.ItemCorrienteCambiado">
+            <summary>
+            Se dispara cuando cambia el Current
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.DataSourceCambiado">
+            <summary>
+            Se dispara cuando cambia el ds
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.EsquemasCambiado">
+            <summary>
+            Se dispara cuando cambian los esquemas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.CampoBotonClicked">
+            <summary>
+            Se dispara cuando se pulsa un campo boton en el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.ItemDobleClicked">
+            <summary>
+            Se dispara cuando se hace doble click sobre un item del abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.ItemRightClicked">
+            <summary>
+            Se dispara cuando se hace click derecho sobre el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMForm.TeclaPulsada">
+            <summary>
+            Se dispara cuando se pulsa una tecla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.TablaEsquema">
+            <summary>
+            Obtiene o establece la tabla que se usa para esquema del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.Control">
+            <summary>
+            Obtiene el formulario del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.ItemActual">
+            <summary>
+            Accede al item actual de la grilla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.TablaMain">
+            <summary>
+            Obtiene o establece la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.TablaMainKey">
+            <summary>
+            Obtiene la clave de la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.Esquemas">
+            <summary>
+            Obtiene la colección de esquemas
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.Filtro">
+            <summary>
+            Obtiene o establece el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.MultiSeleccion">
+            <summary>
+            Se puede hacer MultiSeleccion?
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.StatVisible">
+            <summary>
+            Dice si la barra de stat inferior es visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMForm.MenuVisible">
+            <summary>
+            Dice si el menu principal es visible
+            </summary>
+        </member>
+        <member name="T:FormCom.Recursos">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FormCom.Recursos.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FormCom.Recursos.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:FormCom.ToolForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ToolForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ToolForm.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Añade un menu al formulario
+            </summary>
+        </member>
+        <member name="F:FormCom.ToolForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ToolForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ToolForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.Minimizado">
+            <summary>
+            Minimizado?
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.BarraEstadoVisible">
+            <summary>
+            Dice si la barra de estado esta visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.Panel">
+            <summary>
+            Obtiene el panel para controles
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.AlturaFija">
+            <summary>
+            Da la altura fija
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.PanelAltura">
+            <summary>
+            Obtiene o establece la altura del panel
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.PanelAncho">
+            <summary>
+            Obtiene o establece el ancho del panel
+            </summary>
+        </member>
+        <member name="P:FormCom.ToolForm.PanelSize">
+            <summary>
+            Obtiene o establece el tamaño del panel
+            </summary>
+        </member>
+        <member name="T:FormCom.CheckBoxTexted">
+            <summary>
+            CheckBox con valor por texto
+            </summary>
+        </member>
+        <member name="P:FormCom.CheckBoxTexted.Text">
+            <summary>
+            true = "SI", false = "NO"
+            </summary>
+        </member>
+        <member name="T:FormCom.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FormCom.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FormCom.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMGrilla">
+            <summary>
+            Abm con grilla, en controls
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMGrilla.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Carga el abm
+            </summary>
+            <param name="conFiltro">plugin de filtro?</param>
+            <param name="conData">plugin de datos?</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualiza una tabla del abm y la agrega si no está
+            </summary>
+            <param name="tabla"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ExisteTabla(System.String)">
+            <summary>
+            Dice si una tabla ya está en el abm
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerTabla(System.String)">
+            <summary>
+            Devuelve una copia de la tabla pedida
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerItem(System.Int64)">
+            <summary>
+            Devuelve el item que corresponde al id, null si no esta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.SeleccionarItem(System.Int64[])">
+            <summary>
+            Selecciona items
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.SeleccionarAnterior(System.Boolean)">
+            <summary>
+            Selecciona el item anterior
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.SeleccionarSiguiente(System.Boolean)">
+            <summary>
+            Selecciona el item siguiente
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.SeleccionarPrimero">
+            <summary>
+            Selecciona el 1º item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.SeleccionarUltimo">
+            <summary>
+            Selecciona el ultimo item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerSeleccion">
+            <summary>
+            Devuelve una tabla que representa las filas seleccionadas en el abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerVista(System.String)">
+            <summary>
+            Obtiene una vista de la tabla requerida
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerVista">
+            <summary>
+            Obtiene la vista usada de la tabla principal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.Imprimir(System.String)">
+            <summary>
+            Imprime toda la grilla
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.Imprimir(System.Collections.Generic.IList{System.String},System.Boolean,System.String)">
+            <summary>
+            Imprime la grilla
+            </summary>
+            <param name="datos">los datos que se quieren imprimir o evitar</param>
+            <param name="evitar">evitar los datos anteriores? Si no, sólo se imprimen esos</param>
+            <param name="titulo">título del reporte</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.AddAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Añade un addon al abm
+            </summary>
+            <param name="addon">instancia del addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ActivarAddOn(System.Type)">
+            <summary>
+            Activa el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.DesActivarAddOn(System.Type)">
+            <summary>
+            Desactiva el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ContieneAddOn(System.Type)">
+            <summary>
+            Dice si un tipo de addon ya esta en el abm
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerAddOn(System.Type)">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerAddOn``1">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param type="T">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.RemoverAddOn(System.Type)">
+            <summary>
+            Remueve un addon si esta
+            </summary>
+            <param name="tipo">tipo del addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ResizeAddon(System.Type)">
+            <summary>
+            Reajusta el tamaño de un addon
+            </summary>
+            <param name="tipo">que addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.EstaActivoAddon(System.Type)">
+            <summary>
+            Dice si está activo un addon
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.DesactivarPanel(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva un panel de addons de la herramienta
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerAddOns">
+            <summary>
+            Devuelve todos los addons de la herramienta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerAddOnsActivos">
+            <summary>
+            Devuelve todos los addons activos de la herramienta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerCampos">
+            <summary>
+            Obtiene los nombres de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerAnchos">
+            <summary>
+            Obtiene los anchos de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.AgregarCampo(MarUtils.Soporte.Esquema)">
+            <summary>
+            Agrega una columna
+            </summary>
+            <param name="esq"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ObtenerDataType(System.String)">
+            <summary>
+            Obtiene el tipo de un campo
+            </summary>
+            <param name="campo">nombre del campo</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrilla.EliminarCampo(System.String)">
+            <summary>
+            Quita una columna
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Agrega un menu al abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.RemoverMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Remueve un menu del abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.ReajustarGrilla">
+            <summary>
+            Reajusta la grilla para todas las filas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.Colorear(System.Boolean)">
+            <summary>
+            Colorear grilla?
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.Colorear(System.Drawing.Color)">
+            <summary>
+            Colorea las filas seleccionadas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrilla.PintarItem(System.Int64,System.Drawing.Color)">
+            <summary>
+            Pinta el item correspondiente al id
+            </summary>
+            <param name="id"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:FormCom.ABMGrilla.VerComoVentana(System.Type)">
+            <summary>
+            Muestra un addon como ventana
+            </summary>
+            <param name="tipoAddon"></param>
+        </member>
+        <member name="E:FormCom.ABMGrilla.TerminacionSolicitada">
+            <summary>
+            Se dispara cuando el usuario pide terminar el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.TablaInvalidada">
+            <summary>
+            Se dispara cuando las tablas necesitan ser refrescadas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.ItemCorrienteCambiado">
+            <summary>
+            Se dispara cuando cambia el Current
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.DataSourceCambiado">
+            <summary>
+            Se dispara cuando cambia el ds
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.EsquemasCambiado">
+            <summary>
+            Se dispara cuando cambian los esquemas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.CampoBotonClicked">
+            <summary>
+            Se dispara cuando se pulsa un campo boton en el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.ItemDobleClicked">
+            <summary>
+            Se dispara cuando se hace doble click sobre un item del abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.ItemRightClicked">
+            <summary>
+            Se dispara cuando se hace click derecho sobre el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrilla.TeclaPulsada">
+            <summary>
+            Se dispara cuando se pulsa una tecla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.TablaEsquema">
+            <summary>
+            Obtiene o establece la tabla que se usa para esquema del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.Control">
+            <summary>
+            Obtiene el formulario del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.ItemActual">
+            <summary>
+            Accede al item actual de la grilla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.TablaMain">
+            <summary>
+            Obtiene o establece la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.TablaMainKey">
+            <summary>
+            Obtiene la clave de la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.Esquemas">
+            <summary>
+            Obtiene la colección de esquemas
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.Filtro">
+            <summary>
+            Obtiene o establece el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.MultiSeleccion">
+            <summary>
+            Se puede hacer MultiSeleccion?
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.StatVisible">
+            <summary>
+            Dice si la barra de stat inferior es visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrilla.MenuVisible">
+            <summary>
+            Dice si el menu principal es visible
+            </summary>
+        </member>
+        <member name="T:FormCom.FiltroAv">
+            <summary>
+            Filtro avanzado para ABMs
+            </summary>
+        </member>
+        <member name="F:FormCom.FiltroAv.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.FiltroAv.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.FiltroAv.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.FiltroAv.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.FiltroAv.ToString">
+            <summary>
+            Devuelve el nombre
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FormCom.FiltroAv.FiltradoSuspendido">
+            <summary>
+            Dice si el filtrado se activa inmediatamente se hacen cambios, o si esta 
+            suspendido.
+            </summary>
+        </member>
+        <member name="P:FormCom.FiltroAv.AgregarInvisibles">
+            <summary>
+            Dice si el se agregan los datos cuyos esquemas dicen ser invisibles
+            </summary>
+        </member>
+        <member name="T:FormCom.DGVPrinter">
+            <summary>
+            Data Grid View Printer. Print functions for a datagridview, since MS
+            didn't see fit to do it.
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter._PrintPreviewZoom">
+            <summary>
+            provide an override for the print preview zoom setting
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.GetHeaderCellFormat(System.Windows.Forms.DataGridView)">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.GetCellFormat(System.Windows.Forms.DataGridView)">
+            <summary>
+            Allow override of the cell printing format
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PreviewDisplayWidth">
+            <summary>
+            calculate the print preview window width to show the entire page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PreviewDisplayHeight">
+            <summary>
+            calculate the print preview window height to show the entire page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.DGVPrinter.#ctor">
+            <summary>
+            Constructor for DGVPrinter
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintDataGridView(System.Windows.Forms.DataGridView,System.Collections.Generic.IList{System.String},System.Boolean)">
+            <summary>
+            Start the printing process, print to a printer.
+            </summary>
+            <param name="dgv">la grilla</param>
+            <param name="cols">columnas a tener en cuenta</param>
+            <param name="evitar">las columnas anteriores, evitarlas o imprimir solo esas</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintDataGridView(System.Windows.Forms.DataGridView)">
+            <summary>
+            Start the printing process, print to a printer.
+            </summary>
+            <param name="dgv">The DataGridView to print</param>
+            NOTE: Any changes to this method also need to be done in PrintPreviewDataGridView
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintPreviewDataGridView(System.Windows.Forms.DataGridView)">
+            <summary>
+            Start the printing process, print to a print preview dialog
+            </summary>
+            <param name="dgv">The DataGridView to print</param>
+            NOTE: Any changes to this method also need to be done in PrintDataGridView
+        </member>
+        <member name="M:FormCom.DGVPrinter.DisplayPrintDialog">
+            <summary>
+            Display a printdialog and return the result. Either this method or 
+            the equivalent must be done prior to calling either of the PrintNoDisplay
+            or PrintPreviewNoDisplay methods.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintNoDisplay(System.Windows.Forms.DataGridView)">
+            <summary>
+            Print the provided grid view. Either DisplayPrintDialog() or it's equivalent
+            setup must be completed prior to calling this routine
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintNoDisplay(System.Windows.Forms.DataGridView,System.Collections.Generic.IList{System.String},System.Boolean)">
+            <summary>
+            Print the provided grid view. Either DisplayPrintDialog() or it's equivalent
+            setup must be completed prior to calling this routine
+            </summary>
+            <param name="dgv">la grilla</param>
+            <param name="cols">columnas a tener en cuenta</param>
+            <param name="evitar">las columnas anteriores, evitarlas o imprimir solo esas</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintPreviewNoDisplay(System.Windows.Forms.DataGridView)">
+            <summary>
+            Preview the provided grid view. Either DisplayPrintDialog() or it's equivalent
+            setup must be completed prior to calling this routine
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.EmbeddedPrint(System.Windows.Forms.DataGridView,System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Impresión embebida
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printDoc_BeginPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            BeginPrint Event Handler
+            Set values at start of print run
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printDoc_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            PrintPage event handler. This routine prints one page. It will
+            skip non-printable pages if the user selected the "some pages" option
+            on the print dialog.
+            </summary>
+            <param name="sender">default object from windows</param>
+            <param name="e">Event info from Windows about the printing</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.SetupPrint">
+            <summary>
+            Set up the print job. Save information from print dialog
+            and print document for easy access. Also sets up the rows
+            and columns that will be printed. At this point, we're 
+            collecting all columns in colstoprint. This will be broken
+            up into pagesets later on 
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.buildstringformat(System.Drawing.StringFormat@,System.Windows.Forms.DataGridViewCellStyle,System.Drawing.StringAlignment,System.Drawing.StringAlignment,System.Drawing.StringFormatFlags,System.Drawing.StringTrimming)">
+            <summary>
+            Centralize the string format settings. Build a string format object
+            using passed in settings, (allowing a user override of a single setting)
+            and get the alignment from the cell control style.
+            </summary>
+            <param name="format">String format, ref parameter with return settings</param>
+            <param name="controlstyle">DataGridView style to apply (if available)</param>
+            <param name="alignment">Override text Alignment</param>
+            <param name="linealignment">Override line alignment</param>
+            <param name="flags">String format flags</param>
+            <param name="trim">Override string trimming flags</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.DGVPrinter.measureprintarea(System.Drawing.Graphics)">
+            <summary>
+            Scan all the rows and columns to be printed and calculate the 
+            overall individual column width (based on largest column value), 
+            the header sizes, and determine all the row heights.
+            </summary>
+            <param name="g">The graphics context for all measurements</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.AdjustPageSets(System.Drawing.Graphics,FormCom.DGVPrinter.PageDef)">
+            <summary>
+            Adjust column widths for fixed and porportional columns, set the 
+            margins to enforce the selected tablealignment.
+            </summary>
+            <param name="g">The graphics context for all measurements</param>
+            <param name="pageset">The pageset to adjust</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.TotalPages">
+            <summary>
+            Count the pages that would be printed if print all was selected
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.DetermineHasMorePages">
+            <summary>
+            Check for more pages. This is called at the end of printing a page set.
+            If there's another page set to print, we return true.
+            </summary>
+        </member>
+        <member name="M:FormCom.DGVPrinter.PrintPage(System.Drawing.Graphics)">
+            <summary>
+            This routine prints one page. It will skip non-printable pages if the user 
+            selected the "some pages" option on the print dialog. This is called during 
+            the Print event.
+            </summary>
+            <param name="g">Graphics object to print to</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printsection(System.Drawing.Graphics,System.Single@,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.StringFormat,System.Boolean,System.Drawing.Printing.Margins)">
+            <summary>
+            Print a header or footer section. Used for page numbers and titles
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="text">String to print</param>
+            <param name="font">Font to use for printing</param>
+            <param name="color">Color to print in</param>
+            <param name="format">String format for text</param>
+            <param name="useroverride">True if the user overrode the alignment or flags</param>
+            <param name="margins">The table's print margins</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printfooter(System.Drawing.Graphics,System.Single@,System.Drawing.Printing.Margins)">
+            <summary>
+            Print the footer. This handles the footer spacing, and printing the page number
+            at the bottom of the page (if the page number is not in the header).
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="margins">The table's print margins</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printcolumnheaders(System.Drawing.Graphics,System.Single@,FormCom.DGVPrinter.PageDef)">
+            <summary>
+            Print the column headers. Most printing format info is retrieved from the 
+            source DataGridView.
+            </summary>
+            <param name="g">Graphics Context to print within</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="pageset">Current pageset - defines columns and margins</param>
+        </member>
+        <member name="M:FormCom.DGVPrinter.printrow(System.Drawing.Graphics,System.Single@,System.Windows.Forms.DataGridViewRow,FormCom.DGVPrinter.PageDef)">
+            <summary>
+            Print one row of the DataGridView. Most printing format info is retrieved
+            from the DataGridView.
+            </summary>
+            <param name="g">Graphics Context to print within</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="row">The row that will be printed</param>
+            <param name="pageset">Current Pageset - defines columns and margins</param>
+        </member>
+        <member name="P:FormCom.DGVPrinter.ColsToAvoid">
+            <summary>
+            Que columnas no se deben imprimir
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.Owner">
+            <summary>
+            provide an override for the print preview dialog "owner" field
+            Note: Changed style for VS2005 compatibility
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintPreviewZoom">
+            <summary>
+            provide an override for the print preview zoom setting
+            Note: Changed style for VS2005 compatibility
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintSettings">
+            <summary>
+            expose printer settings to allow access to calling program
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintDialogSettings">
+            <summary>
+            expose settings for the PrintDialog displayed to the user
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrinterName">
+            <summary>
+            Set Printer Name
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.printDocument">
+            <summary>
+            Allow access to the underlying print document
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PreviewDialogIcon">
+            <summary>
+            Allow caller to set the upper-left corner icon used
+            in the print preview dialog
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintHeader">
+            <summary>
+            Flag to control whether or not we print the Page Header
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintFooter">
+            <summary>
+            Flag to control whether or not we print the Page Footer
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintColumnHeaders">
+            <summary>
+            Flag to control whether or not we print the Column Header line
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.Title">
+            <summary>
+            Title for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.DocName">
+            <summary>
+            Name of the document. Default is report title (can be empty)
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TitleFont">
+            <summary>
+            Font for the title. Default is Tahoma, 18pt.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TitleColor">
+            <summary>
+            Foreground color for the title. Default is Black
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TitleFormat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TitleAlignment">
+            <summary>
+            Allow the user to override the title string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TitleFormatFlags">
+            <summary>
+            Allow the user to override the title string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitle">
+            <summary>
+            SubTitle for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitleFont">
+            <summary>
+            Font for the subtitle. Default is Tahoma, 12pt.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitleColor">
+            <summary>
+            Foreground color for the subtitle. Default is Black
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitleFormat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitleAlignment">
+            <summary>
+            Allow the user to override the subtitle string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.SubTitleFormatFlags">
+            <summary>
+            Allow the user to override the subtitle string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.Footer">
+            <summary>
+            footer for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterFont">
+            <summary>
+            Font for the footer. Default is Tahoma, 10pt.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterColor">
+            <summary>
+            Foreground color for the footer. Default is Black
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterFormat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterAlignment">
+            <summary>
+            Allow the user to override the footer string alignment. Default value is 
+            Alignment - Center; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterFormatFlags">
+            <summary>
+            Allow the user to override the footer string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.FooterSpacing">
+            <summary>
+            Espaciado en el pie
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumbers">
+            <summary>
+            Include page number in the printout. Default is true.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberFont">
+            <summary>
+            Font for the page number, Default is Tahoma, 8pt.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberColor">
+            <summary>
+            Text color (foreground) for the page number. Default is Black
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberFormat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberAlignment">
+            <summary>
+            Allow the user to override the page number string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberFormatFlags">
+            <summary>
+            Allow the user to override the pagenumber string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberInHeader">
+            <summary>
+            Allow the user to select whether to have the page number at the top or bottom
+            of the page. Default is false: page numbers on the bottom of the page
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageNumberOnSeparateLine">
+            <summary>
+            Should the page number be printed on a separate line, or printed on the
+            same line as the header / footer? Default is false;
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.ShowTotalPageNumber">
+            <summary>
+            Show the total page number as n of total 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageSeparator">
+            <summary>
+            Text separating page number and total page number. Default is ' de '.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageText">
+            <summary>
+            Text for page. Default is 'Página'.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PartText">
+            <summary>
+            Text for parts. Default is ' - Parte'.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.HeaderCellAlignment">
+            <summary>
+            Deprecated - use HeaderCellFormat
+            Allow the user to override the header cell string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.HeaderCellFormatFlags">
+            <summary>
+            Deprecated - use HeaderCellFormat
+            Allow the user to override the header cell string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.CellAlignment">
+            <summary>
+            Deprecated - use GetCellFormat
+            Allow the user to override the cell string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.CellFormatFlags">
+            <summary>
+            Deprecated - use GetCellFormat
+            Allow the user to override the cell string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.ColumnWidths">
+            <summary>
+            allow the user to override the column width calcs with their own defaults
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.ColumnStyles">
+            <summary>
+            Allow per column style overrides
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PrintMargins">
+            <summary>
+            Page margins override. Default is (60, 60, 40, 40)
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PageSettings">
+            <summary>
+            Expose the printdocument default page settings to the caller
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.PorportionalColumns">
+            <summary>
+            Spread the columns porportionally accross the page. Default is false.
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.TableAlignment">
+            <summary>
+            Alineación de la tabla
+            </summary>
+        </member>
+        <member name="P:FormCom.DGVPrinter.RowHeight">
+            <summary>
+            Altura default de la fila
+            </summary>
+        </member>
+        <member name="T:FormCom.DGVPrinter.PrintDialogSettingsClass">
+            <summary>
+            class to hold settings for the PrintDialog presented to the user during
+            the print process
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.AllowSelection">
+            <summary>
+            Permitir selección?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.AllowSomePages">
+            <summary>
+            Permitir algunas páginas?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.AllowCurrentPage">
+            <summary>
+            Permitir página actual?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.AllowPrintToFile">
+            <summary>
+            Permitir imprimir a archivo?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.ShowHelp">
+            <summary>
+            Mostrar ayuda?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.ShowNetwork">
+            <summary>
+            Mostrar red?
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.PrintDialogSettingsClass.UseEXDialog">
+            <summary>
+            Usar EXDialog?
+            </summary>
+        </member>
+        <member name="T:FormCom.DGVPrinter.Alignment">
+            <summary>
+            Center the table on the page. 
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.Alignment.NotSet">
+            <summary>
+            Sin establecer
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.Alignment.Left">
+            <summary>
+            Alineado a la izquierda
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.Alignment.Right">
+            <summary>
+            Alineado a la derecha
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.Alignment.Center">
+            <summary>
+            Alineado al centro
+            </summary>
+        </member>
+        <member name="T:FormCom.DGVPrinter.RowHeightSetting">
+            <summary>
+            Change the default row height to either the height of the string or the size of 
+            the cell. Added for image cell handling.
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.RowHeightSetting.StringHeight">
+            <summary>
+            A la altura del texto
+            </summary>
+        </member>
+        <member name="F:FormCom.DGVPrinter.RowHeightSetting.CellHeight">
+            <summary>
+            A la altura de la celda
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMGrillaView">
+            <summary>
+            Abm con grilla, en controls
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMGrillaView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Carga el abm
+            </summary>
+            <param name="conFiltro">plugin de filtro?</param>
+            <param name="conData">plugin de datos?</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Actualiza una tabla del abm y la agrega si no está
+            </summary>
+            <param name="tabla"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ExisteTabla(System.String)">
+            <summary>
+            Dice si una tabla ya está en el abm
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerTabla(System.String)">
+            <summary>
+            Devuelve una copia de la tabla pedida
+            </summary>
+            <param name="tabla"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerItem(System.Int64)">
+            <summary>
+            Devuelve el item que corresponde al id, null si no esta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerSeleccion">
+            <summary>
+            Devuelve una tabla que representa las filas seleccionadas en el abm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.PermirtirABM(System.Boolean)">
+            <summary>
+            Permite o deniega todas funciones ABM
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.PermirtirABM(System.Boolean,MarUtils.Soporte.enABMFuncion)">
+            <summary>
+            Permite o deniega una funcion ABM particular
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerVista(System.String)">
+            <summary>
+            Obtiene una vista de la tabla requerida
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerVista">
+            <summary>
+            Obtiene una vista actual de la tabla principal
+            </summary>
+            <exception cref="T:System.Exception">Se lanza cuando el abm no tiene TablaMain o no existe</exception>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.SeleccionarItem(System.Int64[])">
+            <summary>
+            Selecciona items
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.SeleccionarAnterior(System.Boolean)">
+            <summary>
+            Selecciona el item anterior
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.SeleccionarSiguiente(System.Boolean)">
+            <summary>
+            Selecciona el item siguiente
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.SeleccionarPrimero">
+            <summary>
+            Selecciona el 1º item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.SeleccionarUltimo">
+            <summary>
+            Selecciona el ultimo item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.Imprimir(System.String,System.Boolean)">
+            <summary>
+            Imprime toda la grilla
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.Imprimir(System.Collections.Generic.IList{System.String},System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Imprime la grilla
+            </summary>
+            <param name="datos">los datos que se quieren imprimir o evitar</param>
+            <param name="evitar">evitar los datos anteriores? Si no, sólo se imprimen esos</param>
+            <param name="titulo">titulo del reporte</param>
+            <param name="preview">ver setup</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.AddAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Añade un addon al abm
+            </summary>
+            <param name="addon">instancia del addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ActivarAddOn(System.Type)">
+            <summary>
+            Activa el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.DesActivarAddOn(System.Type)">
+            <summary>
+            Desactiva el addon del tipo dado
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ContieneAddOn(System.Type)">
+            <summary>
+            Dice si un tipo de addon ya esta en el abm
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerAddOn(System.Type)">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param name="tipo">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerAddOn``1">
+            <summary>
+            Devuelve el addon del tipo solicitado
+            </summary>
+            <param type="T">tipo del addon</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.RemoverAddOn(System.Type)">
+            <summary>
+            Remueve un addon si esta
+            </summary>
+            <param name="tipo">tipo del addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ResizeAddon(System.Type)">
+            <summary>
+            Reajusta el tamaño de un addon
+            </summary>
+            <param name="tipo">que addon</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.EstaActivoAddon(System.Type)">
+            <summary>
+            Dice si está activo un addon
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.DesactivarPanel(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva un panel de addons de la herramienta
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerAddOns">
+            <summary>
+            Devuelve todos los addons de la herramienta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerAddOnsActivos">
+            <summary>
+            Devuelve todos los addons activos de la herramienta
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerCampos">
+            <summary>
+            Obtiene los nombres de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerAnchos">
+            <summary>
+            Obtiene los anchos de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.AgregarCampo(MarUtils.Soporte.Esquema)">
+            <summary>
+            Agrega una columna
+            </summary>
+            <param name="esq"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ObtenerDataType(System.String)">
+            <summary>
+            Obtiene el tipo de un campo
+            </summary>
+            <param name="campo">nombre del campo</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.EliminarCampo(System.String)">
+            <summary>
+            Quita una columna
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Agrega un menu al abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.RemoverMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Remueve un menu del abm en la posicion indicada
+            </summary>
+            <param name="menu">el menu en cuestion</param>
+            <param name="pos">en que posicion</param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.ReajustarGrilla">
+            <summary>
+            Reajusta la grilla para todas las filas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.Colorear(System.Boolean)">
+            <summary>
+            Colorear grilla?
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.Colorear(System.Drawing.Color)">
+            <summary>
+            Colorea las filas seleccionadas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.PintarItem(System.Int64,System.Drawing.Color)">
+            <summary>
+            Pinta el item correspondiente al id
+            </summary>
+            <param name="id"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.VerAddOnComoVentana(System.Type)">
+            <summary>
+            Muestra un addon como ventana
+            </summary>
+            <param name="tipoAddon"></param>
+        </member>
+        <member name="M:FormCom.ABMGrillaView.VerComoVentana(System.Type)">
+            <summary>
+            Muestra un addon como ventana
+            </summary>
+            <param name="tipoAddon"></param>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.TerminacionSolicitada">
+            <summary>
+            Se dispara cuando el usuario pide terminar el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.TablaInvalidada">
+            <summary>
+            Se dispara cuando las tablas necesitan ser refrescadas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.ItemCorrienteCambiado">
+            <summary>
+            Se dispara cuando cambia el Current
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.DataSourceCambiado">
+            <summary>
+            Se dispara cuando cambia el ds
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.EsquemasCambiado">
+            <summary>
+            Se dispara cuando cambian los esquemas
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.FiltroCambiado">
+            <summary>
+            Se dispara cuando se cambia el filtro
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.CampoBotonClicked">
+            <summary>
+            Se dispara cuando se pulsa un campo boton en el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.ItemDobleClicked">
+            <summary>
+            Se dispara cuando se hace doble click sobre un item del abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.ItemRightClicked">
+            <summary>
+            Se dispara cuando se hace click derecho sobre el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMGrillaView.TeclaPulsada">
+            <summary>
+            Se dispara cuando se pulsa una tecla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.TablaEsquema">
+            <summary>
+            Obtiene o establece la tabla que se usa para esquema del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.Control">
+            <summary>
+            Obtiene el formulario del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.ItemActual">
+            <summary>
+            Accede al item actual de la grilla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.TablaMain">
+            <summary>
+            Obtiene o establece la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.TablaMainKey">
+            <summary>
+            Obtiene la clave de la tabla principal del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.Esquemas">
+            <summary>
+            Obtiene la colección de esquemas
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.Filtro">
+            <summary>
+            Obtiene o establece el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.MultiSeleccion">
+            <summary>
+            Se puede hacer MultiSeleccion?
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.StatVisible">
+            <summary>
+            Dice si la barra de stat inferior es visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMGrillaView.MenuVisible">
+            <summary>
+            Dice si el menu principal es visible
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMListado">
+            <summary>
+            Abm con ObjectListView, en control
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="tipoEntidad">tipo hijo de EntidadBase</param>
+        </member>
+        <member name="M:FormCom.ABMListado.ActualizarTabla(System.Data.DataTable)">
+            <summary>
+            Agrega o actualiza una tabla
+            </summary>
+            <param name="tabla"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ExisteTabla(System.String)">
+            <summary>
+            Dice si existe la tabla
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerTabla(System.String)">
+            <summary>
+            Devuelve una copia de la tabla pedida
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerVista(System.String)">
+            <summary>
+            Obtiene una vista de la tabla pedida
+            </summary>
+            <param name="tabla">nombre de la tabla</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerVista">
+            <summary>
+            Obtiene la vista usada de la tabla principal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerItem(System.Int64)">
+            <summary>
+            Obtiene el item correspondiente al id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.SeleccionarItem(System.Int64[])">
+            <summary>
+            Selecciona los items correspondientes
+            </summary>
+            <param name="ids"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.SeleccionarAnterior(System.Boolean)">
+            <summary>
+            Selecciona el item anterior
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMListado.SeleccionarSiguiente(System.Boolean)">
+            <summary>
+            Selecciona el item siguiente
+            </summary>
+            <param name="circular">recorrer en forma circular?</param>
+        </member>
+        <member name="M:FormCom.ABMListado.SeleccionarPrimero">
+            <summary>
+            Selecciona el 1º item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.SeleccionarUltimo">
+            <summary>
+            Selecciona el ultimo item
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerSeleccion">
+            <summary>
+            Obtiene la seleccion
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerObjetosSeleccionados">
+            <summary>
+            Obtiene la seleccion de objetos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerObjetos">
+            <summary>
+            Obtiene todos los objetos del listado con el filtro actual
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.RefrescarObjeto(MarUtils.Entidades.EntidadBase)">
+            <summary>
+            Actualiza la fila del listado
+            </summary>
+            <param name="ent"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerCampos">
+            <summary>
+            Obtiene los campos que se estan mostrando
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerAnchos">
+            <summary>
+            Obtiene los anchos de las columnas de la grilla
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerDataType(System.String)">
+            <summary>
+            Obtiene el tipo de un campo
+            </summary>
+            <param name="campo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.AgregarCampo(MarUtils.Soporte.Esquema)">
+            <summary>
+            Agrega un campo al ABM
+            </summary>
+            <param name="esq"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.EliminarCampo(System.String)">
+            <summary>
+            Elimina un campo del ABM
+            </summary>
+            <param name="dato"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.AddAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Añade un addon
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.ContieneAddOn(System.Type)">
+            <summary>
+            Dice si contiene el addon
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerAddOn(System.Type)">
+            <summary>
+            Obtiene el addon pedido
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerAddOn``1">
+            <summary>
+            Obtiene el addon pedido
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.EstaActivoAddon(System.Type)">
+            <summary>
+            Dice si el addon esta activo
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMListado.DesactivarPanel(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva un panel de addons de la herramienta
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.RemoverAddOn(System.Type)">
+            <summary>
+            Quita el addon del abm
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ResizeAddon(System.Type)">
+            <summary>
+            Resize del addon en su contenedor
+            </summary>
+            <param name="tipo"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.AgregarMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Agrega menues al addon
+            </summary>
+            <param name="menu"></param>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.RemoverMenu(System.Windows.Forms.ToolStripItem,FormCom.enMenuPosicion)">
+            <summary>
+            Remueve menues del abm
+            </summary>
+            <param name="menu"></param>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ActivarAddOn(System.Type)">
+            <summary>
+            Activa un addon
+            </summary>
+            <param name="tAddon"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ActivarAddOn(FormCom.IABMAddOn)">
+            <summary>
+            Activa un addon
+            </summary>
+            <param name="addon"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerAddOns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.ObtenerAddOnsActivos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.VerComoVentana(System.Type)">
+            <summary>
+            Muestra un addon como ventana
+            </summary>
+            <param name="tipoAddon"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.DesActivarAddOn(FormCom.ABMAddOnPosicion)">
+            <summary>
+            Desactiva la barra de addons
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:FormCom.ABMListado.ReajustarGrilla">
+            <summary>
+            Reajusta la grilla
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.Colorear(System.Boolean)">
+            <summary>
+            Colorear grilla?
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.Colorear(System.Drawing.Color)">
+            <summary>
+            Colorea las filas seleccionadas
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.PintarItem(System.Int64,System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="color"></param>
+        </member>
+        <member name="F:FormCom.ABMListado.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMListado.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMListado.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.TerminacionSolicitada">
+            <summary>
+            Se dispara cuando el usuario pide terminar el abm
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.EntidadCambiada">
+            <summary>
+            Se dispara cuando se modifica una entidad desde la UI
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.Control">
+            <summary>
+            Obtiene el control
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.CampoBotonClicked">
+            <summary>
+            Se dispara cuando se cliquea un campo boton
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.ItemDobleClicked">
+            <summary>
+            Se dispara cuando se hace doble click
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.TeclaPulsada">
+            <summary>
+            Se dispara cuando se pulsa una tecla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.ItemActual">
+            <summary>
+            Obtiene el item actual
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.ObjetoActual">
+            <summary>
+            Obtiene el objeto actual
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.TablaMain">
+            <summary>
+            Obtiene o establece la tabla principal
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.TablaEsquema">
+            <summary>
+            Obtiene o establece la tabla que se usa para esquema del abm
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.TablaMainKey">
+            <summary>
+            Obtiene la clave de la tabla
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.Esquemas">
+            <summary>
+            Obtiene los esquemas
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.Filtro">
+            <summary>
+            Obtiene o establece el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.MultiSeleccion">
+            <summary>
+            Se puede hacer multiseleccion?
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMListado.ReadOnly">
+            <summary>
+            Dice si la lista es de solo lectura
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.TablaInvalidada">
+            <summary>
+            Se dispara cuando se invalida una tabla
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.ItemCorrienteCambiado">
+            <summary>
+            Se dispara cuando se pasa a otro item
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.DataSourceCambiado">
+            <summary>
+            Se dispara cuando se cambia el dataSource
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMListado.EsquemasCambiado">
+            <summary>
+            Se dispara cuando se cambia los esquemas
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMFiltro">
+            <summary>
+            Filtro para la grilla
+            </summary>
+        </member>
+        <member name="F:FormCom.ABMFiltro.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FormCom.ABMFiltro.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.#ctor">
+            <summary>
+            Constructor base
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.FormCom#IABMAddOn#GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="tamPreferido">tamaño propuesto</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMFiltro.FormCom#IABMAddOn#OnInit(FormCom.IABMTool)">
+            <summary>
+            Se llama cuando se inicializa el abm
+            </summary>
+            <param name="abm"></param>
+        </member>
+        <member name="M:FormCom.ABMFiltro.FormCom#IABMAddOn#OnFinit(FormCom.AddOnQuitInfo)">
+            <summary>
+            Se llama cuando se quita el addon
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.DataSourceChanged">
+            <summary>
+            Se llama cuando se cambia la fuente de datos
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.ToString">
+            <summary>
+            Devuelve el nombre
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormCom.ABMFiltro.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Obtiene el tamaño preferido
+            </summary>
+            <param name="proposedSize">tamaño propuesto</param>
+        </member>
+        <member name="M:FormCom.ABMFiltro.SetComboValue(System.Int32,System.Object)">
+            <summary>
+            Setea el valor en un combo
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.SetComboHijo(System.Int32)">
+            <summary>
+            Pone el filtro de los hijos con su valor
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMFiltro.SetDato(System.String,System.Object)">
+            <summary>
+            Setea el valor de uno de los filtros
+            </summary>
+            <param name="dato"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="E:FormCom.ABMFiltro.SeleccionAceptada">
+            <summary>
+            Se dispara cuando se pulsa "Aceptar"
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMFiltro.SeleccionCancelada">
+            <summary>
+            Se dispara cuando se pulsa "Cancelar"
+            </summary>
+        </member>
+        <member name="E:FormCom.ABMFiltro.FiltroCambiado">
+            <summary>
+            Se dispara cuando se cambia el filtro
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.FormCom#IABMAddOn#Posicion">
+            <summary>
+            Obtiene la posicion del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.FormCom#IABMAddOn#Control">
+            <summary>
+            Obtiene el control del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.FormCom#IABMAddOn#Nombre">
+            <summary>
+            Obtiene el nombre del addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.ABMTool">
+            <summary>
+            Obtiene el abm al que pertenece
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.Filtro">
+            <summary>
+            Obtiene el filtro establecido por el addon
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.FiltroVisible">
+            <summary>
+            Dice si el filtro es visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.ToolbarVisible">
+            <summary>
+            Dice si la barra de herramientas es visible
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMFiltro.SeleccionarOn2Click">
+            <summary>
+            Seleccionar al hacer doble click?
+            </summary>
+        </member>
+        <member name="T:FormCom.ABMEventeArgs">
+            <summary>
+            Datos de evento ABM
+            </summary>
+        </member>
+        <member name="M:FormCom.ABMEventeArgs.#ctor(MarUtils.Soporte.enABMFuncion,System.Object)">
+            <summary>
+            Crea un ABMEventeArgs con funcion y entidad
+            </summary>
+            <param name="funcion">que funcion</param>
+            <param name="entidad">una entidad</param>
+        </member>
+        <member name="P:FormCom.ABMEventeArgs.Funcion">
+            <summary>
+            Obtiene o establece la funcion abm requerida
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMEventeArgs.Manejado">
+            <summary>
+            Dice si se manejo el evento
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMEventeArgs.Entidad">
+            <summary>
+            Obtiene o establece la entidad del abm intentado
+            </summary>
+        </member>
+        <member name="P:FormCom.ABMEventeArgs.Valores">
+            <summary>
+            Obtiene o establece los valores del abm intentado
+            </summary>
+        </member>
+        <member name="T:FormCom.AddOnQuitInfo">
+            <summary>
+            Representa informacion sobre el removido del addon
+            </summary>
+        </member>
+        <member name="M:FormCom.AddOnQuitInfo.#ctor(System.Windows.Forms.CloseReason)">
+            <summary>
+            
+            </summary>
+            <param name="razon">que razon</param>
+        </member>
+        <member name="P:FormCom.AddOnQuitInfo.Razon">
+            <summary>
+            Razon del cierre/removido
+            </summary>
+        </member>
+        <member name="P:FormCom.AddOnQuitInfo.Cancelado">
+            <summary>
+            Cancelar el cierre/removido
+            </summary>
+        </member>
+    </members>
+</doc>

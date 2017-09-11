@@ -1,0 +1,206 @@
+﻿  Chars.cpp
+Chars.cpp(114): error C3861: 'CharToOem': identifier not found
+Chars.cpp(119): error C3861: 'OemToChar': identifier not found
+  ClaseFiscal.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  debug.cpp
+debug.cpp(83): error C3861: 'open': identifier not found
+debug.cpp(87): error C3861: 'lseek': identifier not found
+debug.cpp(89): error C3861: 'close': identifier not found
+debug.cpp(107): error C3861: 'open': identifier not found
+debug.cpp(129): error C3861: 'write': identifier not found
+debug.cpp(130): error C3861: 'close': identifier not found
+  Excepcion.cpp
+Excepcion.cpp(52): error C2065: 's' : undeclared identifier
+  ImpresorFiscal.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  ImpresorFiscal16Bits.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  ImpresorFiscal8Bits.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  Mutex.cpp
+  P262_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P272_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P320_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P321_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P322.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P322_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P322_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P330.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P330_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P330_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P330_202.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P425.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  Generating Code...
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\mutex.cpp(45): error C4716: 'Mutex::Enter' : must return a value
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\mutex.cpp(58): error C4716: 'Mutex::TryEnter' : must return a value
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\mutex.cpp(74): error C4716: 'Mutex::Leave' : must return a value
+  Compiling...
+  P425_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P425_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P435.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P435_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P435_101.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P614_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P615_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P715.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P715_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P715_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P950_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  P951_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PJ20_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPL8.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPL8_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPL8_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPL9_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPR4_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPR5.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  PPR5_100.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  Generating Code...
+  Compiling...
+  PPR5_201.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  Protocolo.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+Protocolo.cpp(657): error C3861: 'Sleep': identifier not found
+  PuertoSerie.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+  Select.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+Select.cpp(17): error C2039: 'DESCRIPTOR' : is not a member of 'Transporte'
+          d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(28) : see declaration of 'Transporte'
+Select.cpp(17): error C2065: 'DESCRIPTOR' : undeclared identifier
+Select.cpp(17): error C2146: syntax error : missing ')' before identifier 'fd'
+Select.cpp(17): error C2182: 'DoSelect' : illegal use of type 'void'
+Select.cpp(17): error C2059: syntax error : ')'
+Select.cpp(18): error C2143: syntax error : missing ';' before '{'
+Select.cpp(18): error C2447: '{' : missing function header (old-style formal list?)
+Select.cpp(47): error C2065: 'DESCRIPTOR' : undeclared identifier
+Select.cpp(47): error C2146: syntax error : missing ')' before identifier 'fd'
+Select.cpp(47): error C2761: 'void Transporte::Select(void) throw(Excepcion) const' : member function redeclaration not allowed
+Select.cpp(47): error C2059: syntax error : ')'
+Select.cpp(48): error C2143: syntax error : missing ';' before '{'
+Select.cpp(48): error C2447: '{' : missing function header (old-style formal list?)
+  Socket.cpp
+d:\mis docs\dropbox\sistemas\gasolero\fiscal\Transporte.h(61): error C2061: syntax error : identifier 'DESCRIPTOR'
+Socket.cpp(29): error C3861: 'ntohl': identifier not found
+Socket.cpp(29): error C3861: 'inet_addr': identifier not found
+Socket.cpp(60): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(60): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(60): error C2065: 'SOCK_STREAM' : undeclared identifier
+Socket.cpp(60): error C2065: 'INVALID_SOCKET' : undeclared identifier
+Socket.cpp(60): error C3861: 'socket': identifier not found
+Socket.cpp(67): error C2079: 'Name' uses undefined struct 'SocketTCP::{ctor}::sockaddr_in'
+Socket.cpp(70): error C2228: left of '.sin_family' must have class/struct/union
+          type is 'int'
+Socket.cpp(70): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(71): error C2228: left of '.sin_addr' must have class/struct/union
+          type is 'int'
+Socket.cpp(71): error C2228: left of '.s_addr' must have class/struct/union
+Socket.cpp(71): error C2065: 'INADDR_ANY' : undeclared identifier
+Socket.cpp(71): error C3861: 'htonl': identifier not found
+Socket.cpp(72): error C2228: left of '.sin_port' must have class/struct/union
+          type is 'int'
+Socket.cpp(72): error C3861: 'htons': identifier not found
+Socket.cpp(74): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(74): error C3861: 'bind': identifier not found
+Socket.cpp(86): error C2079: 'to' uses undefined struct 'SocketTCP::{ctor}::sockaddr_in'
+Socket.cpp(88): error C2228: left of '.sin_family' must have class/struct/union
+          type is 'int'
+Socket.cpp(88): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(89): error C2228: left of '.sin_addr' must have class/struct/union
+          type is 'int'
+Socket.cpp(89): error C2228: left of '.s_addr' must have class/struct/union
+Socket.cpp(89): error C3861: 'htonl': identifier not found
+Socket.cpp(90): error C2228: left of '.sin_port' must have class/struct/union
+          type is 'int'
+Socket.cpp(90): error C3861: 'htons': identifier not found
+Socket.cpp(92): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(92): error C3861: 'connect': identifier not found
+Socket.cpp(143): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(145): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(145): error C2065: 'SOCKET_ERROR' : undeclared identifier
+Socket.cpp(145): error C3861: 'recv': identifier not found
+Socket.cpp(156): error C2181: illegal else without matching if
+Socket.cpp(157): error C2065: 'ErrNo' : undeclared identifier
+Socket.cpp(191): error C3861: 'min': identifier not found
+Socket.cpp(193): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(193): error C2065: 'SOCKET_ERROR' : undeclared identifier
+Socket.cpp(193): error C3861: 'send': identifier not found
+Socket.cpp(205): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(224): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(224): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(224): error C2065: 'SOCK_DGRAM' : undeclared identifier
+Socket.cpp(224): error C2065: 'INVALID_SOCKET' : undeclared identifier
+Socket.cpp(224): error C3861: 'socket': identifier not found
+Socket.cpp(231): error C2079: 'Name' uses undefined struct 'SocketUDP::{ctor}::sockaddr_in'
+Socket.cpp(234): error C2228: left of '.sin_family' must have class/struct/union
+          type is 'int'
+Socket.cpp(234): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(235): error C2228: left of '.sin_addr' must have class/struct/union
+          type is 'int'
+Socket.cpp(235): error C2228: left of '.s_addr' must have class/struct/union
+Socket.cpp(235): error C2065: 'INADDR_ANY' : undeclared identifier
+Socket.cpp(235): error C3861: 'htonl': identifier not found
+Socket.cpp(236): error C2228: left of '.sin_port' must have class/struct/union
+          type is 'int'
+Socket.cpp(236): error C3861: 'htons': identifier not found
+Socket.cpp(238): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(238): error C3861: 'bind': identifier not found
+Socket.cpp(277): error C2079: 'from' uses undefined struct 'SocketUDP::LeerByte::sockaddr_in'
+Socket.cpp(285): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(287): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(288): error C2065: 'addrlen' : undeclared identifier
+Socket.cpp(288): error C2065: 'SOCKET_ERROR' : undeclared identifier
+Socket.cpp(287): error C3861: 'recvfrom': identifier not found
+Socket.cpp(298): error C2065: 'ErrNo' : undeclared identifier
+Socket.cpp(312): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(348): error C2079: 'to' uses undefined struct 'SocketUDP::EnviarString::sockaddr_in'
+Socket.cpp(352): error C2228: left of '.sin_family' must have class/struct/union
+          type is 'int'
+Socket.cpp(352): error C2065: 'AF_INET' : undeclared identifier
+Socket.cpp(353): error C2228: left of '.sin_addr' must have class/struct/union
+          type is 'int'
+Socket.cpp(353): error C2228: left of '.s_addr' must have class/struct/union
+Socket.cpp(353): error C3861: 'htonl': identifier not found
+Socket.cpp(354): error C2228: left of '.sin_port' must have class/struct/union
+          type is 'int'
+Socket.cpp(354): error C3861: 'htons': identifier not found
+Socket.cpp(360): error C3861: 'min': identifier not found
+Socket.cpp(362): error C2065: 'SocketDescriptor' : undeclared identifier
+Socket.cpp(363): error C2065: 'SOCKET_ERROR' : undeclared identifier
+Socket.cpp(362): error C3861: 'sendto': identifier not found
+  ssplit.cpp
+  Generating Code...

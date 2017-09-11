@@ -1,0 +1,8 @@
+win + X
+cmd en administrador
+ir al path con los ocx
+registrar
+registrar2
+
+en VS al referenciar Fiscal
+Open the Properties tab for the assembly in VS 2010 and set "Embed Interop Types" to "False".

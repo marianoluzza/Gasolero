@@ -1,0 +1,7 @@
+agregar F4 para deuro                  *******************
+reportes xls                            ?????
+reporte combustibles xls               *******************
+reporte vales xls                      *******************
+vales en cierres por cantidad vendid   *******************
+
+Restaurar el fix.sql (esquemas+sp+atajos+valeentregas)

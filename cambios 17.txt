@@ -1,0 +1,17 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+- Presentacion
+- Logica
+- Datos
+
+- Esq y SP
+
+Tablas:
+- PagoFormas
+- CajaEntregas
+- CajaEntregaItems
+
+cambios: 06/05/2011
+- new formas de pago
+- new entrega de caja
+- fix Informes Z -> Venta Neta y Totales
+- fix cierres -> reintentar CierreZ y guaradado en BD

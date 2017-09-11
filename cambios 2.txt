@@ -1,0 +1,27 @@
+conf monto max a facturar - cota	*******************************
+atajos comb abajo          		*******************************
+etiquetas en facturar  			*******************************
+precio arriba de cant			*******************************
+F10 = añadir item actual		*******************************
+añadir abm al buscar clientes		*******************************
+elegir fila entera			*******************************
+arrancar fact en "Elija opcion" - ninguna opcion por defecto  *********
+alicuota es ali de iva			*******************************
+ImpuestoAbsoluto => Impuesto es %	*******************************
+guardar precio base e imp en la factura *******************************
+mostrar en "preg de q cliente x cuit" el cliente q tenia ese cuit *****
+en la planilla usar el vendedor q cerro la planilla "!ver!!" **********
+aplicar => cerrar turno			*******************************
+cerrar todos > sacar 			*******************************
+planilla -> ver ultimo cierre		*******************************
+ver similar a planilla cuando se esta haciendo el cierre **************
+decimales para cantidad = 2		*******************************
+usar punto para sep de miles		*******************************
+
+mostrar atajo de abm de clientes	*******************************
+alicuota tb guardar en el factitem o monto de iva *********************
+cierre, ver cuando se pasa (ciclo)	*******************************
+mostrar por pantalla diferencia entre facturado y no fact  ************
+
+idvendedor en turno mal seleccionado	*******************************
+mostrar atajos de abm			*******************************

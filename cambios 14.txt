@@ -1,0 +1,13 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+
+
+cambios:
+- agrandado campo numero en fact:
+  ALTER TABLE `gasolero`.`factencabezados` MODIFY COLUMN `Numero` VARCHAR(13) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+- fix reporte
+- fix fecha fiscal en reporte z
+- nvo reporte del mes
+- numero de fact tiene puesto de venta
+- log items fiscales:
+  restore Esq_SP +
+  FactItemFiscales

@@ -1,0 +1,35 @@
+BACKUP!!!! (BD+Petro+Sys)
+
+Restore Esq
+
+CREATE TABLE `gasolero`.`Operaciones` (
+  `IdOperacion` INTEGER UNSIGNED NOT NULL,
+  `Fecha` DATETIME NOT NULL,
+  `CodProducto` smallint(6) COMMENT 'en petrored.mdb',
+  `Cantidad` DECIMAL(5,3) NOT NULL,
+  `IdVehiculo` INTEGER UNSIGNED NOT NULL,
+  `IdLlave` INTEGER UNSIGNED NOT NULL,
+  `Odometro` INTEGER NOT NULL,
+  `IdValeEntrega` INTEGER UNSIGNED NOT NULL,
+  PRIMARY KEY (`IdOperacion`)
+)
+ENGINE = InnoDB;
+
+
+ALTER TABLE `gasolero`.`Operaciones` ADD CONSTRAINT `FK_Operaciones_ValeEntregas` FOREIGN KEY `FK_Operaciones_ValeEntregas` (`IdValeEntrega`)
+    REFERENCES `valeentregas` (`IdValeEntrega`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+
+
+CREATE TABLE `gasolero`.`Vehiculos` (
+  `IdVehiculo` INTEGER UNSIGNED NOT NULL,
+  `Descripcion` VARCHAR(200) NOT NULL,
+  `IdInterna` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`IdVehiculo`)
+)
+ENGINE = InnoDB;
+
+
+VerFix en settings
+FixVehiculos

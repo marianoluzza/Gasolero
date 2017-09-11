@@ -1,0 +1,48 @@
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\ResolveAssemblyReference.cache
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\conn.ini
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\Negocio.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\Negocio.pdb
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\DAL.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MarUtils.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\DAL.pdb
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MarUtils.xml
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\Negocio.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\Negocio.pdb
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MySql.Data.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MySql.Data.xml
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\conn.ini
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\Negocio.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\Negocio.pdb
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\DAL.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MarUtils.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MySql.Data.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\DAL.pdb
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MySql.Data.xml
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MarUtils.xml
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\ResolveAssemblyReference.cache
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\Negocio.dll
+E:\Mis Docs\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\Negocio.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\conn.ini
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\Negocio.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\Negocio.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\DAL.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MarUtils.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\DAL.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MySql.Data.xml
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Debug\MarUtils.xml
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\Negocio.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Debug\Negocio.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\conn.ini
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\Negocio.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\Negocio.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\DAL.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MarUtils.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MySql.Data.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\DAL.pdb
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MySql.Data.xml
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\bin\Release\MarUtils.xml
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\Negocio.dll
+C:\Documents and Settings\XPMUser\Mis documentos\Visual Studio 2005\Projects\Gasolero\Negocio\obj\Release\Negocio.pdb

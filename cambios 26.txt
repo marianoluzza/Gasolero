@@ -1,0 +1,5 @@
+PENDIENTE - USAR cambios 25
+
+- restaurar esq_sp + conceptos + gastos
+
+ALTER TABLE `gasolero`.`articulos` ADD COLUMN `CodRendicion` VARCHAR(5) AFTER `CodProducto`;

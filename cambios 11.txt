@@ -1,0 +1,31 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+
+restore esq_sp
+
+agregado de sp (DAL.dll) (Negocio.dll)
+ 
+cambios:
+- Reporte x Z (gasolero.exe)
+- Fiscal (gasolero.exe)
+- Fiscal, graba los Z (gasolero.exe, negocio y DAL)
+
+
+
+TABLA para Z's:
+
+CREATE TABLE `gasolero`.`ZCierres` (
+  `IdZCierre` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Fecha` DATETIME NOT NULL,
+  `IdVendedor` INTEGER UNSIGNED NOT NULL,
+  PRIMARY KEY (`IdZCierre`)
+)
+ENGINE = InnoDB;
+
+
+ALTER TABLE `gasolero`.`ZCierres` ADD CONSTRAINT `ZCierres_IdVendedor` FOREIGN KEY `ZCierres_IdVendedor` (`IdVendedor`)
+    REFERENCES `vendedores` (`IdVendedor`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+
+
+ALTER TABLE `gasolero`.`zcierres` ADD INDEX `index_Fecha`(`Fecha`);

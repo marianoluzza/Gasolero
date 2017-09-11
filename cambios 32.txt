@@ -1,0 +1,39 @@
+ABM CCAutorizados   ********************LISTO
+Venta en CC con autorizados   **********LISTO
+Reportes de saldo de CC  ***************LISTO
+Ver saldo de CC en Ventas   ************LISTO
+Quitar saldo en reporte diario de CC ***LISTO
+Ver envío de email en carga de CC  *****LISTO
+Forma de Pago en CC	****************LISTO
+
+
+Ver PausaEntreFiscal en VM
+
+BACKUP!!!! (BD+Petro+Sys)
+RESTORE en gasolero15
+CALL _Del('2015-01-01');
+CALL _Update32();
+
+CREATE TABLE `gasolero`.`CCAutorizados` (
+  `IdCCAutorizado` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Nombre` VARCHAR(100) NOT NULL,
+  `DNI` VARCHAR(10) NOT NULL,
+  `Patente` VARCHAR(8) NOT NULL,
+  `IdCliente` INTEGER UNSIGNED NOT NULL,
+  PRIMARY KEY (`IdCCAutorizado`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `gasolero`.`ccautorizados` ADD CONSTRAINT `FK_ccautorizados_IdCliente` FOREIGN KEY `FK_ccautorizados_IdCliente` (`IdCliente`)
+    REFERENCES `clientes` (`IdCliente`)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
+
+ALTER TABLE `gasolero`.`ccautorizados` ADD UNIQUE INDEX `Index_UNICO`(`DNI`, `Patente`, `IdCliente`);
+
+ALTER TABLE `gasolero`.`ccmovimientos` ADD COLUMN `DNIAutorizado` VARCHAR(10) DEFAULT '' AFTER `Descripcion`,
+ ADD COLUMN `PatenteAutorizado` VARCHAR(8) DEFAULT '' AFTER `DNIAutorizado`,
+ ADD COLUMN `NombreAutorizado` VARCHAR(100) DEFAULT '' AFTER `PatenteAutorizado`,
+ ADD COLUMN `IdPagoForma` INTEGER UNSIGNED NOT NULL DEFAULT 3 AFTER `NombreAutorizado`;
+
+UPDATE ccmovimientos SET IdPagoForma = 1 WHERE Monto>0;

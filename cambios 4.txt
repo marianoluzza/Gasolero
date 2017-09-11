@@ -1,0 +1,21 @@
+3 decimales para articulos y 8 enteros para venta maxima (igual que cierres)
+ALTER TABLE `gasolero`.`articulos` MODIFY COLUMN `Precio` DECIMAL(10,3) NOT NULL DEFAULT '0.000',
+ MODIFY COLUMN `VentaMaxima` DECIMAL(11,3) DEFAULT '0.000',
+ MODIFY COLUMN `Impuesto` DECIMAL(8,3) NOT NULL;
+
+
+decimales de cierre 3 y 8 enteros
+ALTER TABLE `gasolero`.`cierres` MODIFY COLUMN `Entrada` DECIMAL(11,3) NOT NULL DEFAULT '0.000',
+ MODIFY COLUMN `Salida` DECIMAL(11,3) NOT NULL DEFAULT '0.000',
+ MODIFY COLUMN `Costo` DECIMAL(10,3) NOT NULL DEFAULT '0.000' COMMENT 'Costo unitario';
+
+coherencia con facturas
+ALTER TABLE `gasolero`.`factitems` MODIFY COLUMN `Cantidad` DECIMAL(11,3) NOT NULL,
+ MODIFY COLUMN `Monto` DECIMAL(11,3) NOT NULL,
+ MODIFY COLUMN `Precio` DECIMAL(11,3) NOT NULL,
+ MODIFY COLUMN `Impuestos` DECIMAL(11,3) NOT NULL,
+ MODIFY COLUMN `IVA` DECIMAL(11,3) NOT NULL;
+
+con puestos
+ALTER TABLE `gasolero`.`puestos` MODIFY COLUMN `Ciclo` DECIMAL(11,3) NOT NULL,
+ MODIFY COLUMN `Margen` DECIMAL(11,3) NOT NULL;

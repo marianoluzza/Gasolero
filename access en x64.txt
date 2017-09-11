@@ -1,0 +1,45 @@
+The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+
+You are getting this error because the Jet driver you have installed need 32 bit OS & system to function, Here’s how to update to a new 64-bit compatible database engine:
+
+1/ Download the Microsoft Access Database Engine 2010 Redistributable, you can choose from the 32 bit or 64 bit version depending on your machine and install it on your server
+
+http://www.microsoft.com/download/en/details.aspx?id=13255
+(AccessDatabaseEngine_X64.exe en Dropbox\Base de Datos)
+
+2/ in your application or website code, update the connection string from “Provider=Microsoft.Jet.OLEDB.4.0; “  to  “Provider=Microsoft.ACE.OLEDB.12.0;”
+
+3/ recompile and run your application
+
+That’s all, but if you don’t want to use the new OLEDB you still can force the Jet OLEDB 4.0 to run on a 64 bit environment : http://www.codicode.com/art/the_microsoft_jet_oledb_4_0_prov.aspx
+___________________________
+USO DE AccessDatabaseEngine
+___________________________
+
+Nota: antes de instalar esta descarga, quite las versiones anteriores del motor de base de datos de Access del equipo. Para hacerlo, seleccione Agregar o quitar programas en el Panel de control. 
+
+Para instalar esta descarga:
+Descargue el archivo haciendo clic en el botón Descargar y guarde los archivos en el disco duro.
+Haga doble clic en el archivo de programa AccessDatabaseEngine.exe del disco duro para iniciar el programa de instalación.
+Siga las instrucciones que aparecen en pantalla para completar la instalación.
+Para usar esta descarga:
+Si es usuario de una aplicación, consulte la documentación de ésta para obtener detalles acerca de cómo usar el controlador adecuado.
+Si es un desarrollador de aplicaciones que usa OLEDB, establezca el argumento de proveedor de la propiedad ConnectionString en “Microsoft.ACE.OLEDB.12.0”. 
+
+Si va a conectarse a datos de Microsoft Office Excel, agregue las propiedades extendidas adecuadas de la cadena de conexión OLEDB en función del tipo de archivo de Excel. 
+
+Tipo de archivo (extensión)                                             Propiedades extendidas
+---------------------------------------------------------------------------------------------
+Libro de Excel 97-2003 (.xls)                                  "Excel 8.0"
+Libro de Excel 2007-2010 (.xlsx)                             "Excel 12.0 Xml"
+Libro de Excel 2007-2010 habilitado para macros (.xlsm)      "Excel 12.0 Macro"
+Libro de Excel 2007-2010 binario no XML (.xlsb)      "Excel 12.0"
+
+Si es un desarrollador de aplicaciones que usa ODBC para conectarse a los datos de Microsoft Office Access, establezca la cadena de conexión en “Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=ruta del archivo mdb/accdb”.
+Si es un desarrollador de aplicaciones que usa ODBC para conectarse a los datos de Microsoft Office Excel, establezca la cadena de conexión en “Driver={Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)};DBQ=ruta del archivo xls/xlsx/xlsm/xlsb”.
+Para quitar esta descarga: 
+Para quitar el archivo de descarga en cuestión, elimine el archivo AccessDatabaseEngine.exe. 
+En el menú Inicio, seleccione Configuración y haga clic en Panel de control.
+Haga doble clic en Agregar o quitar programas.
+En la lista de programas instalados actualmente, seleccione “Microsoft Office Access database engine 2010” que desea desinstalar y, a continuación, haga clic en Quitar o Agregar o quitar. Si aparece un cuadro de diálogo, siga las instrucciones para quitar el programa.
+Haga clic en Sí o en Aceptar para confirmar que desea quitar el programa.

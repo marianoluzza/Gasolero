@@ -1,0 +1,12 @@
+BACKUP!!!!
+
+Restore Esq
+
+Agregar articulo moneda
+
+Agregar puesto
+
+ALTER TABLE `gasolero`.`articulos` ADD COLUMN `Facturar` BOOLEAN NOT NULL DEFAULT true AFTER `CodProducto`;
+
+update articulos set Facturar = false where idarticulo = 7;
+

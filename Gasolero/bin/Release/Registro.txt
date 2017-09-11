@@ -1,0 +1,16 @@
+23/04/2017 1:02:41 ---------------INICIO-----------------
+23/04/2017 1:02:41 en Void WinIOError(Int32, System.String) -> No se pudo encontrar el archivo 'E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Release\conn.ini'.
+23/04/2017 1:02:41  Data en excepcion:
+23/04/2017 1:02:41  Fin Data.---------
+23/04/2017 1:02:41 ------------------
+23/04/2017 1:02:41  Stack Trace:
+23/04/2017 1:02:41    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   en System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   en DAL.Datos.Init() en E:\Mis Docs\Dropbox\Sistemas\Gasolero\DAL\Datos.cs:línea 18
+   en Negocio.Reglas.Init(String pathConfig) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Negocio\Reglas.cs:línea 286
+   en Gasolero.Program.Main(String[] args) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Program.cs:línea 52
+23/04/2017 1:02:41  Fin Stack Trace.---------
+23/04/2017 1:02:41 ---------------FIN-------------------

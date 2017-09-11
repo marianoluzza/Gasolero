@@ -1,0 +1,5 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+
+cambios:
+- Cierre Z en 1ra venta (opc) (gasolero.exe)
+- NC manual

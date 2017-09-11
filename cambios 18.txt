@@ -1,0 +1,32 @@
+Release
+//- Esq y SP
+
+Tablas:
+DELETE FROM `gasolero`.`turnos` WHERE `IdTurno`='1932';
+ALTER TABLE `gasolero`.`turnos` AUTO_INCREMENT = 1932 ;
+
+
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24694';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24695';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24696';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24697';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24698';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24699';
+
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24700';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24701';
+
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24702';
+DELETE FROM `gasolero`.`cierres` WHERE `IdCierre`='24703';
+
+
+VER:
+SELECT idcierre,surtidor,entrada,salida,(salida-entrada) as dif, costo, idvendedor, turno FROM `gasolero`.`cierres` 
+where turno >= 1931
+order by surtidor, idcierre;
+
+
+SELECT `gasolero`.`turnos` where numero >= 1931;
+
+
+fix: guardar ccierre corregido (modificar un cierre a mano)

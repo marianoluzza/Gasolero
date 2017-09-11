@@ -1,0 +1,4 @@
+Modificar entrada en cierre => SuperUsuario
+Modificar permisos => >Vendedor
+Cierres parciales => >Vendedor
+Reportes => >Vendedor

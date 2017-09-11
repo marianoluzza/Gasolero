@@ -1,0 +1,79 @@
+ver formas de pago ABM
+elegir forma de pago  *******LISTO
+guardar forma de pago *******LISTO
+generar mov cc de fact  *****LISTO
+generar mov cc de NC  *******LISTO
+generar pagos cc ************LISTO
+filtrar cc por monto ********LISTO
+ver cc  *********************LISTO
+ccmov en cierre *************PROBAR+
+tarjeta en cierre ***********LISTO
+emitir recibo  **************LISTO
+emitir cc comprobante *******LISTO
+limite de venta por ítem ****LISTO
+habilitar cc en clientes ****LISTO
+envio de emails  ************LISTO
+movimientos al cierre  ******LISTO
+vta max x volumen  **********LISTO
+saldo a favor cliente   *****LISTO
+deuda maxima     ************LISTO
+enviar informe pdf de cc  ***LISTO
+
+
+BACKUP!!!! (BD+Petro+Sys)
+
+Restore Esq
+ALTER TABLE `gasolero`.`clientes` ADD COLUMN `SaldoAdvertencia` DECIMAL(9,2) AFTER `Exento`,
+ ADD COLUMN `SaldoMaximo` DECIMAL(9,2) AFTER `SaldoAdvertencia`;
+update clientes set saldomaximo=0,saldoadvertencia=0;
+
+Settings: 
+PagoCC
+PagoTarjeta
+
+
+CREATE TABLE  `gasolero`.`pagoformas` (
+  
+	`IdPagoForma` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  
+	`Descripcion` varchar(45) NOT NULL,
+  
+	`SumaAlTotal` tinyint(1) NOT NULL,
+  
+	`Orden` int(10) unsigned NOT NULL,
+  
+	`Habilitado` tinyint(1) NOT NULL,
+  
+	PRIMARY KEY (`IdPagoForma`),
+  
+	KEY `Index_HabilitadoOrden` (`Habilitado`,`Orden`),
+  
+	KEY `Index_Orden` (`Orden`,`IdPagoForma`) USING BTREE
+
+) 
+ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `gasolero`.`CCMovimientos` (
+  `IdCCMovimiento` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Fecha` DATETIME NOT NULL,
+  `Monto` DECIMAL(9,2) NOT NULL,
+  `IdCliente` INTEGER UNSIGNED NOT NULL,
+  `IdVendedor` INTEGER UNSIGNED NOT NULL,
+  `IdFactEncabezado` INTEGER UNSIGNED,
+  `Descripcion` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`IdCCMovimiento`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE CCMovimientos AUTO_INCREMENT=10;
+ALTER TABLE `gasolero`.`factencabezados` ADD COLUMN `IdPagoForma` INTEGER UNSIGNED AFTER `Anula`;
+
+update factencabezados set idpagoforma = 1;
+
+ALTER TABLE `gasolero`.`clientes` ADD COLUMN `Email` VARCHAR(45) AFTER `SaldoMaximo`;
+update clientes set email = '';
+
+Cambiar máximos por ítem
+
+ver los chequeos por fiscal extra para cc
+hacer comp de cc

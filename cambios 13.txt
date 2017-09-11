@@ -1,0 +1,7 @@
+de ahora en mas reportar si hubo cambios en dlls dependientes, ya que se usan de release
+
+
+cambios:
+- formCom actualizado
+- desplazamiento en selector de clientes x teclado
+- unica instancia de programa

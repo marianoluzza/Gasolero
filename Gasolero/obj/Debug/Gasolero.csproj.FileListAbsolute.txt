@@ -1,0 +1,94 @@
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Interop.FiscalPrinterLib.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csproj.ResolveComReference.cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\mysqldump.exe
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\config.ini
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gasolero.exe
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gasolero.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\BarChart.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\EPPlus.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\FormCom.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gios Pdf.NET.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MarUtils.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Negocio.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Yogesh.ExcelXml.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Yogesh.Extensions.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\INIFileParser.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DAL.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MySql.Data.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Negocio.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\EPPlus.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\FormCom.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gios Pdf.NET.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MarUtils.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\INIFileParser.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DAL.pdb
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MySql.Data.xml
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Interop.FiscalPrinterLib.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csprojResolveAssemblyReference.cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.AccessQuery.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CCierre.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CGastos.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.LVVisor.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CVentas.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FactFiltro.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FrmMain.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FrmPreg.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.PanelLogin.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Planilla.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Properties.Resources.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.QFiltro.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Recursos.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CBarChart.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CEntregas.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.ZCierresFiltro.resources
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csproj.GenerateResource.Cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.exe
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.pdb
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Interop.FiscalPrinterLib.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csproj.ResolveComReference.cache
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.exe
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.pdb
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csprojResolveAssemblyReference.cache
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.AccessQuery.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CCierre.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CGastos.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.LVVisor.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CVentas.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FactFiltro.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FrmMain.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.FrmPreg.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.PanelLogin.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Planilla.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Properties.Resources.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.QFiltro.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.Recursos.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CBarChart.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.CEntregas.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.ZCierresFiltro.resources
+D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Debug\Gasolero.csproj.GenerateResource.Cache
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\mysqldump.exe
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\config.ini
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gasolero.exe
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gasolero.pdb
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\BarChart.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\EPPlus.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\FormCom.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gios Pdf.NET.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MarUtils.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Negocio.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Yogesh.ExcelXml.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Yogesh.Extensions.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\INIFileParser.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DAL.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MySql.Data.dll
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Negocio.pdb
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\EPPlus.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\FormCom.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Gios Pdf.NET.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MarUtils.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\INIFileParser.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DAL.pdb
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MySql.Data.xml
+D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Interop.FiscalPrinterLib.dll
