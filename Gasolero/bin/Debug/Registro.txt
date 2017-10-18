@@ -70,3 +70,111 @@
 05/09/2017 14:47:37    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
 05/09/2017 14:47:37  Fin Stack Trace.---------
 05/09/2017 14:47:37 ---------------FIN-------------------
+12/10/2017 22:15:09 ---------------INICIO-----------------
+12/10/2017 22:15:09 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+12/10/2017 22:15:09  Data en excepcion:
+12/10/2017 22:15:09  Fin Data.---------
+12/10/2017 22:15:09 ------------------
+12/10/2017 22:15:09  Stack Trace:
+12/10/2017 22:15:09    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+12/10/2017 22:15:09  Fin Stack Trace.---------
+12/10/2017 22:15:09 ---------------FIN-------------------
+12/10/2017 22:15:09 ---------------INICIO-----------------
+12/10/2017 22:15:09 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+12/10/2017 22:15:09  Data en excepcion:
+12/10/2017 22:15:09  Fin Data.---------
+12/10/2017 22:15:09 ------------------
+12/10/2017 22:15:09  Stack Trace:
+12/10/2017 22:15:09    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+12/10/2017 22:15:09  Fin Stack Trace.---------
+12/10/2017 22:15:09 ---------------FIN-------------------
+12/10/2017 22:16:24 ---------------INICIO-----------------
+12/10/2017 22:16:24 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+12/10/2017 22:16:24  Data en excepcion:
+12/10/2017 22:16:24  Fin Data.---------
+12/10/2017 22:16:24 ------------------
+12/10/2017 22:16:24  Stack Trace:
+12/10/2017 22:16:24    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+12/10/2017 22:16:24  Fin Stack Trace.---------
+12/10/2017 22:16:24 ---------------FIN-------------------
+12/10/2017 22:16:40 ---------------INICIO-----------------
+12/10/2017 22:16:40 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+12/10/2017 22:16:40  Data en excepcion:
+12/10/2017 22:16:40  Fin Data.---------
+12/10/2017 22:16:40 ------------------
+12/10/2017 22:16:40  Stack Trace:
+12/10/2017 22:16:40    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+12/10/2017 22:16:40  Fin Stack Trace.---------
+12/10/2017 22:16:40 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------
+17/10/2017 22:13:32 ---------------INICIO-----------------
+17/10/2017 22:13:32 en MarUtils.Soporte.ABMResultado Imprimir(Negocio.Cliente, Negocio.FactEncabezado) -> No se pudo recuperar el generador de clases COM para el componente con CLSID {267528BE-D4B6-4D35-93F2-A67B56AC7FF9} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+17/10/2017 22:13:32  Data en excepcion:
+17/10/2017 22:13:32  Fin Data.---------
+17/10/2017 22:13:32 ------------------
+17/10/2017 22:13:32  Stack Trace:
+17/10/2017 22:13:32    en Gasolero.Fiscal.Imprimir(Cliente cli, FactEncabezado fact) en E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\Fiscal.cs:línea 24
+17/10/2017 22:13:32  Fin Stack Trace.---------
+17/10/2017 22:13:32 ---------------FIN-------------------

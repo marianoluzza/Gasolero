@@ -17,6 +17,8 @@ namespace Gasolero
 		#region Imprimir
 		public static ABMResultado Imprimir(Cliente cli, FactEncabezado fact)
 		{
+			if (!Reglas.UsarFiscal)
+				return new ABMResultado(fact.IdFactEncabezado);
 			bool exito = false;
 			ABMResultado res;
 			try
