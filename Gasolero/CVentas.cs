@@ -688,7 +688,7 @@ namespace Gasolero
 						if (abmRes.CodigoError != enErrores.Ninguno)
 							MessageBox.Show(abmRes.MensajeError, "Error al actualizar movimiento de CC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
-					if (Reglas.UsarFiscal)
+					if (AppConfig.UsarFiscal)
 					{
 						abmRes = Fiscal.Imprimir(_cliente, _factura);
 						if (abmRes.CodigoError != enErrores.Ninguno)
@@ -919,7 +919,7 @@ namespace Gasolero
 					MessageBox.Show(abmRes.MensajeError, "Error al emitir", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
 				}
-				if (Reglas.UsarFiscal)
+				if (AppConfig.UsarFiscal)
 				{
 					abmRes = Fiscal.Imprimir(_cliente, _factura);
 					if (abmRes.CodigoError != enErrores.Ninguno)

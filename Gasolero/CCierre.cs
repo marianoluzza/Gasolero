@@ -9,6 +9,7 @@ using MarUtils.Controles;
 using Negocio;
 using MarUtils.Soporte;
 using FormCom;
+using DataLinkLibrary;
 
 namespace Gasolero
 {
@@ -97,13 +98,20 @@ namespace Gasolero
 				tb1In.TabStop = false;
 				tb1In.Location = new Point(txtEntrada.Location.X, txtEntrada.Location.Y + (txtEntrada.Size.Height + 8) * i);
 				txtEntrada.Parent.Controls.Add(tb1In);
-				//
-				//Salida
-				tb2Out = new MoneyTextBox(8, 3, "", ",", ".");
+                //
+                //Salida
+                tb2Out = new MoneyTextBox(8, 3, "", ",", ".");
 				//tb2Out = new MoneyTextBox(8, 3, "", ".");
 				tb2Out.Name = name;
-				tb2Out.ReadOnly = false;
-				tb2Out.Size = txtSalida.Size;
+                //-------------- ZEEB ---------------
+                //Boton Obtener Aforador
+                uint idPuesto = UInt32.Parse(name);
+                idPuesto++; // para corregir desfasaje de numeracion (entre BD y Sistema)
+                Puesto puesto = Puesto.GetSingleE(idPuesto);
+				//tb2Out.ReadOnly = false;
+				tb2Out.ReadOnly = (puesto.SurtidorVOX != 0 && !Reglas.EditarSalidaVOX); //(esto se carga solo al inicio)
+                //-------------- /ZEEB ---------------
+                tb2Out.Size = txtSalida.Size;
 				tb2Out.TabIndex = 2 + i * 2;
 				tb2Out.Location = new Point(txtSalida.Location.X, txtSalida.Location.Y + (txtSalida.Size.Height + 8) * i);
 				tb2Out.ValorCambiado += new EventHandler(TBSalida_ValorCambiado);
@@ -115,13 +123,32 @@ namespace Gasolero
 				bm.Name = name;
 				bm.Size = BMod.Size;
 				bm.Text = BMod.Text;
-				bm.TabIndex = Reglas.CantidadPuestos * 2 + 5 + i;
-				bm.Location = new Point(BMod.Location.X, BMod.Location.Y + (BMod.Size.Height + 8) * i);
+                bm.TabIndex = Reglas.CantidadPuestos * 2 + 5 + i;
+                bm.Location = new Point(BMod.Location.X, BMod.Location.Y + (BMod.Size.Height + 8) * i);
 				bm.Click += new EventHandler(BMod_Click);
 				BMod.Parent.Controls.Add(bm);
-				//
-				//Check ¿cerrar puesto?
-				chb = new CheckBox();
+
+                //-------------- ZEEB ---------------
+                //Boton Obtener Aforador
+                idPuesto = UInt32.Parse(name);
+                idPuesto++; // para corregir desfasaje de numeracion (entre BD y Sistema)
+                puesto = Puesto.GetSingleE(idPuesto);
+                //MessageBox.Show("Puesto: " + puesto.IdPuesto + "\nSurtidor: " + puesto.SurtidorVOX + "\nManguera: " + puesto.MangueraVOX);
+                Button bmObtAfo = new Button();
+                bmObtAfo.Name = name;
+                bmObtAfo.Size = btnObtenerAforador.Size;
+                bmObtAfo.Text = btnObtenerAforador.Text;
+                //bmObtAfo.TabIndex = Reglas.CantidadPuestos * 2 + 5 + i;
+                bmObtAfo.TabIndex = 4 + i * 2;
+                bmObtAfo.Location = new Point(btnObtenerAforador.Location.X, btnObtenerAforador.Location.Y + (btnObtenerAforador.Size.Height + 8) * i);
+                bmObtAfo.Visible = puesto.SurtidorVOX != 0;
+                bmObtAfo.Click += new EventHandler(btnObtenerAforador_Click);
+                btnObtenerAforador.Parent.Controls.Add(bmObtAfo);
+                //-------------- /ZEEB ---------------
+
+                //
+                //Check ¿cerrar puesto?
+                chb = new CheckBox();
 				chb.Name = name;
 				chb.AutoSize = false;
 				chb.Size = chbCerrar.Size;
@@ -1246,5 +1273,75 @@ namespace Gasolero
 			idParcial = id;
 			return res;
 		}
-	}
+
+        //-------------- ZEEB ---------------
+        private void btnObtenerAforador_Click(object sender, EventArgs e)
+        {
+            Button b = sender as Button;
+            CCDatos cc = _cierreDatos[b.Name];
+            uint idPuesto = UInt32.Parse(b.Name);
+            idPuesto++; // para corregir desfasaje de numeracion (entre BD y Sistema)
+            Puesto puesto = Puesto.GetSingleE(idPuesto);
+            //MessageBox.Show("Puesto: " + puesto.IdPuesto + "\nSurtidor: " + puesto.SurtidorVOX + "\nManguera: " + puesto.MangueraVOX);
+            if (puesto.SurtidorVOX != 0)
+            {
+                //MessageBox.Show("IPVOX: " + AppConfig.IPVOX);
+                //Controller Controlador = new Controller("192.168.5.122");
+                Controller Controlador = new Controller(AppConfig.IPVOX);
+                //Controller Controlador = new Controller("DEMO");
+                if (!Controlador.IsLicenseValid())
+                { 
+                    //Console.WriteLine("Licencia Inválida");
+                    MessageBox.Show("Licencia Inválida");
+                }
+                //Controller Controlador = new Controller("192.168.5.122");
+                Controlador.ConectarControlador(AppConfig.IPVOX);
+                //Controlador.ConectarControlador("DEMO");
+                if (!Controlador.Conectado())
+                {
+                    string msjError = "";
+                    switch (Controlador.ObtenerUltimoError())
+                    {
+                        case "E5":
+                            msjError = "Error en Parámetros, formato de parámetro incorrecto.";
+                            break;
+                        case "E6":
+                            //msjError = "El Controlador se encuentra Desconectado.Es necesario llamar la función ConectarControlador()";
+                            msjError = "El Controlador se encuentra Desconectado.";
+                            break;
+                        case "E7":
+                            //msjError = "Error interno del sistema. En caso de persistir un error con valor E7, por favor comuníquese con el Soporte Técnico de DataOil S.R.L.";
+                            msjError = "Error interno del sistema VOX. En caso de persistir, por favor comuníquese con el Soporte Técnico de DataOil S.R.L.";
+                            break;
+                        case "E8":
+                            msjError = "Error de Licencia.La licencia de la Librería que intenta utilizar no es compatible con su Controlador.";
+                            break;
+                    }
+                    MessageBox.Show("Fallo de conexión\n\n" + msjError);
+                }
+                else
+                {
+                    int surtidor = puesto.SurtidorVOX;
+                    int manguera = puesto.MangueraVOX;
+                    string respuesta = Controlador.ObtenerAforador(surtidor.ToString());
+
+                    //Console.WriteLine(Controlador.ObtenerAforador("1"));
+                    // respuesta = MMMMMMMM~MMMMMMMM~MMMMMMMM~MMMMMMMM~VVVVVVVV~VVVVVVVV~VVVVVVVV~VVVVVVVV~PPPPPP~PPPPPP~PPPPPP~PPPPPP
+                    // M=Monto, V=Volumen, P=Precio
+                    // 4*8~4*8~4*6
+                    //string aforadorPuesto1 = respuesta.Substring(36, 8);
+                    //string aforadorPuesto2 = respuesta.Substring(45, 8);
+                    //string aforadorPuesto3 = respuesta.Substring(54, 8);
+                    //string aforadorPuesto4 = respuesta.Substring(63, 8);
+
+                    int indice = (4 + manguera)*9;
+                    string aforador = respuesta.Substring(indice,6) + "," + respuesta.Substring(indice+6,2);
+                    cc.salida.Valor = Convert.ToDecimal(aforador);
+                    //MessageBox.Show("Salida cambiada\n\nPuesto: " + puesto.IdPuesto + "\nSurtidor: " + surtidor + "\nManguera: " + manguera + "\nIndice: " + indice + "\nRespuesta: " + respuesta + "\nSalida: " + aforador);
+                }
+            }
+        }
+        //-------------- /ZEEB ---------------
+
+    }
 }

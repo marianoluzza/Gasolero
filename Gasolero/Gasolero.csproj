@@ -91,6 +91,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BarChart.dll</HintPath>
     </Reference>
+    <Reference Include="DataLinkLibrary">
+      <HintPath>..\DataLinkLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="EPPlus">
       <HintPath>..\EPPlus.dll</HintPath>
     </Reference>

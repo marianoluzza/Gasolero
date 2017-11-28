@@ -1769,7 +1769,7 @@ namespace Gasolero
 			ModelosDeImpresoras res = ModelosDeImpresoras.MODELO_715;
 			try
 			{
-				int modelo = Reglas.ModeloFiscal;
+				int modelo = AppConfig.ModeloFiscal;
 				switch (modelo)
 				{
 					case 441:

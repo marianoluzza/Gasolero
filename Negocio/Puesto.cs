@@ -48,6 +48,20 @@ namespace Negocio
 			get { return _IdArticulo; }
 			set { _IdArticulo = value; }
 		}
+
+		System.Int32 _SurtidorVOX = 0;
+		public System.Int32 SurtidorVOX
+		{
+			get { return _SurtidorVOX; }
+			set { _SurtidorVOX = value; }
+		}
+
+		System.Int32 _MangueraVOX = 0;
+		public System.Int32 MangueraVOX
+		{
+			get { return _MangueraVOX; }
+			set { _MangueraVOX = value; }
+		}
 		#endregion
 
 		#region Constructores
@@ -59,6 +73,8 @@ namespace Negocio
 			Ciclo = decimal.Parse(r["Ciclo"].ToString());
 			Margen = decimal.Parse(r["Margen"].ToString());
 			IdArticulo = uint.Parse(r["IdArticulo"].ToString());
+			SurtidorVOX = int.Parse(r["SurtidorVOX"].ToString());
+			MangueraVOX = int.Parse(r["MangueraVOX"].ToString());
 		}
 
 		#endregion

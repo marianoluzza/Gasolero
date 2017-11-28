@@ -92,3 +92,4 @@ D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\INIFileParser.xml
 D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DAL.pdb
 D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\MySql.Data.xml
 D:\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\Interop.FiscalPrinterLib.dll
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Debug\DataLinkLibrary.dll

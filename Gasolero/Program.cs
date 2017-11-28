@@ -49,7 +49,7 @@ namespace Gasolero
 			{
 				string pathConfig = _args.ContainsKey("-config") ? _args["-config"] : Path.Combine(RutaInicial, "config.ini");
 				Reglas.Init(pathConfig);
-				SinFiscal = !Reglas.UsarFiscal;
+				SinFiscal = !AppConfig.UsarFiscal;
 			}
 			catch (Exception ex)
 			{

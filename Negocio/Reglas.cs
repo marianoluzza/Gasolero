@@ -274,6 +274,12 @@ namespace Negocio
 			set { DAL.Datos.SettingsSet("EnviarEmail", value.ToString()); }
 		}
 
+		public static bool EditarSalidaVOX
+		{
+			get { return DAL.Datos.SettingsGet("EditarSalidaVOX") == bool.TrueString; }
+			set { DAL.Datos.SettingsSet("EditarSalidaVOX", value.ToString()); }
+		}
+
 		/// <summary>
 		/// Init
 		/// </summary>

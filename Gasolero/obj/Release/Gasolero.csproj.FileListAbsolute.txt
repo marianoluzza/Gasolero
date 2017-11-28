@@ -92,3 +92,4 @@ D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Release\Gasolero.CBarChart.resources
 D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Release\Gasolero.CEntregas.resources
 D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Release\Gasolero.ZCierresFiltro.resources
 D:\Dropbox\Sistemas\Gasolero\Gasolero\obj\Release\Gasolero.csproj.GenerateResource.Cache
+E:\Mis Docs\Dropbox\Sistemas\Gasolero\Gasolero\bin\Release\DataLinkLibrary.dll

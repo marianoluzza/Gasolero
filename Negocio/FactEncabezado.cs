@@ -163,9 +163,12 @@ namespace Negocio
 			return DAL.Datos.FactEncabezadosGetNumero();
 		}
 
-		public static decimal GetTotalMaximo()
+		public static decimal GetTotalMaximo(uint idPagoForma = 1)
 		{
-			return DAL.Datos.FactEncabezadosGetTotalMaximo();
+			if (idPagoForma == Reglas.PagoTarjeta)
+				return DAL.Datos.FactEncabezadosGetTotalMaximo();
+			else
+				return DAL.Datos.FactEncabezadosGetTotalMaximo();
 		}
 
 		public static decimal GetTotalVentas(DateTime dde, DateTime hta, uint idPagoForma)

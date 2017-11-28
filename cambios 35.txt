@@ -1,0 +1,16 @@
+Arreglo en control Fiscal ***********LISTO
+PuestoFiscal en config.ini  *********LISTO
+Toma de valores de VOX   ************LISTO
+
+BACKUP!!!! (BD+Petro+Sys)
+OJO con config.ini ver valores! 
+
+
+VALORES NUEVOS EN CONFIG.INI:
+UsarFiscal
+PuertoFiscal
+ModeloFiscal
+IPVOX
+
+INSERT INTO Settings (Nombre,Valor) VALUES ("Version",35);
+INSERT INTO Settings (Nombre,Valor) VALUES ("EditarSalidaVOX",True);

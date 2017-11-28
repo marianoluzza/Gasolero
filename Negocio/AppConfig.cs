@@ -21,6 +21,23 @@ namespace Negocio
 		}
 
 		/// <summary>
+		/// Dice si existe la clave en el config
+		/// </summary>
+		public static bool Existe(string key, string seccion = "General")
+		{
+			try
+			{
+				string obj = "";
+				return _data.TryGetKey(seccion + _data.SectionKeySeparator.ToString() + key, out obj);
+			}
+			catch (Exception ex)
+			{
+				Reglas.AddLog(ex);
+				return false;
+			}
+		}
+
+		/// <summary>
 		/// Ultimo usuario de la app
 		/// </summary>
 		public static uint UltimoUsuario
@@ -469,7 +486,7 @@ namespace Negocio
 		{
 			get
 			{
-				enCierreZ1raVenta res =  enCierreZ1raVenta.SoloDia1EnMedianoche00;
+				enCierreZ1raVenta res = enCierreZ1raVenta.SoloDia1EnMedianoche00;
 				try
 				{
 					res = (enCierreZ1raVenta)uint.Parse(_data["General"]["CierreZ1raVenta"]);
@@ -504,12 +521,181 @@ namespace Negocio
 		}
 
 		public enum enCierreZ1raVenta
-		{ 
+		{
 			Nunca = 0,
 			Siempre = 1,
 			SoloDia1 = 2,
 			Medianoche00 = 3,
 			SoloDia1EnMedianoche00 = 5
+		}
+
+		/// <summary>
+		/// IP de la VOX
+		/// </summary>
+		public static string IPVOX
+		{
+			get
+			{
+				string res = "";
+				try
+				{
+					res = _data["General"]["IPVOX"];
+				}
+				catch (Exception ex)
+				{
+					Reglas.AddLog(ex);
+					try
+					{
+						res = "192.168.5.220";
+						IPVOX = res;
+					}
+					catch (Exception ex2)
+					{
+						Reglas.AddLog(ex2);
+					}
+				}
+				return res;
+			}
+			set
+			{
+				try
+				{
+					_data["General"]["PetroRed"] = value;
+					_parser.WriteFile(_archivo, _data);
+				}
+				catch (Exception ex2)
+				{
+					Reglas.AddLog(ex2);
+				}
+			}
+		}
+
+		/// <summary>
+		/// Devuelve el puerto fiscal de para esta pc o el global en su defecto
+		/// </summary>
+		public static int PuertoFiscal
+		{
+			get
+			{
+				int res = Reglas.PuertoFiscal;
+				try
+				{
+					string nro = "";
+					if (_data.TryGetKey("General" + _data.SectionKeySeparator.ToString() + "PuertoFiscal", out nro))
+						res = int.Parse(nro);
+				}
+				catch (Exception ex)
+				{
+					Reglas.AddLog(ex);
+					try
+					{
+						PuertoFiscal = Reglas.PuertoFiscal;
+					}
+					catch (Exception ex2)
+					{
+						Reglas.AddLog(ex2);
+					}
+				}
+				return res;
+			}
+			set
+			{
+				try
+				{
+					_data["General"]["PuertoFiscal"] = value.ToString();
+					_parser.WriteFile(_archivo, _data);
+				}
+				catch (Exception ex2)
+				{
+					Reglas.AddLog(ex2);
+				}
+			}
+
+		}
+
+		/// <summary>
+		/// Devuelve el modelo de impresora fiscal de para esta pc o el global en su defecto
+		/// </summary>
+		public static int ModeloFiscal
+		{
+			get
+			{
+				int res = Reglas.ModeloFiscal;
+				try
+				{
+					string modelo = "";
+					if (_data.TryGetKey("General" + _data.SectionKeySeparator.ToString() + "ModeloFiscal", out modelo))
+						res = int.Parse(modelo);
+				}
+				catch (Exception ex)
+				{
+					Reglas.AddLog(ex);
+					try
+					{
+						ModeloFiscal = Reglas.ModeloFiscal;
+					}
+					catch (Exception ex2)
+					{
+						Reglas.AddLog(ex2);
+					}
+				}
+				return res;
+			}
+			set
+			{
+				try
+				{
+					_data["General"]["ModeloFiscal"] = value.ToString();
+					_parser.WriteFile(_archivo, _data);
+				}
+				catch (Exception ex2)
+				{
+					Reglas.AddLog(ex2);
+				}
+			}
+
+		}
+
+		/// <summary>
+		/// Usar controlador fiscal en esta pc? (o global en su defecto)
+		/// </summary>
+		public static bool UsarFiscal
+		{
+			get
+			{
+				bool res = Reglas.UsarFiscal;
+				try
+				{
+					string usar = "";
+					if (_data.TryGetKey("General" + _data.SectionKeySeparator.ToString() + "UsarFiscal", out usar))
+						res = bool.Parse(usar);
+				}
+				catch (Exception ex)
+				{
+					Reglas.AddLog(ex);
+					try
+					{
+						UsarFiscal = Reglas.UsarFiscal;
+					}
+					catch (Exception ex2)
+					{
+						Reglas.AddLog(ex2);
+					}
+				}
+				return res;
+			}
+			set
+			{
+				try
+				{
+					_data["General"]["UsarFiscal"] = value.ToString();
+					_parser.WriteFile(_archivo, _data);
+				}
+				catch (Exception ex2)
+				{
+					Reglas.AddLog(ex2);
+				}
+			}
 		}
 	}
 }

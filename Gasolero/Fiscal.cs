@@ -17,7 +17,7 @@ namespace Gasolero
 		#region Imprimir
 		public static ABMResultado Imprimir(Cliente cli, FactEncabezado fact)
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return new ABMResultado(fact.IdFactEncabezado);
 			bool exito = false;
 			ABMResultado res;
@@ -27,7 +27,7 @@ namespace Gasolero
 				hasarCte = hasar;
 				try
 				{
-					hasar.Puerto = Reglas.PuertoFiscal;
+					hasar.Puerto = AppConfig.PuertoFiscal;
 					hasar.Modelo = ModeloFiscal();
 					hasar.PrecioBase = false;
 					hasar.kIVA = true;
@@ -219,14 +219,14 @@ namespace Gasolero
 		/// </summary>
 		public static bool ImprimirVale(Operacion op, Vehiculo veh = null)
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = new HASARClass();
 			bool seImprimio = false;
 			hasarCte = hasar;
 			try
 			{
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.PrecioBase = false;
 				hasar.kIVA = true;
@@ -299,13 +299,13 @@ namespace Gasolero
 
 		public static bool ImprimirRecibo(Cliente cli, string txtRecibo, double monto)
 		{
-			if (!Reglas.UsarFiscal || !Reglas.CCFiscal)
+			if (!AppConfig.UsarFiscal || !Reglas.CCFiscal)
 				return true;
 			HASAR hasar = new HASARClass();
 			hasarCte = hasar;
 			try
 			{
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.PrecioBase = false;
 				hasar.kIVA = true;
@@ -359,14 +359,14 @@ namespace Gasolero
 		/// </summary>
 		public static bool ImprimirCCMov(CCMovimiento mov)
 		{
-			if (!Reglas.UsarFiscal || !Reglas.CCFiscal)
+			if (!AppConfig.UsarFiscal || !Reglas.CCFiscal)
 				return true;
 			HASAR hasar = new HASARClass();
 			bool seImprimio = false;
 			hasarCte = hasar;
 			try
 			{
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.PrecioBase = false;
 				hasar.kIVA = true;
@@ -438,14 +438,14 @@ namespace Gasolero
 
 		public static bool CierreZ()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
 				object[] r = new object[50];
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -484,13 +484,13 @@ namespace Gasolero
 
 		public static bool CierreZHastaAhora()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -515,13 +515,13 @@ namespace Gasolero
 
 		public static bool CierreZPorFechas()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -562,13 +562,13 @@ namespace Gasolero
 
 		public static bool CierreZPorNum()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -611,13 +611,13 @@ namespace Gasolero
 
 		public static bool CierreZPorFechasXls()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -688,13 +688,13 @@ namespace Gasolero
 
 		public static bool CierreX()
 		{
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 				return true;
 			HASAR hasar = null;
 			try
 			{
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -738,13 +738,13 @@ namespace Gasolero
 		{
 			try
 			{
-				if (!Reglas.UsarFiscal)
+				if (!AppConfig.UsarFiscal)
 					return Reglas.NowServidor;
 				HASAR hasar = null;
 				try
 				{
 					hasar = new HASARClass();
-					hasar.Puerto = Reglas.PuertoFiscal;
+					hasar.Puerto = AppConfig.PuertoFiscal;
 					hasar.Modelo = ModeloFiscal();
 					hasar.Comenzar();
 					hasar.TratarDeCancelarTodo();
@@ -772,7 +772,7 @@ namespace Gasolero
 			ModelosDeImpresoras res = ModelosDeImpresoras.MODELO_715;
 			try
 			{
-				int modelo = Reglas.ModeloFiscal;
+				int modelo = AppConfig.ModeloFiscal;
 				switch (modelo)
 				{
 					case 441:
@@ -813,7 +813,7 @@ namespace Gasolero
 			{
 				HASAR hasar = null;
 				hasar = new HASARClass();
-				hasar.Puerto = Reglas.PuertoFiscal;
+				hasar.Puerto = AppConfig.PuertoFiscal;
 				hasar.Modelo = ModeloFiscal();
 				hasar.Comenzar();
 				hasar.TratarDeCancelarTodo();
@@ -832,7 +832,7 @@ namespace Gasolero
 			string res = "";
 			object[] vals = new object[8];
 			object ptoVta;
-			if (!Reglas.UsarFiscal)
+			if (!AppConfig.UsarFiscal)
 			{
 				return "0000";
 			}
@@ -852,7 +852,7 @@ namespace Gasolero
 			}
 			try
 			{
-				hasarCte.Puerto = Reglas.PuertoFiscal;
+				hasarCte.Puerto = AppConfig.PuertoFiscal;
 				hasarCte.Modelo = ModeloFiscal();
 				hasarCte.PrecioBase = false;
 				hasarCte.kIVA = true;

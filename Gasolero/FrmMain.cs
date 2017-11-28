@@ -163,6 +163,10 @@ namespace Gasolero
 			maxFacturableToolStripMenuItem.Visible = acceso;
 			modoFiscalToolStripMenuItem.Visible = super &&
 				!Reglas.VendedorActual.TienePermiso(enPermisos.Administrador);
+			//-------------- ZEEB ---------------
+			editarSalidaVOXToolStripMenuItem.Enabled = super;
+			//-------------- /ZEEB ---------------
+
 			modeloFiscalToolStripMenuItem.Enabled = super;
 			marcaParcialToolStripMenuItem.Visible = super;
 			imprimirParcialFinalToolStripMenuItem.Visible = super;
@@ -916,12 +920,15 @@ namespace Gasolero
 			envioDeEmailsToolStripMenuItem.CheckedChanged -= new EventHandler(envioDeEmailsToolStripMenuItem_CheckedChanged);
 			modoFiscalToolStripMenuItem.CheckedChanged -= new EventHandler(modoFiscalToolStripMenuItem_CheckedChanged);
 			movDeCCAFiscalToolStripMenuItem.CheckedChanged -= new EventHandler(movDeCCAFiscalToolStripMenuItem_CheckedChanged);
+			editarSalidaVOXToolStripMenuItem.CheckedChanged -= new EventHandler(editarSalidaVOXToolStripMenuItem_CheckedChanged);
 			envioDeEmailsToolStripMenuItem.Checked = Reglas.EnviarEmail;
-			modoFiscalToolStripMenuItem.Checked = Reglas.UsarFiscal;
+			modoFiscalToolStripMenuItem.Checked = AppConfig.UsarFiscal;
 			movDeCCAFiscalToolStripMenuItem.Checked = Reglas.CCFiscal;
+			editarSalidaVOXToolStripMenuItem.Checked = Reglas.EditarSalidaVOX;
 			envioDeEmailsToolStripMenuItem.CheckedChanged += new EventHandler(envioDeEmailsToolStripMenuItem_CheckedChanged);
 			modoFiscalToolStripMenuItem.CheckedChanged += new EventHandler(modoFiscalToolStripMenuItem_CheckedChanged);
 			movDeCCAFiscalToolStripMenuItem.CheckedChanged += new EventHandler(movDeCCAFiscalToolStripMenuItem_CheckedChanged);
+			editarSalidaVOXToolStripMenuItem.CheckedChanged += new EventHandler(editarSalidaVOXToolStripMenuItem_CheckedChanged);
 		}
 
 		private void BCerrar_Click(object sender, EventArgs e)
@@ -1150,7 +1157,13 @@ namespace Gasolero
 				"¿Está seguro que quiere desactivar el modo fiscal?";
 			if (MessageBox.Show(msj, "Modo Fiscal", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 				== DialogResult.Yes)
-				Reglas.UsarFiscal = check;
+				AppConfig.UsarFiscal = check;
+			else
+			{
+				modoFiscalToolStripMenuItem.CheckedChanged -= new EventHandler(modoFiscalToolStripMenuItem_CheckedChanged);
+				modoFiscalToolStripMenuItem.Checked = !check;
+				modoFiscalToolStripMenuItem.CheckedChanged += new EventHandler(modoFiscalToolStripMenuItem_CheckedChanged);
+			}
 		}
 
 		private void movDeCCAFiscalToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
@@ -1161,6 +1174,28 @@ namespace Gasolero
 			if (MessageBox.Show(msj, "Modo Fiscal para Cta.Cte.", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 				== DialogResult.Yes)
 				Reglas.CCFiscal = check;
+			else
+			{
+				movDeCCAFiscalToolStripMenuItem.CheckedChanged -= new EventHandler(movDeCCAFiscalToolStripMenuItem_CheckedChanged);
+				movDeCCAFiscalToolStripMenuItem.Checked = !check;
+				movDeCCAFiscalToolStripMenuItem.CheckedChanged += new EventHandler(movDeCCAFiscalToolStripMenuItem_CheckedChanged);
+			}
+		}
+
+		private void editarSalidaVOXToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+		{
+			bool check = editarSalidaVOXToolStripMenuItem.Checked;
+			string msj = check ? "¿Está seguro que quiere activar la edición de los campos salida de la planilla de cierre que carga la VOX?" :
+				"¿Está seguro que quiere desactivar la edición de los campos salida de la planilla de cierre que carga la VOX?";
+			if (MessageBox.Show(msj, "Edición salida VOX", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+				== DialogResult.Yes)
+				Reglas.EditarSalidaVOX = check;
+			else
+			{
+				editarSalidaVOXToolStripMenuItem.CheckedChanged -= new EventHandler(editarSalidaVOXToolStripMenuItem_CheckedChanged);
+				editarSalidaVOXToolStripMenuItem.Checked = !check;
+				editarSalidaVOXToolStripMenuItem.CheckedChanged += new EventHandler(editarSalidaVOXToolStripMenuItem_CheckedChanged);
+			}
 		}
 
 		private void maxFacturableToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1282,16 +1317,17 @@ namespace Gasolero
 			esq.Dato = "Modelo Impresora Fiscal";
 			esq.Tipo = Esquema.enControles.Money;
 			esq.Mascara = "000000000";
-			esq.ValorDefectoOriginal = Reglas.ModeloFiscal;
+			esq.ValorDefectoOriginal = AppConfig.ModeloFiscal;
 			Prompt pr = new Prompt(esq);
 			if (pr.ShowDialog() != DialogResult.OK)
 				return;
 			try
 			{
-				Reglas.ModeloFiscal = int.Parse(pr.GetValue().ToString());
+				AppConfig.ModeloFiscal = int.Parse(pr.GetValue().ToString());
 			}
 			catch { }
 		}
+
 		#endregion
 
 		#region Atajos de CVentas
